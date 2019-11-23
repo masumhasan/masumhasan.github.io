@@ -1,0 +1,3586 @@
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block
+}
+
+audio, canvas, video {
+    display: inline-block
+}
+
+    audio:not([controls]) {
+        display: none;
+        height: 0
+    }
+
+[hidden], template {
+    display: none
+}
+
+script {
+    display: none !important
+}
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+a {
+    background: transparent
+}
+
+    a:focus {
+        outline: thin dotted
+    }
+
+    a:active, a:hover {
+        outline: 0
+    }
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+abbr[title] {
+    border-bottom: 1px dotted
+}
+
+b, strong {
+    font-weight: 700
+}
+
+dfn {
+    font-style: italic
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+code, kbd, pre, samp {
+    font-family: monospace,serif;
+    font-size: 1em
+}
+
+pre {
+    white-space: pre-wrap
+}
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019"
+}
+
+small {
+    font-size: 80%
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup {
+    top: -.5em
+}
+
+sub {
+    bottom: -.25em
+}
+
+img {
+    border: 0
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+figure {
+    margin: 0
+}
+
+fieldset {
+    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+legend {
+    border: 0;
+    padding: 0
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0
+}
+
+button, input {
+    line-height: normal
+}
+
+button, select {
+    text-transform: none
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+    button[disabled], html input[disabled] {
+        cursor: default
+    }
+
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+input[type=search] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+    input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+        -webkit-appearance: none
+    }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+@font-face {
+    font-family: din;
+    src: url(https://masumhasan.github.io/assets/day/day-light.woff) format('woff'),url(https://masumhasan.github.io/assets/day/day-light.svg) format('svg');
+    font-weight: 300;
+    font-style: 300
+}
+
+@font-face {
+    font-family: din;
+    src: url(https://masumhasan.github.io/assets/day/day-regular.woff) format('woff'),url(https://masumhasan.github.io/assets/day/day-regular.svg) format('svg');
+    font-weight: 400;
+    font-style: 400
+}
+
+@font-face {
+    font-family: din;
+    src: url(https://masumhasan.github.io/assets/day/day-medium.woff) format('woff'),url(https://masumhasan.github.io/assets/day/day-medium.svg) format('svg');
+    font-weight: 600;
+    font-style: 600
+}
+
+@font-face {
+    font-family: din;
+    src: url(https://masumhasan.github.io/assets/day/day-bold.woff) format('woff'),url(https://masumhasan.github.io/assets/day/day-bold.svg) format('svg');
+    font-weight: 700;
+    font-style: 700
+}
+
+@font-face {
+    font-family: lusitana;
+    src: url(https://masumhasan.github.io/assets/day/lusitana.woff) format('woff'),url(https://masumhasan.github.io/assets/day/lusitana.svg) format('svg');
+    font-weight: 400;
+    font-style: 400
+}
+/*!
+Video.js Default Styles (http://videojs.com)
+Version GENERATED_AT_BUILD
+Create your own skin at http://designer.videojs.com
+*/
+
+.vjs-default-skin {
+    color: #fff
+}
+
+.vjs-fullscreen-control {
+    display: none
+}
+
+@font-face {
+    font-family: VideoJS;
+    src: url(fonts/vjs/vjs.eot);
+    src: url(fonts/vjs/vjs.eot?#iefix) format('embedded-opentype'),url(fonts/vjs/vjs.woff) format('woff'),url(fonts/vjs/vjs.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal
+}
+
+.vjs-default-skin .vjs-slider {
+    outline: 0;
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    background-color: #333;
+    background-color: rgba(51,51,51,.9)
+}
+
+.vjs-default-skin .vjs-slider-handle {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+    .vjs-default-skin .vjs-slider-handle:before {
+        background: #fff;
+        width: 8px;
+        height: 90%;
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0
+    }
+
+.vjs-default-skin .vjs-control-bar {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3em;
+    background-color: #07141e;
+    background-color: rgba(7,20,30,.7)
+}
+
+.vjs-default-skin.vjs-has-started .vjs-control-bar {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    -ms-transition: visibility .1s,opacity .1s;
+    -webkit-transition: visibility .1s,opacity .1s;
+    -moz-transition: visibility .1s,opacity .1s;
+    -o-transition: visibility .1s,opacity .1s;
+    transition: visibility .1s,opacity .1s
+}
+
+.vjs-default-skin.vjs-has-started.vjs-user-inactive.vjs-playing .vjs-control-bar {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    -ms-transition: visibility 1s,opacity 1s;
+    -webkit-transition: visibility 1s,opacity 1s;
+    -moz-transition: visibility 1s,opacity 1s;
+    -o-transition: visibility 1s,opacity 1s;
+    transition: visibility 1s,opacity 1s
+}
+
+.vjs-default-skin.vjs-controls-disabled .vjs-control-bar {
+    display: none
+}
+
+.vjs-default-skin.vjs-using-native-controls .vjs-control-bar {
+    display: none
+}
+
+@media \0screen {
+    .vjs-default-skin.vjs-user-inactive.vjs-playing .vjs-control-bar :before {
+        content: ""
+    }
+}
+
+.vjs-default-skin .vjs-control {
+    outline: 0;
+    position: relative;
+    float: left;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 3em
+}
+
+    .vjs-default-skin .vjs-control:before {
+        font-family: VideoJS;
+        font-size: 1.8em;
+        line-height: 1.7;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center
+    }
+
+    .vjs-default-skin .vjs-control:focus {
+    }
+
+.vjs-default-skin .vjs-control-text {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px
+}
+
+.vjs-default-skin .vjs-play-control {
+    width: 5em;
+    cursor: pointer
+}
+
+    .vjs-default-skin .vjs-play-control:before {
+        content: "\e001"
+    }
+
+.vjs-default-skin.vjs-playing .vjs-play-control:before {
+    content: "\e002"
+}
+
+.vjs-default-skin .vjs-mute-control, .vjs-default-skin .vjs-volume-menu-button {
+    cursor: pointer;
+    float: right;
+    padding-right: 3em
+}
+
+    .vjs-default-skin .vjs-mute-control:before, .vjs-default-skin .vjs-volume-menu-button:before {
+        content: "\e006"
+    }
+
+    .vjs-default-skin .vjs-mute-control.vjs-vol-0:before, .vjs-default-skin .vjs-volume-menu-button.vjs-vol-0:before {
+        content: "\e003"
+    }
+
+    .vjs-default-skin .vjs-mute-control.vjs-vol-1:before, .vjs-default-skin .vjs-volume-menu-button.vjs-vol-1:before {
+        content: "\e004"
+    }
+
+    .vjs-default-skin .vjs-mute-control.vjs-vol-2:before, .vjs-default-skin .vjs-volume-menu-button.vjs-vol-2:before {
+        content: "\e005"
+    }
+
+.vjs-default-skin .vjs-volume-control {
+    width: 5em;
+    float: right;
+    padding-right: 2em;
+    top: 1px
+}
+
+.vjs-default-skin .vjs-volume-bar {
+    width: 5em;
+    height: .6em;
+    margin: 1.1em auto 0;
+    background: rgba(255,255,255,.2)
+}
+
+.vjs-default-skin .vjs-volume-menu-button .vjs-menu-content {
+    height: 2.9em
+}
+
+.vjs-default-skin .vjs-volume-level {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #fb6906 url() -50% 0 repeat
+}
+
+.vjs-default-skin .vjs-volume-bar .vjs-volume-handle {
+    width: .5em;
+    height: .5em;
+    display: none
+}
+
+.vjs-default-skin .vjs-volume-handle:before {
+    font-size: .9em;
+    top: -.2em;
+    left: -.2em;
+    width: 1em;
+    height: 1em
+}
+
+.vjs-default-skin .vjs-volume-menu-button .vjs-menu .vjs-menu-content {
+    width: 6em;
+    left: -4em
+}
+
+.vjs-default-skin .vjs-progress-control {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: auto;
+    font-size: .9em;
+    height: 1em;
+    top: -1em;
+    -ms-transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s
+}
+
+.vjs-default-skin:hover .vjs-progress-control {
+    font-size: .9em;
+    -ms-transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s
+}
+
+.vjs-default-skin .vjs-progress-holder {
+    height: 100%
+}
+
+    .vjs-default-skin .vjs-progress-holder .vjs-play-progress, .vjs-default-skin .vjs-progress-holder .vjs-load-progress {
+        position: absolute;
+        display: block;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        left: 0;
+        top: 0
+    }
+
+.vjs-default-skin .vjs-play-progress {
+    background: #fb6906 url() -50% 0 repeat
+}
+
+.vjs-default-skin .vjs-load-progress {
+    background: #646464;
+    background: rgba(255,255,255,.4)
+}
+
+.vjs-default-skin .vjs-seek-handle {
+    width: 1.5em;
+    height: 100%
+}
+
+    .vjs-default-skin .vjs-seek-handle:before {
+        padding-top: .1em
+    }
+
+.vjs-default-skin .vjs-time-controls {
+    font-size: 1.5em;
+    line-height: 2em;
+    font-weight: 600;
+    padding: 0 .5em
+}
+
+.vjs-default-skin .vjs-current-time {
+    float: left
+}
+
+.vjs-default-skin .vjs-duration {
+    float: left
+}
+
+.vjs-default-skin .vjs-remaining-time {
+    display: none;
+    float: left
+}
+
+.vjs-time-divider {
+    float: left;
+    line-height: 3em
+}
+
+.vjs-default-skin .vjs-fullscreen-control {
+    width: 3.8em;
+    cursor: pointer;
+    float: right
+}
+
+    .vjs-default-skin .vjs-fullscreen-control:before {
+        content: "\e000"
+    }
+
+.vjs-default-skin.vjs-fullscreen .vjs-fullscreen-control:before {
+    content: "\e00b"
+}
+
+.vjs-default-skin .vjs-big-play-button {
+    left: 50%;
+    margin-left: -1.6em;
+    top: 50%;
+    margin-top: -1.6em;
+    font-size: 3em;
+    display: block;
+    z-index: 2;
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    opacity: 1;
+    background-color: #000;
+    background-color: rgba(0,0,0,.5);
+    border: .1em solid #fff;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -ms-transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s
+}
+
+.vjs-default-skin.vjs-big-play-centered .vjs-big-play-button {
+    left: 50%;
+    margin-left: -1.6em;
+    top: 50%;
+    margin-top: -1.6em
+}
+
+.vjs-default-skin.vjs-controls-disabled .vjs-big-play-button {
+    display: none
+}
+
+.vjs-default-skin.vjs-has-started .vjs-big-play-button {
+    display: none
+}
+
+.vjs-default-skin.vjs-using-native-controls .vjs-big-play-button {
+    display: none
+}
+
+.vjs-default-skin:hover .vjs-big-play-button, .vjs-default-skin .vjs-big-play-button:focus {
+    outline: 0;
+    border-color: #fff;
+    background-color: #505050;
+    background-color: rgba(50,50,50,.75);
+    -ms-transition: all 0s;
+    -webkit-transition: all 0s;
+    -moz-transition: all 0s;
+    -o-transition: all 0s;
+    transition: all 0s
+}
+
+.vjs-default-skin .vjs-big-play-button:before {
+    content: "\e001";
+    font-family: VideoJS;
+    line-height: 3em;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.vjs-loading-spinner {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 4em;
+    line-height: 1;
+    width: 1em;
+    height: 1em;
+    margin-left: -.5em;
+    margin-top: -.5em;
+    opacity: .75;
+    -ms-animation: spin 1.5s infinite linear;
+    -webkit-animation: spin 1.5s infinite linear 300ms 0 ease;
+    -moz-animation: spin 1.5s infinite linear 300ms 0 ease;
+    -ms-animation: spin 1.5s infinite linear 300ms 0 ease;
+    -o-animation: spin 1.5s infinite linear 300ms 0 ease;
+    animation: spin 1.5s infinite linear 300ms 0 ease;
+    -webkit-animation: spin 1.5s infinite linear;
+    -moz-animation: spin 1.5s infinite linear;
+    -o-animation: spin 1.5s infinite linear;
+    animation: spin 1.5s infinite linear
+}
+
+.vjs-default-skin .vjs-loading-spinner:before {
+    content: "\e01e";
+    font-family: VideoJS;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    text-align: center
+}
+
+@-moz-keyframes spin {
+    0% {
+        -moz-transform: rotate(0deg)
+    }
+
+    100% {
+        -moz-transform: rotate(359deg)
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(359deg)
+    }
+}
+
+@-o-keyframes spin {
+    0% {
+        -o-transform: rotate(0deg)
+    }
+
+    100% {
+        -o-transform: rotate(359deg)
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(359deg)
+    }
+}
+
+.vjs-default-skin .vjs-menu-button {
+    float: right;
+    cursor: pointer
+}
+
+.vjs-default-skin .vjs-menu {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    margin-bottom: 3em;
+    border-left: 2em solid transparent;
+    border-right: 2em solid transparent;
+    border-top: 1.55em solid #000;
+    border-top-color: rgba(7,40,50,.5)
+}
+
+.vjs-default-skin .vjs-menu-button .vjs-menu .vjs-menu-content {
+    display: block;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 10em;
+    bottom: 1.5em;
+    max-height: 15em;
+    overflow: auto;
+    left: -5em;
+    background-color: #07141e;
+    background-color: rgba(7,20,30,.7)
+}
+
+.vjs-default-skin .vjs-menu-button:hover .vjs-menu {
+    display: block
+}
+
+.vjs-default-skin .vjs-menu-button ul li {
+    list-style: none;
+    margin: 0;
+    padding: .3em 0;
+    line-height: 1.4em;
+    font-size: 1.2em;
+    text-align: center;
+    text-transform: lowercase
+}
+
+    .vjs-default-skin .vjs-menu-button ul li.vjs-selected {
+        background-color: #000
+    }
+
+        .vjs-default-skin .vjs-menu-button ul li:focus, .vjs-default-skin .vjs-menu-button ul li:hover, .vjs-default-skin .vjs-menu-button ul li.vjs-selected:focus, .vjs-default-skin .vjs-menu-button ul li.vjs-selected:hover {
+            outline: 0;
+            color: #111;
+            background-color: #fff;
+            background-color: rgba(255,255,255,.75)
+        }
+
+    .vjs-default-skin .vjs-menu-button ul li.vjs-menu-title {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1em;
+        line-height: 2em;
+        padding: 0;
+        margin: 0 0 .3em;
+        font-weight: 700;
+        cursor: default
+    }
+
+.vjs-default-skin .vjs-subtitles-button:before {
+    content: "\e00c"
+}
+
+.vjs-default-skin .vjs-captions-button:before {
+    content: "\e008"
+}
+
+.video-js {
+    background-color: #000;
+    position: relative;
+    padding: 0;
+    font-size: 10px;
+    vertical-align: middle;
+    font-weight: 400;
+    font-style: normal;
+    font-family: din;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-font-smoothing: antialiased
+}
+
+    .video-js .vjs-tech {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%
+    }
+
+    .video-js:-moz-full-screen {
+        position: absolute
+    }
+
+body.vjs-full-window {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow-y: auto
+}
+
+.video-js.vjs-fullscreen {
+    position: fixed;
+    overflow: hidden;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100% !important;
+    height: 100% !important;
+    _position: absolute
+}
+
+.video-js:-webkit-full-screen {
+    width: 100% !important;
+    height: 100% !important
+}
+
+.video-js.vjs-fullscreen.vjs-user-inactive {
+    cursor: none
+}
+
+.vjs-poster {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    cursor: pointer;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%
+}
+
+    .vjs-poster img {
+        display: block;
+        margin: 0 auto;
+        max-height: 100%;
+        padding: 0;
+        width: 100%
+    }
+
+.video-js.vjs-using-native-controls .vjs-poster {
+    display: none
+}
+
+.video-js .vjs-text-track-display {
+    text-align: center;
+    position: absolute;
+    bottom: 4em;
+    left: 1em;
+    right: 1em
+}
+
+.video-js .vjs-text-track {
+    display: none;
+    font-size: 1.4em;
+    text-align: center;
+    margin-bottom: .1em;
+    background-color: #000;
+    background-color: rgba(0,0,0,.5)
+}
+
+.video-js .vjs-subtitles {
+    color: #fff
+}
+
+.video-js .vjs-captions {
+    color: #fc6
+}
+
+.vjs-tt-cue {
+    display: block
+}
+
+.vjs-default-skin .vjs-hidden {
+    display: none
+}
+
+.vjs-lock-showing {
+    display: block !important;
+    opacity: 1;
+    visibility: visible
+}
+
+@-skrollr-keyframes scroll-front {
+    bottom-top {
+        transform: translate(0px,50px)
+    }
+
+    top-bottom {
+        transform: translate(0px,-10px)
+    }
+}
+
+.scroll-front {
+    -skrollr-animation-name: scroll-front
+}
+
+@-skrollr-keyframes scroll-mid {
+    bottom-top {
+        transform: translate(0px,100px)
+    }
+
+    top-bottom {
+        transform: translate(0px,-20px)
+    }
+}
+
+.scroll-mid {
+    -skrollr-animation-name: scroll-mid
+}
+
+@-skrollr-keyframes scroll-back {
+    bottom-top {
+        transform: translate(0px,200px)
+    }
+
+    top-bottom {
+        transform: translate(0px,-40px)
+    }
+}
+
+.scroll-back {
+    -skrollr-animation-name: scroll-back
+}
+
+@-skrollr-keyframes scroll-left {
+    bottom-top {
+        transform: translate(100px,0);
+        opacity: 0
+    }
+
+    200-top {
+        transform: translate(0px,0);
+        opacity: 1
+    }
+}
+
+.scroll-left {
+    -skrollr-animation-name: scroll-left
+}
+
+@-skrollr-keyframes scroll-left-big {
+    bottom-top {
+        transform: translate(200px,0);
+        opacity: 0
+    }
+
+    top-bottom {
+        transform: translate(0px,0);
+        opacity: 1
+    }
+}
+
+.scroll-left-big {
+    -skrollr-animation-name: scroll-left-big
+}
+
+@-skrollr-keyframes scroll-left-bottom {
+    bottom-top {
+        transform: translate(100px,0);
+        opacity: 0
+    }
+
+    -200-bottom {
+        transform: translate(0px,0);
+        opacity: 1
+    }
+}
+
+.scroll-left-bottom {
+    -skrollr-animation-name: scroll-left-bottom
+}
+
+@-skrollr-keyframes scroll-right {
+    bottom-top {
+        transform: translate(-100px,0);
+        opacity: 0
+    }
+
+    200-top {
+        transform: translate(0px,0);
+        opacity: 1
+    }
+}
+
+.scroll-right {
+    -skrollr-animation-name: scroll-right
+}
+
+@-skrollr-keyframes scroll-right-bottom {
+    bottom-top {
+        transform: translate(-100px,0);
+        opacity: 0
+    }
+
+    -200-bottom {
+        transform: translate(0px,0);
+        opacity: 1
+    }
+}
+
+.scroll-right-bottom {
+    -skrollr-animation-name: scroll-right-bottom
+}
+
+@-skrollr-keyframes scroll-up-opacity {
+    bottom-top {
+        transform: translate(0px,100px);
+        opacity: .5
+    }
+
+    top-bottom {
+        transform: translate(0px,0);
+        opacity: 1
+    }
+}
+
+.scroll-up-opacity {
+    -skrollr-animation-name: scroll-up-opacity
+}
+
+@-skrollr-keyframes scroll-opacity {
+    bottom-top {
+        opacity: 0
+    }
+
+    top-bottom {
+        opacity: 1
+    }
+}
+
+.scroll-opacity {
+    -skrollr-animation-name: scroll-opacity
+}
+
+@-skrollr-keyframes scroll-up-title {
+    bottom-top {
+        transform: translate(0px,100px)
+    }
+
+    top-bottom {
+        transform: translate(0px,0)
+    }
+}
+
+.scroll-up-title {
+    -skrollr-animation-name: scroll-up-title
+}
+
+@-skrollr-keyframes scroll-year {
+    bottom-top {
+        transform: translate(0px,-30px);
+        opacity: 0
+    }
+
+    200-top {
+        transform: translate(0px,0);
+        opacity: .5
+    }
+}
+
+.scroll-year {
+    -skrollr-animation-name: scroll-year
+}
+
+html, body { /*width:100%;height:100%;background:#f0f0f0;max-width:100%*/
+}
+
+#bio-bg {
+    display: block;
+    width: 100%;
+    overflow: hidden
+}
+
+#about-bg {
+    background-color: #fdbd12;
+    background: #fdbd12 url(https://masumhasan.github.io/bio/edge/fedgev1.png) repeat-x bottom left;
+    height: 667px;
+    top: -20px
+}
+
+#ms-bg {
+    background-color: #4db99a;
+    background-image: url(https://masumhasan.github.io/bio/edge/hedgev1.png),url(https://masumhasan.github.io/bio/edge/fedgev2.png);
+    background-position: top,bottom;
+    background-repeat: repeat-x,repeat-x;
+    height: 594px;
+    top: 1300px
+}
+
+#found-bg {
+    background-color: #fb6906;
+    background-image: url(https://masumhasan.github.io/bio/edge/hedgev2.png),url(https://masumhasan.github.io/bio/edge/fedgev3.png);
+    background-position: top,bottom;
+    background-repeat: repeat-x,repeat-x;
+    height: 638px;
+    top: 2400px
+}
+
+#phil-bg {
+    background-color: #4bc1c4;
+    background-image: url(https://masumhasan.github.io/bio/edge/hedgev1.png),url(https://masumhasan.github.io/bio/edge/fedgev2.png);
+    background-position: top,bottom;
+    background-repeat: repeat-x,repeat-x;
+    top: 3650px;
+    height: 576px
+}
+
+#thanks-bg {
+    background-color: #adbdd3;
+    background-image: url(https://masumhasan.github.io/bio/edge/hedgev2.png),url(https://masumhasan.github.io/bio/edge/fedgev3.png);
+    background-position: top,bottom;
+    background-repeat: repeat-x,repeat-x;
+    top: 4550px;
+    height: 800px
+}
+
+#bio-content {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #000;
+    font-family: din;
+    font-size: 18px;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    width: 100%
+}
+
+    #bio-content #bio-content-container {
+        overflow: visible;
+        position: relative;
+        left: 50%
+    }
+
+    #bio-content h2, #bio-content h3, #bio-content h4, #bio-content h5 {
+        margin: 0;
+        position: absolute;
+        font-weight: 600;
+        line-height: 1.2
+    }
+
+    #bio-content h2 {
+        font-size: 4em;
+        line-height: 1
+    }
+
+    #bio-content h3 {
+        font-size: 2em
+    }
+
+    #bio-content h4 {
+        font-size: 1em;
+        font-weight: 400
+    }
+
+    #bio-content .timeline-caption {
+        position: absolute;
+        left: 170px;
+        top: 50px;
+        width: 230px
+    }
+
+        #bio-content .timeline-caption strong {
+            font-weight: 700
+        }
+
+        #bio-content .timeline-caption.right-align {
+            text-align: right;
+            left: -245px
+        }
+
+    #bio-content .connect-left:after {
+        content: '';
+        position: absolute;
+        right: -50px;
+        top: 40%;
+        background-image: url();
+        background-position: -1895px -813px;
+        width: 46px;
+        height: 6px
+    }
+
+    #bio-content .connect-left-turn:after {
+        content: '';
+        position: absolute;
+        right: -50px;
+        top: 40%;
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -1638px -794px;
+        width: 46px;
+        height: 44px
+    }
+
+    #bio-content .connect-left-turn.rotate:after {
+        -webkit-transform: rotateX(180deg);
+        -moz-transform: rotateX(180deg);
+        -ms-transform: rotateX(180deg);
+        -o-transform: rotateX(180deg);
+        transform: rotateX(180deg)
+    }
+
+    #bio-content .connect-right:after {
+        content: '';
+        position: absolute;
+        left: -50px;
+        top: 40%;
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -1881px -794px;
+        width: 46px;
+        height: 6px
+    }
+
+    #bio-content .connect-right-turn:after {
+        content: '';
+        position: absolute;
+        left: -50px;
+        top: 40%;
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -1536px -794px;
+        width: 46px;
+        height: 44px
+    }
+
+    #bio-content .connect-right-turn.rotate:after {
+        -webkit-transform: rotateX(180deg);
+        -moz-transform: rotateX(180deg);
+        -ms-transform: rotateX(180deg);
+        -o-transform: rotateX(180deg);
+        transform: rotateX(180deg)
+    }
+
+    #bio-content .connect-left-white:after {
+        content: '';
+        position: absolute;
+        right: -50px;
+        top: 40%;
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -1932px -794px;
+        width: 46px;
+        height: 6px
+    }
+
+    #bio-content .connect-left-turn-white:after {
+        content: '';
+        position: absolute;
+        right: -50px;
+        top: 40%;
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -1689px -794px;
+        width: 46px;
+        height: 44px
+    }
+
+    #bio-content .connect-right-white:after {
+        content: '';
+        position: absolute;
+        left: -50px;
+        top: 40%;
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -1844px -813px;
+        width: 46px;
+        height: 6px
+    }
+
+    #bio-content .connect-right-turn-white:after {
+        content: '';
+        position: absolute;
+        left: -50px;
+        top: 40%;
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -1587px -794px;
+        width: 46px;
+        height: 44px
+    }
+
+    #bio-content .connect-shift-center:after {
+        top: 50%
+    }
+
+    #bio-content .connect-shift-down:after {
+        top: 70%
+    }
+
+    #bio-content .connect-shift-up:after {
+        top: 25%
+    }
+
+    #bio-content .bio-videoicon {
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -1844px -794px;
+        width: 32px;
+        height: 14px;
+        position: absolute;
+        left: 0;
+        top: -30px
+    }
+
+    #bio-content .right-align .bio-videoicon {
+        left: auto;
+        right: 0
+    }
+
+    #bio-content .content-section {
+        position: relative;
+        width: 1200px;
+        left: -600px
+    }
+
+    #bio-content .content-section-bg {
+        position: absolute;
+        left: 0;
+        width: 100%
+    }
+
+    #bio-content #about {
+        top: 0;
+        color: #000;
+        height: 1300px
+    }
+
+    #bio-content #about-bill {
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -303px 0;
+        width: 433px;
+        height: 531px;
+        position: absolute;
+        left: 271px;
+        top: 100px
+    }
+
+    #bio-content #about-design {
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: 0 0;
+        width: 298px;
+        height: 726px;
+        position: absolute;
+        left: -20px;
+        top: 76px
+    }
+
+    #bio-content #about-paul {
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -308px -1748px;
+        width: 221px;
+        height: 149px;
+        position: absolute;
+        left: 981px;
+        top: 300px
+    }
+
+    #bio-content #about-timeline-group {
+        position: relative;
+        top: -80px
+    }
+
+    #bio-content #about-timeline {
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -1458px -443px;
+        width: 18px;
+        height: 401px;
+        position: absolute;
+        left: 925px;
+        top: 233px
+    }
+
+    #bio-content #about-young {
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -1820px -1543px;
+        width: 146px;
+        height: 150px;
+        position: absolute;
+        left: 741px;
+        top: 200px
+    }
+
+    #bio-content #about-young-caption {
+        position: absolute;
+        left: -90px;
+        top: 150px
+    }
+
+    #bio-content #about-paul-caption {
+        position: absolute;
+        left: 10px;
+        top: 220px
+    }
+
+    #bio-content #about-harvard {
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -800px -1543px;
+        width: 148px;
+        height: 170px;
+        position: absolute;
+        left: 739px;
+        top: 450px
+    }
+
+    #bio-content #about-harvard-caption {
+        position: absolute;
+        left: -88px;
+        top: 168px
+    }
+
+    #bio-content #about-mugshotbg {
+        position: absolute;
+        left: 693px;
+        top: 730px;
+        width: 584px;
+        height: 495px;
+        background: #B8C9E0
+    }
+
+    #bio-content #about-mugshot {
+        position: absolute;
+        left: 568px;
+        top: 730px;
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: 0 -731px;
+        width: 638px;
+        height: 438px
+    }
+
+    #bio-content #about-mugshotstamp {
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -1624px -1543px;
+        width: 191px;
+        height: 152px;
+        position: absolute;
+        left: 1162px;
+        top: 710px
+    }
+
+    #bio-content #about-dots {
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -1740px -794px;
+        width: 79px;
+        height: 34px;
+        position: absolute;
+        left: 682px;
+        top: 710px
+    }
+
+    #bio-content #about-signed {
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -580px -1433px;
+        width: 394px;
+        height: 65px;
+        position: absolute;
+        left: 20px;
+        top: 780px
+    }
+
+    #bio-content #about-title {
+        position: absolute;
+        left: 30px;
+        top: 180px
+    }
+
+    #bio-content #about-year {
+        font-size: 1.65em;
+        line-height: 1;
+        color: #EA991B;
+        position: absolute;
+        left: 920px;
+        top: 120px
+    }
+
+        #bio-content #about-year span {
+            color: #fff
+        }
+
+    #bio-content #about-family {
+        position: absolute;
+        left: 20px;
+        top: 280px;
+        color: #000;
+        font-weight: 600
+    }
+
+        #bio-content #about-family td:first-child {
+            color: #fff;
+            font-weight: 600;
+            font-size: .9em;
+            line-height: 1;
+            white-space: nowrap;
+            text-align: right;
+            top: .2em;
+            position: relative
+        }
+
+        #bio-content #about-family td {
+            padding-bottom: .5em;
+            padding-right: .5em;
+            vertical-align: top
+        }
+
+    #bio-content #about-text {
+        position: absolute;
+        left: 10px;
+        top: 725px;
+        color: #666;
+        width: 575px
+    }
+
+    #bio-content #ms {
+        height: 1100px
+    }
+
+    #bio-content #ms-text {
+        position: absolute;
+        left: 780px;
+        top: 70px;
+        color: #fff;
+        width: 440px
+    }
+
+    #bio-content #ms-title {
+        position: relative;
+        text-align: center;
+        top: 80px;
+        color: #fff
+    }
+
+    #bio-content #ms-year {
+        position: absolute;
+        left: 562px;
+        top: 38px;
+        opacity: .35
+    }
+
+    #bio-content #ms-whiteboard {
+        position: absolute;
+        left: 644px;
+        top: 335px
+    }
+
+    #bio-content #ms-whiteboard-caption {
+        position: absolute;
+        left: 15px;
+        top: -11px
+    }
+
+    #bio-content #ms-washington {
+        position: absolute;
+        left: 550px;
+        top: 420px
+    }
+
+    #bio-content #ms-washington-caption {
+        position: absolute;
+        left: -410px;
+        top: -10px;
+        width: 400px
+    }
+
+    #bio-content #ms-dos {
+        position: absolute;
+        left: 644px;
+        top: 460px
+    }
+
+    #bio-content #ms-dos-caption {
+        position: absolute;
+        left: 10px;
+        top: -10px;
+        width: 400px
+    }
+
+    #bio-content #ms-wedding {
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -622px -1543px;
+        width: 173px;
+        height: 174px;
+        position: absolute;
+        left: 378px;
+        top: 430px
+    }
+
+    #bio-content #ms-wedding-caption {
+        top: 70px
+    }
+
+    #bio-content #ms-paul {
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -303px -536px;
+        width: 178px;
+        height: 179px;
+        position: absolute;
+        left: 372px;
+        top: 160px
+    }
+
+    #bio-content #ms-xbox {
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -975px -1748px;
+        width: 193px;
+        height: 129px;
+        position: absolute;
+        left: 357px;
+        top: 650px
+    }
+
+    #bio-content #ms-chief {
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -1105px -454px;
+        width: 137px;
+        height: 208px;
+        position: absolute;
+        left: 645px;
+        top: 570px
+    }
+
+    #bio-content #ms-chief-caption {
+        top: 40px;
+        left: 150px;
+        width: 290px
+    }
+
+    #bio-content #ms-ceo {
+        position: absolute;
+        left: 644px;
+        top: 835px
+    }
+
+    #bio-content #ms-ceo-caption {
+        position: absolute;
+        left: 15px;
+        top: -8px;
+        width: 400px
+    }
+
+    #bio-content #ms-windows {
+        position: absolute;
+        left: 644px;
+        top: 410px;
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -842px -1748px;
+        width: 128px;
+        height: 148px
+    }
+
+    #bio-content #ms-windows-caption {
+        left: 148px
+    }
+
+    #bio-content #ms-windows95 {
+        width: 178px;
+        height: 25px;
+        position: absolute;
+        left: 372px;
+        top: 530px
+    }
+
+    #bio-content #ms-windows95-caption {
+        top: 0;
+        left: -62px
+    }
+
+    #bio-content #ms-advisor {
+        width: 315px;
+        height: 129px;
+        position: absolute;
+        left: 235px;
+        top: 830px
+    }
+
+    #bio-content #ms-advisor-caption {
+        left: -8px;
+        top: 45px;
+        width: 310px
+    }
+
+    #bio-content #ms-timeline {
+        position: absolute;
+        left: 596px;
+        top: 170px;
+        background-color: #000;
+        width: 2px;
+        height: 780px
+    }
+
+    #bio-content #found {
+        height: 1255px
+    }
+
+    #bio-content #found-billsign {
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -1295px -443px;
+        width: 135px;
+        height: 412px;
+        position: absolute;
+        left: 986px;
+        top: -200px
+    }
+
+    #bio-content #found-title {
+        position: absolute;
+        left: 460px;
+        top: 91px;
+        color: #fff
+    }
+
+    #bio-content #found-text {
+        position: absolute;
+        left: 35px;
+        top: 80px;
+        color: #fff;
+        width: 410px
+    }
+
+    #bio-content #found-year {
+        position: absolute;
+        left: 576px;
+        top: 36px;
+        opacity: .35
+    }
+
+    #bio-content #found-ted {
+        position: absolute;
+        left: 401px;
+        top: 630px;
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -534px -1748px;
+        width: 149px;
+        height: 149px
+    }
+
+    #bio-content #found-bill-melinda {
+        position: absolute;
+        left: 530px;
+        top: 155px;
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -580px -1174px;
+        width: 387px;
+        height: 254px
+    }
+
+    #bio-content #found-davinci {
+        position: absolute;
+        left: 987px;
+        top: 119px;
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -1766px -443px;
+        width: 242px;
+        height: 341px
+    }
+
+    #bio-content #found-timeline {
+        left: 596px;
+        top: 430px;
+        background-color: #000;
+        position: absolute;
+        width: 2px;
+        height: 800px
+    }
+
+    #bio-content #found-bmg {
+        position: absolute;
+        left: 372px;
+        top: 390px;
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -486px -536px;
+        width: 178px;
+        height: 178px
+    }
+
+    #bio-content #found-bmg-caption {
+        width: 325px;
+        left: -340px;
+        top: -5px
+    }
+
+    #bio-content #found-buffet {
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: 0 -1543px;
+        width: 287px;
+        height: 200px;
+        position: absolute;
+        left: 644px;
+        top: 590px
+    }
+
+    #bio-content #found-buffet-caption {
+        left: 300px
+    }
+
+    #bio-content #found-polio {
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -154px -1748px;
+        width: 149px;
+        height: 149px;
+        position: absolute;
+        left: 644px;
+        top: 800px
+    }
+
+    #bio-content #found-polio-caption {
+        width: 360px;
+        top: 10px
+    }
+
+    #bio-content #found-library {
+        position: absolute;
+        left: 644px;
+        top: 490px
+    }
+
+    #bio-content #found-library-caption {
+        top: -51px;
+        left: 10px;
+        width: 420px
+    }
+
+    #bio-content #found-vaccine {
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -1640px -1174px;
+        width: 342px;
+        height: 210px;
+        position: absolute;
+        left: 208px;
+        top: 660px
+    }
+
+    #bio-content #found-vaccine-caption {
+        width: 390px;
+        top: 215px;
+        left: -55px
+    }
+
+    #bio-content #found-CHAMPS {
+        position: absolute;
+        left: 550px;
+        top: 1010px;
+        background-position: 0 -1748px;
+        width: 0px;
+        height: 0px;
+    }
+
+    #bio-content #found-CHAMPS-caption {
+        left: -390px;
+        top: -10px;
+        width: 390px;
+        text-align: right;
+    }
+
+    #bio-content #found-fiaa {
+        position: absolute;
+        left: 647px;
+        top: 1020px;
+        background-position: 0 -1748px;
+        width: 0px;
+        height: 0px;
+    }
+
+    #bio-content #found-fiaa-caption {
+        left: 2px;
+        top: 31px;
+        width: 390px;
+    }
+
+    #bio-content #found-expo {
+        position: absolute;
+        left: 550px;
+        top: 1090px;
+        background-position: 0 -1748px;
+        width: 0px;
+        height: 0px;
+    }
+
+    #bio-content #found-expo-caption {
+        left: -400px;
+        top: 30px;
+        width: 400px;
+        text-align: right;
+    }
+
+    #bio-content #phil {
+        height: 1140px
+    }
+
+    #bio-content #phil-edison {
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -741px 0;
+        width: 359px;
+        height: 451px;
+        position: absolute;
+        left: -17px;
+        top: 0
+    }
+
+    #bio-content #phil-bono {
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -1295px 0;
+        width: 731px;
+        height: 438px;
+        position: absolute;
+        left: 580px;
+        top: -100px
+    }
+
+    #bio-content #phil-venn {
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -1700px -860px;
+        width: 300px;
+        height: 230px;
+        position: absolute;
+        left: 384px;
+        top: 150px
+    }
+
+    #bio-content #phil-title {
+        position: absolute;
+        left: 460px;
+        top: 116px;
+        width: 800px;
+        color: #fff
+    }
+
+    #bio-content #phil-text {
+        position: absolute;
+        left: 50px;
+        top: 120px;
+        width: 397px;
+        color: #fff
+    }
+
+    #bio-content #phil-year {
+        position: absolute;
+        left: 567px;
+        top: 72px;
+        width: 61px;
+        color: #000
+    }
+
+    #bio-content #phil-quote {
+        position: absolute;
+        left: 610px;
+        top: 240px;
+        color: #fff;
+        font-size: 1.9em;
+        font-weight: 500
+    }
+
+    #bio-content #phil-sign {
+        position: absolute;
+        left: 970px;
+        top: 440px;
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -643px -1105px;
+        width: 250px;
+        height: 62px
+    }
+
+    #bio-content #phil-timeline {
+        position: absolute;
+        left: 599px;
+        top: 350px;
+        width: 2px;
+        height: 680px;
+        background: #000
+    }
+
+    #bio-content #phil-giving {
+        position: absolute;
+        left: 647px;
+        top: 550px;
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -669px -536px;
+        width: 66px;
+        height: 66px
+    }
+
+    #bio-content #phil-giving-caption {
+        position: absolute;
+        left: 84px;
+        top: -3px;
+        width: 345px
+    }
+
+    #bio-content #phil-power {
+        position: absolute;
+        left: 553px;
+        top: 475px
+    }
+
+    #bio-content #phil-power-caption {
+        width: 400px;
+        left: -410px;
+        top: -9px
+    }
+
+    #bio-content #phil-vaccine {
+        position: absolute;
+        left: 647px;
+        top: 580px;
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -688px -1748px;
+        width: 149px;
+        height: 149px
+    }
+
+        #bio-content #phil-vaccine .timeline-caption {
+            left: 170px;
+            width: 350px;
+            top: 0
+        }
+
+    #bio-content #phil-fallon {
+        position: absolute;
+        left: 403px;
+        top: 600px;
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: 0 -1748px;
+        width: 149px;
+        height: 149px
+    }
+
+    #bio-content #phil-fallon-caption {
+        width: 325px;
+        left: -340px;
+        top: 40px
+    }
+
+    #bio-content #phil-bec {
+        position: absolute;
+        left: 647px;
+        top: 720px;
+        background-position: 0 -1748px;
+        width: 0px;
+        height: 0px;
+    }
+
+    #bio-content #phil-bec-caption {
+        left: 10px;
+        top: -9px;
+        width: 430px;
+    }
+
+    #bio-content #phil-Roger {
+        position: absolute;
+        left: 553px;
+        top: 800px;
+        background-position: 0 -1748px;
+        width: 0px;
+        height: 0px;
+    }
+
+    #bio-content #phil-Roger-caption {
+        left: -402px;
+        top: -10px;
+        width: 400px;
+        text-align: right;
+    }
+
+    #bio-content #phil-Accelerator {
+        position: absolute;
+        left: 647px;
+        top: 860px;
+        background-position: 0 -1748px;
+        width: 0px;
+        height: 0px;
+    }
+
+    #bio-content #phil-Accelerator-caption {
+        left: 10px;
+        top: -10px;
+        width: 380px;
+    }
+
+    #bio-content #phil-Dairy {
+        position: absolute;
+        left: 553px;
+        top: 910px;
+        background-position: 0 -1748px;
+        width: 0px;
+        height: 0px;
+    }
+
+    #bio-content #phil-Dairy-caption {
+        left: -411px;
+        top: -10px;
+        width: 410px;
+        text-align: right;
+    }
+
+    #bio-content #phil-Brain {
+        position: absolute;
+        left: 647px;
+        top: 960px;
+        background-position: 0 -1748px;
+        width: 0px;
+        height: 0px;
+    }
+
+    #bio-content #phil-Brain-caption {
+        left: 10px;
+        top: -10px;
+        width: 380px;
+    }
+
+    #bio-content #thanks {
+        height: 500px
+    }
+
+    #bio-content #thanks-givethanks {
+        position: absolute;
+        left: 0;
+        top: -70px;
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: 0 -1174px;
+        width: 575px;
+        height: 364px
+    }
+
+    #bio-content #thanks-timeline {
+        position: absolute;
+        left: 599px;
+        top: 282px;
+        width: 2px;
+        height: 348px;
+        background: #000
+    }
+
+    #bio-content #thanks-title {
+        position: absolute;
+        left: 450px;
+        top: 0;
+        color: #fff
+    }
+
+    #bio-content #thanks-unyear {
+        position: absolute;
+        left: 539px;
+        top: -30px;
+        width: 106px;
+        height: 15px;
+        background: #8DA4C4
+    }
+
+    #bio-content #thanks-text {
+        position: absolute;
+        left: 797px;
+        top: 88px;
+        width: 416px;
+        height: 186px;
+        color: #fff
+    }
+
+    #bio-content #thanks-sign {
+        background-image: url(https://i.imgur.com/uEi0QTf.png);
+        background-position: -643px -1105px;
+        width: 250px;
+        height: 62px;
+        position: relative;
+        display: inline-block
+    }
+
+.bio-popup-link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 149px;
+    height: 149px;
+    border-radius: 50%;
+    background: rgba(0,0,0,.5);
+    cursor: pointer;
+    opacity: 0
+}
+
+    .bio-popup-link:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: -10px;
+        margin-left: -5px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 0 10px 18px;
+        border-color: transparent transparent transparent #fff
+    }
+
+    .bio-popup-link:hover {
+        opacity: 1
+    }
+
+.bio-popup-content {
+    display: none;
+    width: 100%;
+    height: 100%
+}
+
+    .bio-popup-content video {
+        width: 100%;
+        height: 100%
+    }
+
+    .bio-popup-content .video-js {
+        width: 100% !important;
+        height: 100% !important
+    }
+
+#bio-popup-content-host {
+    width: 100%;
+    height: 100%
+}
+
+#bio-popup-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-image: url(https://i.imgur.com/uEi0QTf.png);
+    background-position: -1481px -794px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0,0,0,0);
+    display: none
+}
+
+    #bio-popup-close:hover {
+        background-color: #000
+    }
+
+#bio-popup-overlay {
+    background: rgba(0,0,0,.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none
+}
+
+#bio-popup-container {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #000;
+    opacity: 0
+}
+
+@media all and (max-width:1280px) {
+    #bio-bg {
+        height: 4600px
+    }
+
+    #bio-content {
+        -webkit-transform-origin: 50% 0;
+        -moz-transform-origin: 50% 0;
+        -ms-transform-origin: 50% 0;
+        -o-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -o-transform: scale(0.9);
+        transform: scale(0.9)
+    }
+
+    .content-section-bg {
+        -webkit-transform-origin: 50% 0;
+        -moz-transform-origin: 50% 0;
+        -ms-transform-origin: 50% 0;
+        -o-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        -webkit-transform: scale(1.1111111111111112,1);
+        -moz-transform: scale(1.1111111111111112,1);
+        -ms-transform: scale(1.1111111111111112,1);
+        -o-transform: scale(1.1111111111111112,1);
+        transform: scale(1.1111111111111112,1)
+    }
+}
+
+@media all and (max-width:1140px) {
+    #bio-content #found-CHAMPS {
+        top: 1060px;
+    }
+    #bio-content #found-fiaa {
+        top: 1080px;
+    }
+    #bio-content #found-expo {
+        top: 1170px;
+    }
+    #bio-content {
+        font-size: 20px
+    }
+
+    #bio-bg {
+        height: 4125px
+    }
+
+    #bio-content #about-bill {
+        left: 294px
+    }
+
+    #bio-content #ms-whiteboard {
+        top: 306px
+    }
+
+    #bio-content #ms-whiteboard-caption {
+        width: 130px;
+        left: 10px;
+        top: -14px
+    }
+
+    #bio-content #found {
+        height: 1325px
+    }
+
+    #bio-content #found-bmg {
+        top: 420px
+    }
+
+        #bio-content #found-bmg:after {
+            top: 30%;
+            -webkit-transform: rotateX(180deg);
+            -moz-transform: rotateX(180deg);
+            -ms-transform: rotateX(180deg);
+            -o-transform: rotateX(180deg);
+            transform: rotateX(180deg)
+        }
+
+    #bio-content #found-bmg-caption {
+        width: 365px;
+        left: -380px;
+        top: -3px
+    }
+
+    #bio-content #found-timeline {
+        top: 446px;
+    }
+    #bio-content #phil-Brain {
+        top: 970px;
+    }
+    #bio-content #found-vaccine {
+        top: 690px
+    }
+
+    #bio-content #found-buffet {
+        top: 640px
+    }
+
+    #bio-content #found-polio-caption {
+        width: 375px
+    }
+
+    #bio-content #found-polio {
+        top: 905px
+    }
+
+    #bio-content #found-library {
+        top: 510px
+    }
+
+    #bio-content #phil {
+        height: 1185px
+    }
+
+    #bio-content #phil-bg {
+        top: 3700px
+    }
+
+    #bio-content #phil-sign {
+        top: 500px
+    }
+
+    #bio-content #phil-timelinegroup {
+        position: relative;
+        top: 60px
+    }
+
+    #thanks-bg {
+        top: 4600px
+    }
+
+    #bio-content {
+        -webkit-transform-origin: 50% 0;
+        -moz-transform-origin: 50% 0;
+        -ms-transform-origin: 50% 0;
+        -o-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+        transform: scale(0.8)
+    }
+
+    .content-section-bg {
+        -webkit-transform-origin: 50% 0;
+        -moz-transform-origin: 50% 0;
+        -ms-transform-origin: 50% 0;
+        -o-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        -webkit-transform: scale(1.25,1);
+        -moz-transform: scale(1.25,1);
+        -ms-transform: scale(1.25,1);
+        -o-transform: scale(1.25,1);
+        transform: scale(1.25,1)
+    }
+}
+
+@media all and (max-width:1080px) {
+    #bio-content #found-CHAMPS {
+        top: 1080px;
+    }
+    #bio-content #found-fiaa {
+        top: 1236px;
+    }
+    #bio-content #found-expo {
+        top: 1240px;
+    }
+    #bio-content {
+        -webkit-transform-origin: 50% 0;
+        -moz-transform-origin: 50% 0;
+        -ms-transform-origin: 50% 0;
+        -o-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1)
+    }
+
+    .content-section-bg {
+        -webkit-transform-origin: 50% 0;
+        -moz-transform-origin: 50% 0;
+        -ms-transform-origin: 50% 0;
+        -o-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        -webkit-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1)
+    }
+
+    #bio-bg {
+        height: 6925px
+    }
+
+    #bio-content {
+        font-size: 20px
+    }
+
+        #bio-content h2 {
+            font-size: 2.95em;
+            letter-spacing: -.02em
+        }
+
+        #bio-content h3 {
+            font-size: 1.65em
+        }
+
+        #bio-content .content-section {
+            position: relative;
+            width: 960px;
+            left: -480px
+        }
+
+        #bio-content .timeline-caption {
+            top: 200px;
+            left: 0
+        }
+
+            #bio-content .timeline-caption.right-align {
+                left: -85px
+            }
+
+        #bio-content #about-text, #bio-content #ms-text, #bio-content #found-text, #bio-content #phil-text, #bio-content #thanks-text {
+            font-size: 1.2em
+        }
+
+        #bio-content #about {
+            height: 1800px
+        }
+
+        #bio-content #about-bg {
+            height: 540px
+        }
+
+        #bio-content #about-title {
+            position: absolute;
+            left: 180px;
+            top: 46px
+        }
+
+        #bio-content #about-bill {
+            position: absolute;
+            left: 530px;
+            top: 150px;
+            background-image: url(https://i.imgur.com/uEi0QTf.png);
+            background-position: -1481px -443px;
+            width: 280px;
+            height: 346px
+        }
+
+        #bio-content #about-design {
+            position: absolute;
+            left: 182px;
+            top: 249px;
+            background-image: url(https://i.imgur.com/uEi0QTf.png);
+            background-position: -1105px 0;
+            width: 185px;
+            height: 449px
+        }
+
+        #bio-content #about-family {
+            position: absolute;
+            left: 160px;
+            top: 140px;
+            font-size: 1.2em
+        }
+
+        #bio-content #about-year {
+            position: absolute;
+            left: 447px;
+            top: 455px;
+            font-size: 1.2em;
+            font-weight: 700
+        }
+
+            #bio-content #about-year span {
+                font-weight: 400;
+                position: absolute;
+                top: -4px;
+                left: -220px;
+                text-align: right;
+                color: #000;
+                font-size: 1.2em;
+                width: 200px
+            }
+
+        #bio-content #about-timeline-group {
+            top: 0
+        }
+
+        #bio-content #about-timeline {
+            position: absolute;
+            left: 466px;
+            top: 505px;
+            background-image: url(https://i.imgur.com/uEi0QTf.png);
+            background-position: -1435px -443px;
+            width: 18px;
+            height: 401px
+        }
+
+        #bio-content #about-young {
+            position: absolute;
+            left: 522px;
+            top: 460px
+        }
+
+            #bio-content #about-young:after {
+                content: '';
+                position: absolute;
+                left: -50px;
+                top: 40%;
+                background-image: url(https://i.imgur.com/uEi0QTf.png);
+                background-position: -1536px -794px;
+                width: 46px;
+                height: 44px
+            }
+
+        #bio-content #about-young-caption {
+            text-align: left;
+            position: absolute;
+            left: 5px;
+            top: 150px
+        }
+
+        #bio-content #about-harvard {
+            position: absolute;
+            left: 280px;
+            top: 530px
+        }
+
+            #bio-content #about-harvard:after {
+                content: '';
+                position: absolute;
+                right: -50px;
+                top: 40%;
+                background-image: url(https://i.imgur.com/uEi0QTf.png);
+                background-position: -1895px -813px;
+                width: 46px;
+                height: 6px
+            }
+
+        #bio-content #about-paul {
+            position: absolute;
+            left: 522px;
+            top: 740px
+        }
+
+            #bio-content #about-paul:after {
+                content: '';
+                position: absolute;
+                left: -50px;
+                top: 40%;
+                background-image: url(https://i.imgur.com/uEi0QTf.png);
+                background-position: -1536px -794px;
+                width: 46px;
+                height: 44px
+            }
+
+        #bio-content #about-paul-caption {
+            position: absolute;
+            left: 0;
+            top: 150px
+        }
+
+        #bio-content #about-signed {
+            position: absolute;
+            left: 191px;
+            top: 1000px
+        }
+
+        #bio-content #about-text {
+            position: absolute;
+            left: 190px;
+            top: 960px;
+            width: 590px
+        }
+
+            #bio-content #about-text p:last-child {
+                position: relative;
+                width: 50%;
+                left: 300px
+            }
+
+        #bio-content #about-mugshot-group {
+            position: relative;
+            top: -115px
+        }
+
+        #bio-content #about-mugshotbg {
+            position: absolute;
+            left: 141px;
+            top: 1518px;
+            width: 310px;
+            height: 269px
+        }
+
+        #bio-content #about-mugshot {
+            position: absolute;
+            left: 40px;
+            top: 1560px;
+            background-image: url(https://i.imgur.com/uEi0QTf.png);
+            background-position: -1295px -860px;
+            width: 400px;
+            height: 275px
+        }
+
+        #bio-content #about-mugshotstamp {
+            position: absolute;
+            left: 107px;
+            top: 1472px
+        }
+
+        #bio-content #about-dots {
+            position: absolute;
+            left: 377px;
+            top: 1530px
+        }
+
+        #bio-content #ms {
+            height: 1650px
+        }
+
+        #bio-content #ms-billdesk {
+            display: none
+        }
+
+        #bio-content #ms-bg {
+            top: 1825px;
+            height: 526px
+        }
+
+        #bio-content #ms-year {
+            position: absolute;
+            left: 442px;
+            top: 43px
+        }
+
+        #bio-content #ms-title {
+            position: absolute;
+            left: 320px;
+            top: 75px
+        }
+
+        #bio-content #ms-whiteboard {
+            position: absolute;
+            left: 528px;
+            top: 685px
+        }
+
+            #bio-content #ms-whiteboard:after {
+                -webkit-transform: rotateX(180deg);
+                -moz-transform: rotateX(180deg);
+                -ms-transform: rotateX(180deg);
+                -o-transform: rotateX(180deg);
+                transform: rotateX(180deg)
+            }
+
+        #bio-content #ms-whiteboard-caption {
+            position: absolute;
+            left: 0;
+            top: 28px;
+            width: 265px
+        }
+
+        #bio-content #ms-washington {
+            top: 835px
+        }
+
+        #bio-content #ms-text {
+            position: absolute;
+            left: 220px;
+            top: 155px;
+            width: 560px
+        }
+
+        #bio-content #ms-timeline {
+            position: absolute;
+            left: 480px;
+            top: 515px;
+            height: 950px
+        }
+
+        #bio-content #ms-windows {
+            position: absolute;
+            left: 528px;
+            top: 810px
+        }
+
+        #bio-content #ms-windows-caption {
+            top: 50px;
+            left: 145px;
+            width: 200px
+        }
+
+        #bio-content #ms-windows95 {
+            left: 256px;
+            top: 950px
+        }
+
+        #bio-content #ms-chief {
+            left: 529px;
+            top: 970px
+        }
+
+        #bio-content #ms-chief-caption {
+            top: 215px;
+            left: 6px;
+            width: 290px
+        }
+
+        #bio-content #ms-xbox {
+            position: absolute;
+            left: 241px;
+            top: 1070px
+        }
+
+        #bio-content #ms-xbox-caption {
+            position: absolute;
+            left: -35px;
+            top: 140px
+        }
+
+        #bio-content #ms-wedding {
+            position: absolute;
+            left: 528px;
+            top: 900px
+        }
+
+        #bio-content #ms-wedding-caption {
+            position: absolute;
+            left: 0;
+            top: 180px
+        }
+
+        #bio-content #ms-paul {
+            position: absolute;
+            left: 281px;
+            top: 515px;
+            background-image: url(https://i.imgur.com/uEi0QTf.png);
+            background-position: -1466px -1543px;
+            width: 153px;
+            height: 153px
+        }
+
+        #bio-content #ms-paul-caption {
+            top: 160px;
+            width: 300px;
+            left: -154px
+        }
+
+        #bio-content #ms-dos {
+            left: 528px;
+            top: 840px
+        }
+
+        #bio-content #ms-dos-caption {
+            left: 0;
+            width: 300px
+        }
+
+        #bio-content #ms-washington {
+            left: 434px;
+            top: 835px
+        }
+
+        #bio-content #ms-washington-caption {
+            left: -300px;
+            width: 300px
+        }
+
+        #bio-content #ms-ceo-caption {
+            position: absolute;
+            left: 7px;
+            top: -10px;
+            width: 300px
+        }
+
+        #bio-content #ms-ceo {
+            position: absolute;
+            left: 528px;
+            top: 1330px
+        }
+
+        #bio-content #ms-advisor {
+            left: 119px;
+            top: 1320px
+        }
+
+        #bio-content #ms-advisor-caption {
+            left: 8px
+        }
+
+        #bio-content #found {
+            height: 1720px
+        }
+
+        #bio-content #found-bg {
+            position: absolute;
+            left: 0;
+            top: 3425px;
+            height: 632px
+        }
+
+        #bio-content #found-title {
+            position: absolute;
+            left: 165px;
+            top: 70px
+        }
+
+        #bio-content #found-year {
+            position: absolute;
+            left: 444px;
+            top: 20px
+        }
+
+        #bio-content #found-text {
+            position: absolute;
+            left: 165px;
+            top: 218px;
+            width: 580px
+        }
+
+        #bio-content #found-bill-melinda {
+            position: absolute;
+            left: 160px;
+            top: -60px;
+            background-image: url(https://i.imgur.com/uEi0QTf.png);
+            background-position: -1215px -1543px;
+            width: 246px;
+            height: 161px;
+            -webkit-transform: scale(0.9);
+            -moz-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+            -o-transform: scale(0.9);
+            transform: scale(0.9)
+        }
+
+        #bio-content #found-bill-sign, #bio-content #found-1 {
+            display: none
+        }
+
+        #bio-content #found-davinci {
+            position: absolute;
+            left: 594px;
+            top: -15px
+        }
+
+        #bio-content #found-timeline-group {
+            position: absolute;
+            left: -120px;
+            top: 320px
+        }
+
+        #bio-content #found-timeline {
+            top: 270px;
+            height: 1030px
+        }
+
+        #bio-content #found-bmg {
+            top: 255px;
+            z-index: 2
+        }
+
+        #bio-content #found-bmg-caption {
+            top: 190px;
+            left: -130px;
+            width: 305px
+        }
+
+        #bio-content #found-library {
+            top: 500px
+        }
+
+        #bio-content #found-library-caption {
+            width: 315px
+        }
+
+        #bio-content #found-buffet {
+            top: 650px
+        }
+
+        #bio-content #found-buffet-caption {
+            left: 0;
+            width: 325px
+        }
+
+        #bio-content #found-ted {
+            top: 545px
+        }
+
+        #bio-content #found-vaccine {
+            top: 715px
+        }
+
+        #bio-content #found-vaccine-caption {
+            width: 345px;
+            top: 215px;
+            left: -5px
+        }
+
+        #bio-content #found-polio {
+            top: 960px
+        }
+
+        #bio-content #found-polio-caption {
+            top: 160px
+        }
+
+        #bio-content #phil {
+            height: 1330px
+        }
+
+        #bio-content #phil-year {
+            top: 25px;
+            left: 430px
+        }
+
+        #bio-content #phil-quote {
+            display: none
+        }
+
+        #bio-content #phil-bg {
+            top: 5150px;
+            height: 610px
+        }
+
+        #bio-content #phil-title {
+            left: 155px;
+            top: 90px
+        }
+
+        #bio-content #phil-text {
+            left: 160px;
+            top: 165px;
+            width: 640px
+        }
+
+        #bio-content #phil-edison {
+            left: 60px;
+            top: -40px
+        }
+
+        #bio-content #phil-venn {
+            display: none
+        }
+
+        #bio-content #phil-bono {
+            background-image: url(https://i.imgur.com/uEi0QTf.png);
+            background-position: -292px -1543px;
+            width: 325px;
+            height: 195px;
+            top: -20px;
+            left: 508px
+        }
+
+        #bio-content #phil-timeline-group {
+            position: relative;
+            left: -120px;
+            top: 200px
+        }
+
+        #bio-content #phil-timeline {
+            top: 320px;
+            height: 730px
+        }
+
+        #bio-content #phil-giving {
+            top: 410px
+        }
+
+        #bio-content #phil-giving-caption {
+            left: 0;
+            top: 75px;
+            width: 300px
+        }
+
+        #bio-content #phil-power {
+            top: 350px
+        }
+
+        #bio-content #phil-power-caption {
+            width: 335px;
+            left: -340px
+        }
+
+        #bio-content #phil-vaccine {
+            top: 370px
+        }
+
+            #bio-content #phil-vaccine .timeline-caption {
+                width: 220px;
+                left: 0;
+                top: 160px
+            }
+
+        #bio-content #phil-fallon {
+            top: 510px
+        }
+
+        #bio-content #phil-fallon-caption {
+            width: 340px;
+            left: -200px;
+            top: 156px
+        }
+
+            #bio-content #phil-fallon-caption .bio-videoicon {
+                right: 55px;
+                top: 6px
+            }
+
+        #bio-content #thanks-bg {
+            top: 6280px;
+            height: 803px
+        }
+
+        #bio-content #thanks-unyear {
+            display: none
+        }
+
+        #bio-content #thanks-title {
+            left: 250px
+        }
+
+        #bio-content #thanks-timeline-group {
+            position: relative;
+            top: 300px;
+            left: -120px
+        }
+
+        #bio-content #thanks-givethanks {
+            background-image: url(https://i.imgur.com/uEi0QTf.png);
+            background-position: -972px -1174px;
+            width: 336px;
+            height: 213px;
+            left: 160px;
+            top: -50px
+        }
+
+        #bio-content #thanks-text {
+            left: 225px;
+            top: 160px;
+            width: 540px
+        }
+}
+
+@media all and (max-width:767px) {
+    #bio-content #found-timeline {
+        top: 270px;
+        height: 1150px;
+    }
+    #bio-content h4 {
+        font-size: .83em;
+    }
+    #bio-content #found-CHAMPS {
+        top: 1190px;
+    }
+    #bio-content #found-CHAMPS-caption {
+        left: -301px;
+        top: -10px;
+        width: 300px;
+        text-align: right;
+    }
+    #bio-content #found-fiaa {
+        top: 1266px;
+    }
+    #bio-content #found-fiaa-caption {
+        width: 310px;
+    }
+    #bio-content #found-expo {
+        top: 1290px;
+    }
+    #bio-content #found-expo-caption {
+        left: -290px;
+        top: 30px;
+        width: 290px;
+        text-align: right;
+    }
+    #bio-bg {
+        height: 6200px
+    }
+    #bio-content #phil-fallon {
+        top: 440px;
+    }
+    #bio-content #phil-fallon-caption {
+        width: 300px;
+        left: -130px;
+        top: 156px;
+    }
+    #bio-content #phil-bec {
+        top: 620px;
+    }
+    #bio-content #phil-bec-caption {
+        width: 280px;
+    }
+    #bio-content #phil-Roger {
+        top: 710px;
+    }
+    #bio-content #phil-Roger-caption {
+        left: -292px;
+        top: -10px;
+        width: 290px;
+        text-align: right;
+    }
+    #bio-content #phil-Accelerator {
+        top: 760px;
+    }
+    #bio-content #phil-Accelerator-caption {
+        width: 290px;
+    }
+    #bio-content #phil-Dairy {
+        top: 810px;
+    }
+    #bio-content #phil-Dairy-caption {
+        left: -301px;
+        top: -10px;
+        width: 300px;
+        text-align: right;
+    }
+    #bio-content #phil-Brain {
+        top: 870px;
+    }
+    #bio-content #phil-Brain-caption {
+        width: 280px;
+    }
+    #bio-content #phil-timeline {
+        top: 320px;
+        height: 690px;
+    }
+    #bio-content #found {
+        height: 1750px
+    }
+    #bio-content #phil-Roger-caption {
+    left: -292px;
+    top: -10px;
+    width: 290px;
+    text-align: right;
+}
+    #bio-content #found-vaccine-caption {
+        width: 300px;
+        top: 215px;
+        left: 40px
+    }
+
+    #bio-content #found-polio-caption {
+        width: 310px
+    }
+
+    #bio-content #found-vaccine {
+        top: 760px
+    }
+
+    #bio-content #phil-bg {
+        top: 5200px
+    }
+
+    #bio-content #phil {
+        height: 1255px
+    }
+
+    #bio-content {
+        -webkit-transform-origin: 50% 0;
+        -moz-transform-origin: 50% 0;
+        -ms-transform-origin: 50% 0;
+        -o-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -o-transform: scale(0.9);
+        transform: scale(0.9)
+    }
+
+    .content-section-bg {
+        -webkit-transform-origin: 50% 0;
+        -moz-transform-origin: 50% 0;
+        -ms-transform-origin: 50% 0;
+        -o-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        -webkit-transform: scale(1.1111111111111112,1);
+        -moz-transform: scale(1.1111111111111112,1);
+        -ms-transform: scale(1.1111111111111112,1);
+        -o-transform: scale(1.1111111111111112,1);
+        transform: scale(1.1111111111111112,1)
+    }
+}
+
+@media all and (max-width:680px) {
+    .TGN_site_Footer {
+        /*display: none !important;*/
+    }
+}
+
+@media all and (max-width:640px) {
+    #bio-bg {
+        height: 5525px
+    }
+
+    #bio-content #ms-bg {
+        height: 550px
+    }
+
+    #bio-content {
+        -webkit-transform-origin: 50% 0;
+        -moz-transform-origin: 50% 0;
+        -ms-transform-origin: 50% 0;
+        -o-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+        transform: scale(0.8)
+    }
+
+    .content-section-bg {
+        -webkit-transform-origin: 50% 0;
+        -moz-transform-origin: 50% 0;
+        -ms-transform-origin: 50% 0;
+        -o-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        -webkit-transform: scale(1.25,1);
+        -moz-transform: scale(1.25,1);
+        -ms-transform: scale(1.25,1);
+        -o-transform: scale(1.25,1);
+        transform: scale(1.25,1)
+    }
+
+    #bio-content #ms-paul {
+        top: 525px
+    }
+
+    #bio-content #ms-whiteboard {
+        top: 700px
+    }
+
+    #bio-content #ms-washington {
+        top: 850px
+    }
+
+    #bio-content #ms-windows95 {
+        top: 960px
+    }
+
+    #bio-content #ms-windows {
+        top: 825px
+    }
+
+    #bio-content #ms-chief {
+        top: 980px
+    }
+
+    #bio-content #ms-xbox {
+        top: 1090px
+    }
+
+    #bio-content #ms-ceo {
+        top: 1340px
+    }
+
+    #bio-content #ms-advisor {
+        top: 1330px
+    }
+
+    #bio-content #found-bg {
+        height: 640px
+    }
+
+    #bio-content #phil-power-caption {
+        width: 285px;
+        left: -295px
+    }
+
+    #bio-content #found-library-caption {
+        width: 300px
+    }
+
+    #bio-content #phil-fallon {
+        top: 530px
+    }
+
+    #bio-content #phil-fallon-caption {
+        width: 300px;
+        left: -164px;
+        top: 156px
+    }
+
+    #bio-content #thanks-title {
+        left: 200px
+    }
+
+    #bio-content #thanks-bg {
+        top: 6290px
+    }
+    #bio-content #found-buffet {
+        top: 590px;
+    }
+    #bio-content #found-vaccine {
+        top: 640px;
+    }
+    #bio-content #found-polio {
+        top: 850px;
+    }
+    #bio-content #found-CHAMPS {
+        top: 1000px;
+    }
+    #bio-content #found-fiaa {
+        top: 1116px;
+    }
+    #bio-content #found-expo {
+        top: 1180px;
+    }
+    #bio-content #phil-power {
+        top: 330px;
+    }
+    #bio-content #phil-giving {
+        top: 340px;
+    }
+    #bio-content #phil-fallon {
+        top: 430px;
+    }
+    #bio-content #phil-bec {
+        top: 550px;
+    }
+    #bio-content #phil-Roger {
+        top: 690px;
+    }
+    #bio-content #phil-Accelerator {
+        top: 710px;
+    }
+    #bio-content #phil-Dairy {
+        top: 790px;
+    }
+    #bio-content #phil-Brain {
+        top: 820px;
+    }
+    #bio-content #phil-timeline {
+        top: 320px;
+        height: 650px;
+    }
+
+}
+
+@media all and (max-width:580px) {
+    #bio-bg {
+        height: 4500px
+    }
+
+    #bio-content {
+        -webkit-transform-origin: 50% 0;
+        -moz-transform-origin: 50% 0;
+        -ms-transform-origin: 50% 0;
+        -o-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        -webkit-transform: scale(0.6);
+        -moz-transform: scale(0.6);
+        -ms-transform: scale(0.6);
+        -o-transform: scale(0.6);
+        transform: scale(0.6)
+    }
+
+    .content-section-bg {
+        -webkit-transform-origin: 50% 0;
+        -moz-transform-origin: 50% 0;
+        -ms-transform-origin: 50% 0;
+        -o-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        -webkit-transform: scale(1.6666666666666667,1);
+        -moz-transform: scale(1.6666666666666667,1);
+        -ms-transform: scale(1.6666666666666667,1);
+        -o-transform: scale(1.6666666666666667,1);
+        transform: scale(1.6666666666666667,1)
+    }
+
+}
+
+@media all and (max-width:420px) {
+    #bio-content {
+        font-size: 22px
+    }
+
+    #bio-bg {
+        height: 3550px
+    }
+
+    #bio-content #phil-fallon {
+        top: 555px
+    }
+
+    #bio-content #about {
+        height: 1850px
+    }
+
+    #bio-content #about-text p:last-child {
+        position: relative;
+        width: 60%;
+        left: 300px
+    }
+
+    #bio-content #about-text br {
+        display: none
+    }
+
+    #bio-content #ms {
+        height: 1700px
+    }
+
+    #bio-content #ms-paul {
+        top: 535px
+    }
+
+    #bio-content #ms-bg {
+        top: 1840px;
+        height: 565px
+    }
+
+    #bio-content #ms-whiteboard {
+        top: 705px
+    }
+
+    #bio-content #ms-windows {
+        top: 845px
+    }
+
+    #bio-content #ms-washington {
+        top: 895px
+    }
+
+    #bio-content #ms-text {
+        top: 100px
+    }
+
+    #bio-content #ms-title {
+        top: 45px
+    }
+
+    #bio-content #ms-year {
+        top: 14px
+    }
+
+    #bio-content #ms-ceo {
+        top: 1385px
+    }
+
+    #bio-content #ms-windows95 {
+        top: 995px
+    }
+
+    #bio-content #ms-chief {
+        top: 1000px
+    }
+
+    #bio-content #ms-xbox {
+        top: 1110px
+    }
+
+    #bio-content #found-buffet {
+        top: 700px
+    }
+
+    #bio-content #found-polio {
+        top: 1030px
+    }
+
+    #bio-content #ms-advisor {
+        top: 1350px
+    }
+
+    #bio-content #found-bg {
+        top: 3475px;
+        height: 715px
+    }
+
+    #bio-content #found-timeline-group {
+        top: 355px
+    }
+
+    #bio-content #found {
+        height: 1850px
+    }
+
+    #bio-content #phil-bg {
+        top: 5375px
+    }
+
+    #bio-content #phil {
+        height: 1300px
+    }
+
+    #bio-content #thanks-bg {
+        top: 6575px
+    }
+
+    #bio-content {
+        -webkit-transform-origin: 50% 0;
+        -moz-transform-origin: 50% 0;
+        -ms-transform-origin: 50% 0;
+        -o-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        -webkit-transform: scale(0.45);
+        -moz-transform: scale(0.45);
+        -ms-transform: scale(0.45);
+        -o-transform: scale(0.45);
+        transform: scale(0.45)
+    }
+
+    .content-section-bg {
+        -webkit-transform-origin: 50% 0;
+        -moz-transform-origin: 50% 0;
+        -ms-transform-origin: 50% 0;
+        -o-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        -webkit-transform: scale(2.2222222222222223,1);
+        -moz-transform: scale(2.2222222222222223,1);
+        -ms-transform: scale(2.2222222222222223,1);
+        -o-transform: scale(2.2222222222222223,1);
+        transform: scale(2.2222222222222223,1)
+    }
+    #bio-content #found-vaccine {
+        top: 620px;
+    }
+    #bio-content #found-library {
+        top: 450px;
+    }
+    #bio-content #found-buffet {
+        top: 580px;
+    }
+    #bio-content #found-polio {
+        top: 830px;
+    }
+    #bio-content #found-CHAMPS {
+        top: 1010px;
+    }
+    #bio-content #found-fiaa {
+        top: 1116px;
+    }
+    #bio-content #phil-fallon {
+        top: 424px;
+    }
+    #bio-content #phil-Roger {
+        top: 720px;
+    }
+    #bio-content #phil-Accelerator {
+        top: 730px;
+    }
+    #bio-content #phil-Dairy {
+        top: 848px;
+    }
+    #bio-content #phil-Brain {
+        top: 860px;
+    }
+}
