@@ -1,0 +1,546 @@
+
+    .AH_BackToProfile {
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        margin: 10px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+        .AH_BackToProfile:hover {
+            color: #3379be;
+        }
+
+    .commentHistory_Holder {
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+        .commentHistory_Holder a {
+            color: black;
+            text-decoration: none;
+        }
+
+    .commentHistory_Stream {
+        min-height: 500px;
+        margin-top: 24px;
+        margin-bottom: 50px;
+    }
+
+    .commentHistory_ItemTitle {
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        margin-bottom: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        color: #666;
+    }
+
+        .commentHistory_ItemTitle:hover {
+            color: #3379be;
+        }
+
+    .commentHistory_ItemReply {
+        margin-bottom: 10px;
+        color: #666;
+        padding-left: 20px;
+        font-size: 14px;
+    }
+
+    .commentHistory_ItemReply_I {
+        display: inline-block;
+    }
+
+    .commentHistory_ItemReply_T1 {
+        display: inline-block;
+    }
+
+    .commentHistory_ItemReply_T2 {
+        display: inline-block;
+    }
+
+    .commentHistory_ItemDescription {
+        margin-bottom: 10px;
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    .commentHistory_ItemFooter {
+        margin-bottom: 30px;
+        color: #666;
+        padding-left: 20px;
+        font-size: 12px;
+    }
+
+    .commentHistory_ItemFooter_View {
+        cursor: pointer;
+        color: #3379be;
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 400;
+    }
+
+        .commentHistory_ItemFooter_View:hover {
+            color: #194f97;
+        }
+
+    #commentHistory_ItemTemplate {
+        display: none;
+    }
+
+    #commentHistory_Holder {
+        display: none;
+    }
+
+    .bookmarks_Holder {
+        display: none;
+        margin-top: 24px;
+        margin-bottom: 50px;
+    }
+
+    #AH_BackToProfile {
+        display: none;
+    }
+
+
+    .EditProfileButton_v2 {
+        display: inline-block;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+        .EditProfileButton_v2:hover {
+            color: #3379be;
+        }
+
+    .AccountSettingsButton_v2 {
+        display: inline-block;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+        .AccountSettingsButton_v2:hover {
+            color: #3379be;
+        }
+
+    .CommentHistoryButton_v2 {
+        display: inline-block;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+        .CommentHistoryButton_v2:hover {
+            color: #3379be;
+        }
+
+    .Auth_ProfileControlsI {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .Auth_ProfileControlsD {
+        display: inline-block;
+    }
+
+    .Auth_ProfileControlsA {
+        display: none;
+    }
+
+    .TGN_BottomMenuS45_SettingsHeaderItem {
+        color: #404040;
+        font-size: 14px;
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        cursor: pointer;
+    }
+
+        .TGN_BottomMenuS45_SettingsHeaderItem:hover {
+            color: #3379be;
+        }
+
+    .GNCommTopNotify {
+        position: relative;
+        top: 23px;
+        left: 20px;
+        background: red;
+        width: 16px;
+        height: 16px;
+        text-align: center;
+        color: white;
+        font-size: 13px;
+        line-height: 18px;
+        padding: 3px;
+        padding-left: 3px;
+        border-radius: 2px;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .GNCommMobArtNotify {
+        position: absolute;
+        top: 20px;
+        left: 158px;
+        background: red;
+        width: 14px;
+        height: 19px;
+        color: white;
+        font-size: 13px;
+        line-height: 13px;
+        padding: 3px;
+        padding-left: 3px;
+        border-radius: 2px;
+        display: none;
+        opacity: 1;
+    }
+
+    #GNCommNotificationBlockBase {
+        display: none;
+    }
+
+    .GNCommTopNotifyExpand {
+        background: #F3F3F3;
+        width: 260px;
+        max-height: 244px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 0px;
+        clear: both;
+        margin: 1px;
+        display: none;
+        opacity: 1;
+    }
+
+    #GNAuthTopNotifyExpand {
+        display: block;
+    }
+
+    .GNCommMobArtNotifyExpand {
+        background: #eee;
+        width: 260px;
+        max-height: 154px;
+        overflow-y: auto;
+        border: 1px solid #ccc;
+        border-top: 0px solid white;
+        overflow-x: hidden;
+        padding: 3px;
+        clear: both;
+        display: none;
+        margin-top: 40px;
+        position: relative;
+        left: -1px;
+        opacity: 1;
+    }
+.GNCommNotificationBlock {
+    background: #F3F3F3;
+    font-size: 13px;
+    line-height: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #F2F2F2;
+    align-items: center;
+}
+.GNCommNB_icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 40px;
+    height: 32px;
+    padding-left: 15px;
+    color: #B8B8B8;
+    vertical-align: top;
+    font-size: 19px;
+}
+.GNAuthNB_icon {
+    color: #FF0000;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 40px;
+    height: 32px;
+    padding-left: 15px;
+    vertical-align: top;
+    font-size: 19px;
+}
+#GNAuth_NB_CTA_TDD_TFV .GNAuthNB_icon {
+    color: #000000;
+}
+#GNAuth_NB_CTA_TDD_TGNNL .GNAuthNB_icon {
+    color: #000000;
+}
+#GNAuth_NB_CTA_TDD_UnSubYes .GNAuthNB_icon {
+    color: #000000;
+}
+    .GNCommNB_description {
+        display: inline-block;
+        width: 150px;
+        height: 32px;
+        color: #404040;
+        cursor: pointer;
+    }
+
+        .GNCommNB_description:hover {
+            color: #3379be;
+        }
+
+    .GNCommNB_descLink {
+    }
+.GNCommNB_time {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80px;
+    height: auto;
+    text-align: right;
+    float: none;
+    padding-right: 10px;
+    font-size: 10px;
+    color: #B8B8B8;
+}
+    .GNAuthNB_description {
+        display: block;
+        width: 150px;
+        height: auto;
+        padding-left: 6px;
+    }
+
+    .GNAuthNB_descA {
+        display: inline;
+        color: #404040;
+    }
+
+    .GNAuthNB_descLink {
+        display: inline;
+        color: #404040;
+        cursor: pointer;
+    }
+
+        .GNAuthNB_descLink:hover {
+            color: #3379be;
+        }
+
+    #GNCommTopUP_SignOut {
+        font-weight: 700;
+    }
+
+    .SettingsHeader {
+        display: inline-block;
+        float: left;
+        text-align: left;
+        padding-left: 12px;
+    }
+
+    .GNCommTopUserMenuPop {
+        position: fixed;
+        top: 70px;
+        right: 0px;
+        width: 260px;
+        z-index: 31;
+        background: #F3F3F3;
+        padding: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        border: 1px solid #d9d9d9;
+        border-radius: 0px;
+        color: #404040;
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 18px;
+        display: none;
+    }
+
+        .GNCommTopUserMenuPop:before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 88px;
+            height: 20px;
+            width: 20px;
+            background: #F3F3F3;
+            box-sizing: border-box;
+            transform: rotate(-45deg) translate(70%);
+            border-top: inherit;
+            border-right: inherit;
+            box-shadow: inherit;
+        }
+
+    .GNCommTopUP_MenuItem {
+        margin-bottom: 11px;
+        cursor: pointer;
+    }
+
+        .GNCommTopUP_MenuItem:hover {
+            color: #3379be;
+        }
+
+    .LogOutHeader {
+        display: inline-block;
+        float: right;
+        background: #fff;
+        width: 110px;
+        text-align: right;
+        padding: 0px;
+        padding-right: 12px;
+        position: unset;
+        color: #3379be;
+        text-decoration: none;
+        font-size: 16px;
+        margin-left: 0px;
+        height: auto;
+    }
+
+    #TGN_BottomMenuS45_LogOutHeader {
+        text-decoration: none;
+        margin-top: auto;
+        display: inline-block;
+        float: right;
+        padding-right: 23px;
+        line-height: 20px;
+        pointer-events: all !important;
+    }
+
+    .commentHistory_Empty {
+        display: block;
+    }
+.bookmarks_none {
+    font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+    #GNAuth_NB_CTA_TDD_PV {
+        display: none;
+    }
+
+    #GNAuth_NB_CTA_TDD_VF {
+        display: none;
+    }
+
+    #GNAuth_NB_CTA_TDD_TFV {
+        display: none;
+    }
+
+    #GNAuth_NB_CTA_TDD_DAA {
+        display: none;
+    }
+
+    #GNAuth_NB_CTA_TDD_TGNNL {
+        display: none;
+    }
+
+    #GNAuth_NB_CTA_TDD_UnSubYes {
+        display: none;
+    }
+
+    #GNAuth_NB_CTA_TDD_UnSubNo {
+        display: none;
+    }
+
+
+    @media all and (max-width: 1020px) {
+        .GNCommTopUserMenuPop {
+            /*display:none !important;
+    opacity:0;
+    pointer-events:none;*/
+        }
+
+    }
+
+    @media all and (max-width: 680px) {
+            .GNCommTopUserMenuPop:before {
+                right: 74px;
+            }
+
+        .GNCommTopUserMenuPop {
+            top: 58px;
+        }
+        .GNCommTopNotify {
+            top: 10px;
+            left: 10px;
+            width: 10px;
+            height: 12px;
+            font-size: 12px;
+            line-height: 14px;
+            border-radius: 0px;
+        }
+
+        .commentHistory_ItemDescription {
+            text-align: left;
+        }
+
+        .EditProfileButton_v2 {
+            display: block;
+            max-width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            clear: both;
+            overflow: hidden;
+            margin-top: 30px;
+        }
+
+        .AccountSettingsButton_v2 {
+            display: block;
+            max-width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            clear: both;
+            overflow: hidden;
+        }
+
+        .CommentHistoryButton_v2 {
+            display: block;
+            max-width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            clear: both;
+            overflow: hidden;
+        }
+
+        .Auth_ProfileControlsI {
+            float: left;
+        }
+
+        .Auth_ProfileControlsD {
+            float: left;
+        }
+
+        .Auth_ProfileControlsA {
+            display: inline-block;
+            float: right;
+        }
+
+        .commentHistory_ItemReply {
+            padding-left: 0px;
+        }
+
+        .commentHistory_Stream {
+        }
+    }
+
+    @media all and (max-width: 480px) {
+        .GNCommNotificationBlock {
+            font-size: 12px;
+            line-height: 14px;
+        }
+
+        .GNCommNB_icon {
+            width: 30px;
+        }
+
+        .GNCommNB_description {
+        }
+
+        .GNAuthNB_description {
+        }
+    }
+
+    @media all and (max-width: 370px) {
+        .GNCommNB_description {
+        }
+
+        .GNAuthNB_description {
+        }
+    }

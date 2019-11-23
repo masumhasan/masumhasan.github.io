@@ -1,0 +1,3087 @@
+
+    * {
+        -webkit-overflow-scrolling: touch;
+    }
+#LI_Mob_All_Error {
+        display:none;
+}
+    #mainContent {
+        display: none !important;
+    }
+
+    .TGN_site_Headermobile a {
+        text-decoration: none;
+    }
+
+    .iconBlock {
+        height: 40px;
+        line-height: 40px;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        vertical-align: top;
+        cursor: pointer;
+    }
+
+        .iconBlock:hover {
+            opacity: .6;
+        }
+
+    #txtFullName {
+        display: none;
+    }
+
+    #txtFirstName {
+        width: 108px;
+    }
+
+    #txtLastName {
+        width: 108px;
+        margin-right: 0px;
+    }
+
+    /*GOOGLE MAPS API*/
+    #txtAddress {
+        /*width: 230px;*/
+    }
+
+    .Auth_50_label {
+        text-align: right;
+        font-weight: bold;
+        width: 100px;
+        color: #303030;
+    }
+
+    #Auth_50_address {
+        border: 1px solid #000090;
+        background-color: #f0f0ff;
+        width: 620px;
+        padding-right: 2px;
+        display: none;
+        padding: 10px;
+    }
+
+        #Auth_50_address td {
+            font-size: 10pt;
+        }
+
+    .Auth_50_field {
+        width: 99%;
+    }
+
+    .Auth_50_slimField {
+        width: 80px;
+    }
+
+    .Auth_50_wideField {
+        width: 200px;
+    }
+
+    #Auth_50_DataPrint {
+        max-width: 600px;
+        word-wrap: break-word;
+    }
+
+    .pac-logo::after {
+        display: none !important;
+    }
+.pac-add-on {
+    display: block;
+    line-height: 13px;
+    border: 0px solid #a4a4a4;
+    width: 318px;
+    font-size: 12px;
+    margin-top: 4px;
+    color: black;
+        margin-left: 1px;
+}
+    .pac-add-on-link {
+        cursor: pointer;
+        color: #0049fb;
+    }
+
+    .pac-container {
+        background-color: #fff;
+        position: relative !important;
+        top: 0px !important;
+        left: 0px !important;
+        z-index: 301;
+        border-radius: 0px;
+        border: 1px solid #d9d9d9;
+        font-family: Arial,sans-serif;
+        box-shadow: 0 0px 0px rgba(0,0,0,0.3);
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        overflow: visible !important;
+    }
+
+    .pac-icon-marker {
+        display: none;
+    }
+
+    .pac-item {
+        line-height: 24px;
+        height: 24px;
+    }
+
+    .Auth_50_ManualAddressArea {
+        display: none;
+    }
+
+    .Auth_50_GAPI_AddressArea {
+        display: block;
+    }
+    /*END GOOGLE MAPS API*/
+
+    .noselect {
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+    }
+
+    #AH_Holder {
+        background: rgba(255,255,255,.85);
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+        display: none;
+    }
+
+    .AH_Inner_Holder {
+        background: white;
+        width: 826px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 0px;
+        margin-bottom: 0px;
+        max-width: 1200px;
+        margin-top: 60px;
+        border: 1px solid #c2c2c2;
+        background: #f2f2f2;
+    }
+
+    .Footer_Holder {
+        background: black;
+        padding-bottom: 200px;
+    }
+
+    .myProfile_Holder {
+        display: none;
+        margin-top: 0;
+        vertical-align: top;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: auto;
+        left: auto;
+        max-width: 1220px;
+        width: auto;
+    }
+
+    .Login_Holder {
+        padding: 0px;
+        display: none;
+        margin-top: 0;
+        text-align: left;
+        width: 826px;
+        background: #f2f2f2;
+    }
+
+    #Auth_50_Form_ResetPassword {
+        text-align: center;
+    }
+
+    #RPtxtPassword {
+        margin-top: 10px;
+    }
+
+    #RPtxtPasswordConfirm {
+        margin-top: 10px;
+    }
+
+    #RPAuth_Paragraph {
+        display: none;
+    }
+
+    #SetNewPasswordOKButton {
+        display: none;
+    }
+
+    #RPpass1ValidationBoxB {
+        margin-bottom: 0px;
+    }
+
+    .Register_Holder {
+        margin-top: 0;
+        padding: 0px;
+        vertical-align: top;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        width: 826px;
+        display: none;
+        background: #f2f2f2;
+    }
+
+    .Welcome_Holder {
+        padding: 0px;
+        padding-top: 0px;
+        display: none;
+        margin-top: 0;
+        vertical-align: top;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        width: 826px;
+        padding-bottom: 0px;
+        background: #f2f2f2;
+    }
+.Auth_50_FullnameBlock {
+    display: flex;
+    justify-content: space-between;
+    width: 318px;
+    margin-top: 8px;
+}
+    .Auth_50_FirstLastnameBlock {
+        display: flex;
+        justify-content: space-between;
+        width: 250px;
+    }
+.TGN_site_TitleDrop {
+    display: inline-block;
+    background: white;
+    width: 52px;
+    height: 36px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 36px;
+    padding-left: 10px;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+#Auth_50_Form_AS_F1 .TGN_site_TitleDrop {
+    border: 1px solid #f2f2f2;
+}
+.TGN_site_TitleDropMenu {
+    display: none;
+    background-color: white;
+    position: absolute;
+    border: 1px solid #f2f2f2;
+    line-height: 25px;
+    width: 62px;
+    margin-left: -11px;
+    z-index: 1;
+}
+.TGN_site_TitleDropMenuItem {
+    border-bottom: 1px solid #f2f2f2;
+    padding-left: 10px;
+}
+.TGN_site_TitleDropDefaultCopy {
+    color:#949494;
+    display:inline-block;
+}
+.TGN_site_TitleDropDefaultCopyOFF {
+    display:none;
+}
+.TGN_site_TitleDropSelectedCopy {
+    display:none;
+}
+.TGN_site_TitleDropSelectedCopyON {
+    display:inline-block;
+}
+
+#txtUserTitle {
+    width: 63px;
+    height: 36px;
+    padding-left: 9px;
+    display:none !important;
+}
+
+    .Auth_50_CTA_Left_Top {
+        display: block;
+        width: 460px;
+        height: 671px;
+        background: white;
+        padding: 0px;
+    }
+
+    .Auth_50_CTA_MiddleSpacer {
+        display: block;
+        width: 0px;
+    }
+.Auth_50_Content_Right_Bottom {
+    display: block;
+    width: 366px;
+    height: 671px;
+    background: #f2f2f2;
+}
+    .Auth_50_Content_Right_BottomInner {
+        padding-left: 0px;
+        margin-bottom: 0px;
+        min-height: 160px;
+        width: 366px;
+        background: #f2f2f2;
+        padding-bottom: 0px;
+    }
+
+    .Auth_50_LogInSignUpFormSpacer {
+        display: block;
+        height: 14px;
+    }
+
+    .Auth_50_LogInSignUpForm {
+        margin-left: 24px;
+        margin-right: 0px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        max-height: 604px;
+    }
+
+    .Register_Holder .Auth_50_LogInSignUpForm {
+        height: 604px;
+    }
+
+    .Auth_50_LISU_ToggleButton_Left_On {
+        display: inline-block;
+        width: 57px;
+        height: 30px;
+        color: black;
+        border-bottom: 4px solid black;
+        text-align: center;
+        line-height: 28px;
+        margin-left: 24px;
+        margin-right: 24px;
+        font-family: 'Roboto Condensed', 'Asap Condensed', 'neue-haas-unica', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        cursor: pointer;
+        letter-spacing: .04px;
+    }
+
+    .Auth_50_LISU_ToggleButton_Left_Off {
+        display: inline-block;
+        width: 57px;
+        height: 30px;
+        color: rgba(101,101,101,0.5);
+        border-bottom: 4px solid #cccccc;
+        text-align: center;
+        line-height: 28px;
+        margin-left: 24px;
+        margin-right: 24px;
+        font-family: 'Roboto Condensed', 'Asap Condensed', 'neue-haas-unica', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        cursor: pointer;
+        letter-spacing: .04px;
+    }
+    .Auth_50_LISU_ToggleButton_Left_Off:hover {
+        color:black;
+    }
+
+    .Auth_50_LISU_ToggleButton_Right_On {
+        display: inline-block;
+        width: 68px;
+        height: 30px;
+        color: black;
+        border-bottom: 4px solid black;
+        text-align: center;
+        line-height: 28px;
+        margin-left: 0px;
+        margin-right: 24px;
+        font-family: 'Roboto Condensed', 'Asap Condensed', 'neue-haas-unica', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        cursor: pointer;
+        letter-spacing: .04px;
+    }
+
+    .Auth_50_LISU_ToggleButton_Right_Off {
+        display: inline-block;
+        width: 68px;
+        height: 30px;
+        color: rgba(101,101,101,0.5);
+        border-bottom: 4px solid #cccccc;
+        text-align: center;
+        line-height: 28px;
+        margin-left: 0px;
+        margin-right: 24px;
+        font-family: 'Roboto Condensed', 'Asap Condensed', 'neue-haas-unica', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        cursor: pointer;
+        letter-spacing: .04px;
+    }
+    .Auth_50_LISU_ToggleButton_Right_Off:hover {
+        color:black;
+    }
+
+    .AH_Holder {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        line-height: 19px;
+        display: none;
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        color: #949494;
+        overflow-y: auto;
+        overflow-x: hidden;
+        z-index: 300;
+    }
+    .AH_Holder_Roadblock {
+        background: rgba(255,255,255,1) !important;
+    }
+
+    .Auth_50_Label01 {
+        margin-top: 10px;
+        margin-bottom: 0px;
+        display: block;
+        font-size: 12px;
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 400;
+        letter-spacing: .4px;
+    }
+.Auth_50_Label02 {
+    font-style: normal;
+    margin-top: 18px;
+    margin-bottom: 0px;
+    display: block;
+    font-size: 14px;
+    font-family: 'HelveticaNeueW01-55Roma','neue-haas-unica', sans-serif;
+    font-weight: 300;
+    color: #000;
+    letter-spacing: .1px;
+}
+    .Auth_50_WelcomeTitle {
+        font-weight: normal;
+        font-style: normal;
+        margin-top: 24px;
+        margin-bottom: 0px;
+        display: block;
+        font-size: 14px;
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 500;
+        color: #000;
+        letter-spacing: .1px;
+        margin-bottom: 16px;
+    }
+.txtEntryBox {
+    padding: 0px;
+    padding-left: 12px;
+    border: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    color: #424242;
+    font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 34px;
+    font-weight: 300;
+    height: 34px;
+    width: 305px;
+}
+    #txtAddressAN {
+        width: 66px;
+        display: none;
+        margin-left: 0px;
+        margin-top: 8px;
+    }
+
+    input[type=text], textarea {
+        -webkit-transition: all 0.30s ease-in-out;
+        -moz-transition: all 0.30s ease-in-out;
+        -ms-transition: all 0.30s ease-in-out;
+        -o-transition: all 0.30s ease-in-out;
+        outline: none;
+        margin: 0px;
+        -webkit-appearance: none;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+    }
+
+    input[type=text]:focus, textarea:focus {
+        background-color: white !important;
+        margin: 0px;
+    }
+
+    input[type=email], textarea {
+        -webkit-transition: all 0.30s ease-in-out;
+        -moz-transition: all 0.30s ease-in-out;
+        -ms-transition: all 0.30s ease-in-out;
+        -o-transition: all 0.30s ease-in-out;
+        outline: none;
+        margin: 0px;
+        -webkit-appearance: none;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+    }
+
+        input[type=email]:focus, textarea:focus {
+            background-color: white !important;
+            margin: 0px;
+        }
+
+    input[type=password], textarea {
+        -webkit-transition: all 0.30s ease-in-out;
+        -moz-transition: all 0.30s ease-in-out;
+        -ms-transition: all 0.30s ease-in-out;
+        -o-transition: all 0.30s ease-in-out;
+        outline: none;
+        margin: 0px;
+        -webkit-appearance: none;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+    }
+
+        input[type=password]:focus, textarea:focus {
+            background-color: white !important;
+            margin: 0px;
+        }
+
+    input[type=search], textarea {
+        -webkit-transition: all 0.30s ease-in-out;
+        -moz-transition: all 0.30s ease-in-out;
+        -ms-transition: all 0.30s ease-in-out;
+        -o-transition: all 0.30s ease-in-out;
+        outline: none;
+        margin: 0px;
+        -webkit-appearance: none;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+            border: 1px solid #f2f2f2;
+    }
+
+        input[type=search]:focus, textarea:focus {
+            background-color: white !important;
+            margin: 0px;
+        }
+
+
+        input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+            background-color: white !important;
+            background-image: none;
+            color: rgb(0, 0, 0);
+        }
+
+    input:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+        background-color: white !important;
+        background-image: none !important;
+        color: #000 !important;
+        outline: none !important;
+    }
+
+    input:textarea:-webkit-autofill {
+        background-color: white !important;
+        background-image: none;
+        color: rgb(0, 0, 0);
+    }
+
+    input:select:-webkit-autofill {
+        background-color: white !important;
+        background-image: none;
+        color: rgb(0, 0, 0);
+    }
+
+    input:-webkit-text-fill-color {
+        black !important;
+    }
+    
+    input {
+        /*transform: translateZ(0);*/
+    }
+    input:focus {
+        border-bottom: 1px solid #0049fb;
+        background-color: white !important;
+        background-image: none;
+        color: #000000;
+        /*transform: translateZ(0);*/
+    }
+
+    .txtEntryBox:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 100px white inset;
+        color: #000;
+    }
+
+        .txtEntryBox:-webkit-autofill:hover,
+        .txtEntryBox:-webkit-autofill:focus {
+            -webkit-box-shadow: 0 0 0 100px white inset;
+            -webkit-text-fill-color: #000;
+            color: #000;
+        }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #949494;
+        opacity: 1; /* Firefox */
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 300;
+    }
+
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #949494;
+    }
+
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: #949494;
+    }
+
+    .Auth_50_LogInSignUpToggle {
+        margin-bottom: 0px;
+        background: #f2f2f2;
+        height: 55px;
+        display: flex;
+        align-items: flex-end;
+    }
+.ForgotPW {
+    display: block;
+    position: absolute;
+    top: 7px;
+    right: 26px;
+    font-size: 14px;
+    width: 60px;
+    cursor: pointer;
+    font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: black;
+    letter-spacing: .5px;
+}
+.LoginPasswordGroup {
+    display: block;
+    position: relative;
+}
+    .RegButton {
+        display: inline-block;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: white;
+        color: black;
+        height: 40px;
+        line-height: 40px;
+        cursor: pointer;
+        text-align: center;
+     font-family: 'Roboto Condensed', 'Asap Condensed', 'neue-haas-unica', sans-serif;
+    text-transform: uppercase;
+        font-weight: 400;
+        font-size: 18px;
+        margin-bottom: 0px;
+        letter-spacing: .3px;
+        border: 1px solid black;
+        margin-top: 18px;
+        margin-bottom: 0px;
+        letter-spacing: .3px;
+        width: 275px;
+        background-color: #0049fb;
+        border: 1px solid #0049fb;
+        color: white;
+    }
+    .RegButton:hover {
+        background-color: black;
+    }
+
+    .TGN_PassiveButton {
+        height: 40px;
+        border: 1px solid #000000;
+        color: black;
+        border-radius: 0px;
+        background-color: #FFFFFF;
+        font-size: 17px;
+        line-height: 38px;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-top: 16px;
+        margin-bottom: 24px;
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .TGN_SmallPassiveButton {
+        height: 27px;
+        border: 1px solid #000000;
+        color: black;
+        border-radius: 0px;
+        background-color: #FFFFFF;
+        font-size: 14px;
+        line-height: 25px;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        padding-left: 12px;
+        padding-right: 12px;
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .SignInUpSocial {
+        display: flex;
+        margin-top: 8px;
+    }
+.SignInUpTW {
+    background-image: none;
+    background-size: contain;
+    display: inline-flex;
+    margin-top: 0px;
+    color: white;
+    height: 28px;
+    width: 28px;
+    line-height: 28px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 9000px;
+    text-align: center;
+    font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: .3px;
+    background: black;
+    align-items: center;
+    justify-content: center;
+}
+        .SignInUpTW:hover {
+            border: 1px solid white;
+        }
+
+        .SignInUpTW i {
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+
+    .SignInUpFB {
+    background-image: none;
+    background-size: contain;
+    display: inline-flex;
+    margin-top: 0px;
+    color: white;
+    height: 28px;
+    width: 28px;
+    line-height: 28px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 9000px;
+    text-align: center;
+    font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: .3px;
+    background: black;
+    align-items: center;
+    justify-content: center;
+    }
+
+        .SignInUpFB:hover {
+            border: 1px solid white;
+        }
+
+        .SignInUpFB i {
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+
+    .AH_Close {
+        display: block;
+        position: relative;
+        top: 10px;
+        right: 30px;
+        margin-left: auto;
+        width: 0px;
+        height: 0px;
+        cursor: pointer;
+        z-index: 20;
+        text-shadow: none;
+        color: #000;
+    }
+    .AH_Close_Roadblock {
+        display:none !important;
+    }
+
+        .AH_Close i {
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            border-radius: 0px;
+            background-color: transparent;
+            box-shadow: none;
+        }
+
+    .validationBox {
+        position: initial;
+        top: 0px;
+        left: 0px;
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        display: none;
+        text-align: left;
+        height: 30px;
+    }
+
+    .Auth_50_Hidden {
+        display: none !important;
+    }
+
+    #LItxtEmail {
+        margin-bottom: 8px;
+    }
+
+    .Auth_50_InputBlock01 {
+        display: inline-block;
+        margin-bottom: 0px;
+        margin-right: 0px;
+    }
+
+    .Auth_50_InputBlock02 {
+        margin-top: 12px;
+        margin-bottom: 0px;
+        display: block;
+    }
+
+    #LoginButton {
+        margin-top: 12px;
+    }
+
+    #RegButton {
+    }
+
+    .RegButtonDisabled {
+        opacity: .5;
+        pointer-events: none;
+    }
+
+    #WelcomeContinueButton {
+    }
+
+    .Auth_Paragraph {
+        margin-top: 6px;
+        margin-bottom: 20px;
+        color: #000000;
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        letter-spacing: 0.07px;
+        line-height: 19px;
+        display: block;
+    }
+
+    .Auth_Paragraph_Small {
+        font-size: 10px;
+        line-height: 13px;
+        display: block;
+        max-width: 310px;
+        margin-top: 8px;
+        margin-left: 0px;
+        margin-right: auto;
+        text-align: left;
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .Auth_Paragraph_link {
+        color: #0049fb;
+        cursor: pointer;
+    }
+
+    .Auth_ProfileImage {
+        width: 80px;
+        height: 80px;
+        margin-left: 0px;
+        margin-right: auto;
+        color: #ccc;
+        font-size: 94px;
+        padding: 0;
+        text-align: center;
+        line-height: 96px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        border-radius: 100%;
+        border: 1px solid #ccc;
+        background-image: none;
+        background-size: cover;
+        position: relative;
+        z-index: 3;
+        opacity: 1;
+        letter-spacing: 0;
+        color: #3379be;
+        background-color: white;
+        font-size: 69px;
+        line-height: 140px;
+        padding-left: 4px;
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        display: none;
+    }
+
+    .Auth_WelcomeProfileImage_Edit {
+        position: relative;
+        color: #ccc;
+        font-size: 17px;
+        line-height: 17px;
+        left: 47px;
+        top: -22px;
+        display: inline-block;
+    }
+
+    .myProfileBase_Holder {
+        margin-top: 24px;
+    }
+
+        .myProfileBase_Holder .TGN_site_Titledsectionstopright {
+            display: none;
+        }
+.TGN_site_Lightbox {
+    display: none;
+    width: 100%;
+    height: 2000px;
+    background: black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.TGN_site_Lightbox_Top {
+    display: block;
+    text-align: right;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 20px;
+    width: 96%;
+    max-width: 1060px;
+}
+.TGN_site_Lightbox_Bottom {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    width: 96%;
+    max-width: 1060px;
+}
+.TGN_site_Lightbox_VR_Addon {
+    color: #FFFFFF;
+    font-weight: 300;
+    letter-spacing: -0.03px;
+    font-family: 'HelveticaNeueW01-55Roma','neue-haas-unica', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+.TGN_site_Lightbox_VR_SpanT1 {
+    font-family: 'HelveticaNeueW01-75Bold','HelveticaNeue Bold','Helvetica LT Std Bold',Helvetica, source-serif-pro, 'Source Serif Pro', 'LyonDisplay-Medium', serif;
+}
+.TGN_site_Lightbox_VR_Addon a {
+    color: white;
+    text-decoration: none;
+    font-family: 'HelveticaNeueW01-75Bold','HelveticaNeue Bold','Helvetica LT Std Bold',Helvetica, source-serif-pro, 'Source Serif Pro', 'LyonDisplay-Medium', serif;
+}
+.TGN_site_Lightbox_VR_Span {
+    margin-top: 8px;
+}
+.TGN_site_Lightbox_VR_SpanT3:hover {
+    text-decoration:underline;
+}
+.TGN_site_Lightbox_Close {
+    cursor: pointer;
+}
+.TGN_site_Lightbox_Middle {
+    width: 96%;
+    max-width: 1060px;
+}
+
+    .Auth_SR_Holder {
+        border-top: 0px solid #ccc;
+        padding-top: 26px;
+        height: auto;
+        overflow: hidden;
+        text-align: left;
+        padding-left: 0px;
+        max-height: 370px;
+        max-width: 810px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .Auth_SR_Item {
+        display: none;
+        margin: 10px;
+        vertical-align: top;
+        text-align: left;
+        width: 184px;
+        cursor: pointer;
+        min-height: 30px;
+        min-width: 170px;
+    }
+
+    .Auth_SR_ItemBook {
+        display: none;
+        margin: 10px;
+        vertical-align: top;
+        text-align: left;
+        width: 184px;
+        cursor: pointer;
+        min-height: 30px;
+        min-width: 170px;
+    }
+
+    .Auth_SR_Thumb {
+        background-image: none;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 157px;
+        height: 157px;
+        background-color: #eee;
+        border: 0px solid #eaeaea;
+    }
+
+    .Auth_SR_Title {
+        padding-top: 10px;
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        color: black;
+        font-size: 14px;
+        line-height: 17px;
+        background-color: white;
+        text-align: left;
+        padding-right: 20px;
+    }
+
+    .Auth_SR_Teaser {
+        padding-top: 10px;
+        color: black;
+        background-color: white;
+        font-family: Lusitana,serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: left;
+        height: auto;
+        overflow: hidden;
+        padding-right: 20px;
+        margin-bottom: 40px;
+    }
+
+    .Auth_A_Item {
+        display: none;
+        text-align: left;
+        cursor: pointer;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Auth_A_Thumb {
+        background-image: none;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 170px;
+        height: 170px;
+        background-color: #aaa;
+        border: 0px solid #eaeaea;
+    }
+
+    .Auth_A_AwardRight {
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 600;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+.Auth_A_Holder a {
+    text-decoration: none;
+    color: black;
+    max-width: 600px;
+}
+    .Auth_A_Year {
+        font-size: 18px;
+        letter-spacing: 0.47px;
+    }
+.Auth_A_Title {
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: -0.05px;
+    font-weight: 700;
+}
+    .Auth_A_Teaser {
+        font-size: 16px;
+        letter-spacing: -0.03px;
+        line-height: 23px;
+    }
+
+        .Auth_A_Teaser a {
+            color: #0049fb !important;
+        }
+
+    .Auth_A_URL {
+        display: none;
+    }
+
+    .Auth_A_Tags {
+        display: none;
+    }
+
+    .Auth_A_Holder {
+        text-align: left;
+        display: flex;
+        align-items: flex-start;
+        margin-top: 4px;
+        padding-top: 24px;
+        margin-bottom: 24px;
+        justify-content: space-between;
+    }
+
+    .Auth_checkbox {
+        display: none;
+    }
+
+    .Authcheckbox {
+        display: block;
+        margin-top: 0px;
+        margin-bottom: 24px;
+        margin-left: 0px;
+        margin-right: auto;
+        text-align: left;
+    }
+
+    .AuthcheckboxTxt {
+        display: inline;
+        color: #000;
+    }
+
+    .Auth_Subs_Holder {
+        display: flex;
+        align-items: center;
+        flex-flow: row-reverse;
+        justify-content: flex-end;
+    }
+
+    .Welcome_Holder .Auth_Subs_Holder {
+    }
+
+    .Welcome_Holder .Auth_Subs_Text {
+        width: 220px;
+        flex-flow: column;
+        font-size: 14px;
+    }
+
+    .Auth_Subs_Text {
+        display: block;
+        align-items: baseline;
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        letter-spacing: 0.03px;
+        line-height: 22px;
+    }
+
+    #AuthEmailSubText_AS {
+        margin-left: 8px;
+    }
+
+    .AuthEmailSubText {
+        display: none;
+    }
+
+    .Auth_Subs_OnOff {
+        width: 86px;
+        height: 27px;
+        display: flex;
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 300;
+        cursor: pointer;
+        margin-right: 16px;
+        font-size: 14px;
+        min-width: 80px;
+    }
+
+    .Auth_Subs_On {
+        width: 50%;
+        background-color: #0049fb;
+        display: inline-block;
+        line-height: 25px;
+        border-radius: 0px;
+        border: 1px solid #0049fb;
+        text-align: center;
+        color: white;
+    }
+
+        .Auth_Subs_On.Auth_Subs_InActive {
+            color: black;
+            background: white;
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+
+    .Auth_Subs_Off {
+        width: 43px;
+        background-color: white;
+        display: inline-block;
+        line-height: 25px;
+        border-radius: 0px;
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        text-align: center;
+        color: black;
+        padding: 0px;
+        margin: 0px;
+    }
+
+        .Auth_Subs_Off.Auth_Subs_Active {
+            color: white;
+            background: #0049fb;
+            border-top: 1px solid #0049fb;
+            border-right: 1px solid #0049fb;
+            border-bottom: 1px solid #0049fb;
+        }
+
+    .Auth_Int_Holder {
+        margin-bottom: 0px;
+        color: black;
+        margin-top: 0px;
+    }
+
+        .Auth_Int_Holder .li {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+    .Welcome_Holder .Auth_Int_Holder .li {
+        margin-bottom: 16px;
+        margin-top: 0px;
+    }
+
+    .ProSetTopics {
+        margin-left: 15px;
+        display: inline-block;
+        margin-top: 0px;
+        max-width: 210px;
+        font-size: 16px;
+        line-height: 22px;
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 300;
+    }
+
+    .Welcome_Holder .ProSetTopics {
+        margin-left: 10px;
+        max-width: 200px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .ProSetOn {
+        display: none;
+        height: 20px;
+        width: 20px;
+        color: white;
+            border: 1px solid #0049fb !important;
+        border-radius: 0px;
+        text-align: center;
+        line-height: 22px;
+        font-size: 14px;
+        padding: 0px;
+        margin: 0px;
+        background-color: #0049fb;
+        user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+        cursor: pointer;
+    }
+
+    .Welcome_Holder .ProSetOn {
+        height: 20px;
+        width: 20px;
+        line-height: 20px;
+        font-size: 13px;
+    }
+
+    .ProSetOff {
+        display: none;
+    height: 20px;
+    width: 20px;
+    background: white;
+    color: #0049fb;
+    border: 1px solid #0049fb;
+    border-radius: 0px;
+    text-align: center;
+    line-height: 22px;
+    font-size: 14px;
+    padding: 0px;
+    margin: 0px;
+        user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+        cursor: pointer;
+    }
+
+    .Welcome_Holder .ProSetOff {
+        height: 20px;
+        width: 20px;
+        line-height: 20px;
+        font-size: 13px;
+    }
+
+    #addressValidationBoxB {
+        /*margin-bottom: 5px;*/
+        margin-left: 1px;
+    }
+
+    .validationBoxB {
+        font-size: 12px;
+        line-height: 13px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        display: none;
+        text-align: left;
+    }
+
+    .validNoTxt {
+        color: #CE3542;
+        display: none;
+        max-width: 300px;
+        line-height: 14px;
+        opacity: 1;
+        padding-left: 0px;
+    }
+
+    .validNoDuplicateTxt {
+        color: #CE3542;
+        display: none;
+        max-width: 300px;
+        line-height: 14px;
+        vertical-align: middle;
+        opacity: 1;
+        padding-left: 0px;
+    }
+#LI_Mob_All_Error {
+    margin-bottom: 0px;
+    padding-left: 0px;
+    color: #CE3542;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 4px;
+}
+.Auth_SectionHeader50 {
+    margin-bottom: 24px;
+    width: max-content;
+    display: block;
+    text-align: left;
+    color: #000000;
+    border-bottom: 1px solid black;
+    font-family: 'Roboto Condensed', 'Asap Condensed', 'neue-haas-unica', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 23px;
+    text-transform: uppercase;
+    border-bottom: 3px solid black;
+}
+
+    .Auth_SectionHeader50Snug {
+        margin-bottom: 4px;
+    }
+
+    .accountSettings_Holder {
+        margin-bottom: 50px;
+        vertical-align: top;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        position: unset;
+        top: auto;
+        left: auto;
+        width: auto;
+        padding-top: 24px;
+        display: none;
+    }
+
+    .Auth_FieldHolder {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding-left: 0px;
+    }
+
+    .Auth_SectionDivider {
+        width: 100%;
+        display: block;
+        clear: both;
+        height: 30px;
+        margin-top: 0px;
+    }
+
+    .Auth_SectionHolder {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .Auth_FieldTitle50 {
+        font-size: 12px;
+        letter-spacing: 0.04px;
+        position: relative;
+        left: 0px;
+        top: 0px;
+        text-align: left;
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: rgba(8,8,8,0.5);
+    }
+.AuthCancelButtonS {
+    display: inline-block;
+    margin-top: 0px;
+    background-color: white;
+    color: #c00;
+    line-height: 14px;
+    border-radius: 0px;
+    margin-left: 10px;
+    margin-right: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: left;
+    font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+.AuthSaveButtonS {
+    display: inline-block;
+    margin-top: 0px;
+    background-color: white;
+    color: #0049fb;
+    line-height: 14px;
+    border-radius: 0px;
+    margin-left: 0px;
+    margin-right: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: left;
+    font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+    .Auth_FieldEditControls {
+        display: none;
+        text-align: left;
+        max-width: 334px;
+        margin-top: 3px;
+    }
+
+    .Auth_FirstName_Block {
+        display: inline-block;
+        margin-right: 4px;
+    }
+
+    #AS_txtFirstName {
+        width: 114px;
+    }
+
+    .Auth_LastName_Block {
+        display: inline-block;
+        margin-right: 4px;
+    }
+
+    #AS_txtLastName {
+        margin-right: 0;
+        width: 114px;
+    }
+
+    #AS_txtUserTitle {
+        width: 70px;
+        height: 36px;
+    display:none !important;
+    }
+
+    #WE_txtUserTitle {
+        width: 48px;
+        height: 40px;
+        outline: none;
+        padding: 3px 0px 3px 3px;
+        margin: 0px;
+        border: 0px;
+        border-bottom: 1px solid #6f6f6f;
+        font-size: 14px;
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        color: #000000;
+        -webkit-appearance: none;
+        -webkit-box-flex: 1;
+        -webkit-font-smoothing: antialiased;
+        -webkit-border-image: none;
+        -webkit-rtl-ordering: logical;
+        overflow: auto;
+        outline: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        border-radius: 0px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCA0LjkgMTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQuOSAxMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCgkuc3Qwe2ZpbGw6I0ZGRkZGRjt9DQoJLnN0MXtmaWxsOiM0NDQ0NDQ7fQ0KPC9zdHlsZT4NCjx0aXRsZT5hcnJvd3M8L3RpdGxlPg0KPHJlY3QgY2xhc3M9InN0MCIgd2lkdGg9IjQuOSIgaGVpZ2h0PSIxMCIvPg0KPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIzLjUsNS4zIDIuNSw2LjggMS40LDUuMyAiLz4NCjwvc3ZnPg0K') no-repeat 105% 50%;
+        padding-left: 2px;
+        background-position-y: -3px;
+        background-position-x: 33px;
+    display:none !important;
+    }
+.Auth_Title_Block {
+    display: inline-block;
+    margin-right: 4px;
+}
+    .txtNewPassEntryBox {
+        width: 300px;
+    }
+
+    .Auth_Paragraph_Profile {
+        display: block;
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 16px;
+        letter-spacing: 0.04px;
+        line-height: 20px;
+    }
+
+    .RequestDeleteTA {
+        width: 350px;
+        height: 40px;
+        margin-top: 14px;
+        margin-bottom: 0;
+        padding-left: 20px;
+        font-size: 14px;
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        max-width: 436px;
+        resize: none;
+        margin-left: auto;
+        margin-right: auto;
+            border: 0px;
+    margin-bottom: 6px !important;
+    }
+
+    #Auth_FieldHolderRD {
+        text-align: center;
+        margin-top: 10px;
+    }
+.resendVerify {
+    cursor: pointer;
+    text-decoration: underline;
+}
+    #validNoVerifyAS {
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 300;
+        color: #CE3542;
+        text-align: left;
+        position: unset;
+        display: none;
+        font-size: 14px;
+        letter-spacing: 0.03px;
+        line-height: 20px;
+        max-width: 310px;
+        margin-top: 6px;
+            padding-left: 10px;
+    }
+
+    .Auth_50_AS_InputLine {
+        margin-bottom: 8px;
+    }
+
+    .validYes {
+        color: #0049fb;
+        font-size: 16px;
+        height: 30px;
+        line-height: 16px;
+        display: none;
+        vertical-align: top;
+    }
+
+    .validNoTxt {
+        color: #CE3542;
+        display: none;
+        max-width: 300px;
+        line-height: 16px;
+        opacity: 1;
+        padding-left: 0px;
+    }
+
+    #AS_txtFullName {
+        display: none;
+    }
+
+    #AS_txtNewPassword {
+        display: none;
+    }
+
+    .Auth_ProfileSettings_NavigationInner {
+        background: #f3f3f3;
+        color: black;
+        padding-top: 32px;
+        padding-left: 64px;
+        padding-bottom: 14px;
+    }
+
+    .Auth_ProfileImageEditLockup {
+        height: 19px;
+        width: 19px;
+        position: relative;
+        margin-right: 0px;
+        margin-left: auto;
+        top: -20px;
+    }
+
+    .Auth_ProfileSettings_Nav_UserRight {
+        display: block;
+        margin-left: 24px;
+        position: relative;
+        top: -10px;
+    }
+
+    .Auth_Profile_ProgressPreview {
+        background-image: none;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        margin-top: 10px;
+        width: 120px;
+        height: auto;
+        overflow: hidden;
+            font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    }
+
+    .Auth_ProfileImageEditText {
+        font-size: 18px;
+        cursor: pointer;
+        color: black;
+        position: relative;
+    }
+
+    .Auth_ProfileSettings_Nav_UserUpload {
+        display: none;
+    }
+
+    .Auth_ProfileImage_Progress {
+        max-width: 430px;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #WEAuth_ProfileImage_Progress {
+        background-color: white;
+        width: 100%;
+        height: auto;
+        display: none;
+        margin-left: 0px;
+        margin-right: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .Auth_IUP_Error {
+        max-width: 430px;
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        display: none;
+    }
+
+    #ASUploadErrorOkButton {
+        width: 60px;
+    }
+
+    .Auth_ProfileSettings_Nav_User {
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .Auth_ProfileSettings_Nav_UserMetrics {
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .Auth_ProfileSettings_Nav_UserImage {
+        width: 120px;
+        height: 120px;
+        margin-left: auto;
+        margin-right: auto;
+        background: white;
+        border-radius: 1000px;
+        background-size: cover;
+    }
+
+    .Auth_ProfileSettings_Nav_UserName {
+        margin-bottom: 10px;
+        display: block;
+        text-align: left;
+        font-size: 36px;
+        line-height: 36px;
+        font-family: source-serif-pro, 'Source Serif Pro', 'LyonDisplay-Medium', serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .Auth_ProfileSettings_Nav_BarItem {
+        display: inline-block;
+        margin-right: 24px;
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .Auth_ProfileSettings_Nav_BarItemTop {
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 30px;
+    }
+
+    .Auth_ProfileSettings_Nav_BarItemBottom {
+        background: #f3f3f3;
+        height: 3px;
+    }
+
+    .Auth_ProfileSettings_Nav_Bar {
+        display: block;
+        width: 100%;
+        text-align: left;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-family: 'Roboto Condensed', 'Asap Condensed', 'neue-haas-unica', sans-serif;
+        font-weight: 600;
+        background: #f3f3f3;
+    }
+
+    .ForgotPassword_Holder {
+        padding: 0px;
+        display: none;
+        margin-top: 0;
+        vertical-align: top;
+        text-align: left;
+        margin-left: 0px;
+        margin-right: auto;
+        max-width: 366px;
+        min-height: 446px;
+        background: #f2f2f2;
+    }
+
+    #ResetPasswordButton {
+    }
+
+    #SetNewPasswordButton {
+    }
+
+    .Auth_SGE_checkboxes {
+        max-width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 16px;
+    }
+
+    .ResetPassword_Holder {
+        padding: 0px;
+        display: none;
+        margin-top: 0;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 60px;
+        padding-bottom: 70px;
+        max-width: 320px;
+        background: #f2f2f2;
+    }
+
+    .SocialGetEmails_Holder {
+        padding: 0px;
+        display: none;
+        margin-top: 0;
+        vertical-align: top;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 50px;
+        padding-bottom: 200px;
+        max-width: 410px;
+        background: #f2f2f2;
+    }
+
+    .Deregister_Holder {
+        padding: 0px;
+        display: none;
+        margin-top: 0;
+        vertical-align: top;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 50px;
+        padding-bottom: 200px;
+        max-width: 500px;
+        background: #f2f2f2;
+    }
+
+    .Auth_Deactivate_Subhead {
+        display: block;
+        font-size: 18px;
+        margin-top: -10px;
+        margin-bottom: 5px;
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        max-width: 430px;
+        margin-left: 0px;
+        margin-right: auto;
+        line-height: 24px;
+    }
+
+    .Auth_Header {
+        font-size: 29px;
+        margin-bottom: 19px;
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        line-height: 28px;
+        color: #333;
+    }
+
+    .UnsubscribeSignIn_Holder {
+        padding: 0px;
+        display: none;
+        margin-top: 0;
+        vertical-align: top;
+        text-align: left;
+        margin-left: 24px;
+        margin-right: 24px;
+        padding-top: 50px;
+        padding-bottom: 300px;
+        background: #f2f2f2;
+    }
+
+    .RequestDelete_Holder {
+        padding: 0px;
+        display: none;
+        margin-top: 0;
+        vertical-align: top;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 50px;
+        padding-bottom: 200px;
+        max-width: 480px;
+        background: #f2f2f2;
+    }
+.RequestDeletePartA .Auth_Paragraph {
+    text-align: left;
+}
+    .RequestDeletePartA {
+        padding: 0px;
+    }
+.liSignUpT1 {
+    display: block;
+    font-size: 26px;
+    margin-bottom: 36px;
+    font-family: source-serif-pro, "Lyon Display";
+    font-weight: 900;
+    font-style: normal;
+}
+    .FAQ_Holder {
+        padding: 80px;
+        display: none;
+        margin-top: 0;
+        vertical-align: top;
+        text-align: left;
+        color: black;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 660px;
+        background: #f2f2f2;
+        font-family: 'HelveticaNeueW01-55Roma','neue-haas-unica', sans-serif;
+    font-weight: 300;
+    }
+
+    .FAQ_Questions {
+        max-width: 480px;
+        margin-left: 0px;
+        margin-right: auto;
+        padding: 0px;
+        text-align: left;
+        margin-top: -20px;
+        font-family: 'HelveticaNeueW01-55Roma','neue-haas-unica', sans-serif;
+    font-weight: 300;
+    }
+    
+.FAQ_Questions ul {
+  list-style-type: circle;
+  margin-top: 10px;
+font-size: 15px !important;
+    line-height: 19px !important;
+  color: black; }
+
+.FAQ_Questions li {
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 15px !important;
+    line-height: 19px !important;
+  color: black; }
+
+.FAQ_Questions h1 {
+  font-size: 15px !important;
+    line-height: 19px !important;
+  margin-top: 16px;
+  }
+
+.FAQ_Questions h2 {
+  font-size: 15px !important;
+    line-height: 19px !important;
+  margin-bottom: 16px;
+  }
+
+    #Auth_Deactivate_DynamicCopy {
+        text-align: left;
+        display: block;
+    }
+
+    .Auth_4_0_ForgotPasswordBack {
+        color: #aaa;
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        margin-bottom: 30px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .Auth_TopSpacer {
+        width: 100%;
+        height: 34px;
+    }
+
+    .Auth_Bold_01 {
+        display: block;
+        color: #000000;
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-size: 27px;
+        font-weight: 600;
+        letter-spacing: 0.03px;
+        line-height: 33px;
+        margin-bottom: 12px;
+    }
+
+    .Auth_Bold_02 {
+        display: block;
+        color: #000000;
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 0.03px;
+        line-height: 27px;
+    }
+
+    .Auth_Para_01 {
+    }
+
+    #Auth_50_GAPI_QuestionMark {
+        display: inline-block;
+        color: #ccc;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    #Auth_50_ManualAA_QuestionMark {
+        display: inline-block;
+        color: #ccc;
+        font-size: 18px;
+    }
+
+    .Auth_50_GAPI_AddressAreaExtra {
+        font-style: italic;
+        display: none;
+        color: #666;
+        font-size: 13px;
+        max-width: 390px;
+        line-height: 15px;
+    }
+
+    .Auth_Int_Right {
+        text-align: left;
+        display: inline-block;
+        vertical-align: top;
+        height: 100%;
+    }
+
+    .Auth_Int_Left {
+        display: inline-block;
+        margin-right: 24px;
+    }
+
+    .Auth_50_GAPI_QuestionMarkRO_Box {
+        background: #f2f1f3;
+        min-height: 40px;
+        position: relative;
+        left: 0px;
+        z-index: 9;
+        padding: 12px;
+        border-radius: 0px;
+        max-width: 520px;
+        margin-top: 10px;
+        display: none;
+        margin-top: 10px;
+        margin-bottom: 6px;
+        max-width: 390px;
+    }
+
+    .Auth_50_GAPI_QuestionMarkRO_BoxClose {
+        position: absolute;
+        right: 6px;
+        top: 6px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .Auth_50_GAPI_QuestionMarkRO_BoxT1 {
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 15px;
+        font-style: normal;
+        color: #000000 !important;
+    }
+
+    .Auth_50_GAPI_QuestionMarkRO_BoxT2 {
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 15px;
+        font-style: normal;
+        color: #4472C4 !important;
+    }
+
+    .Auth_50_GAPI_QuestionMarkRO_Arrow {
+        background: #f2f1f3;
+        height: 16px;
+        width: 16px;
+        position: absolute;
+        margin-left: 53px;
+        margin-top: -18px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5);
+    }
+
+    .ProSetEntryField {
+        float: left;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -o-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -khtml-border-radius: 0px;
+        border-radius: 0px;
+        margin-bottom: 10px !important;
+        height: 30px;
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .ProSetCommentsField {
+        float: left;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -o-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -khtml-border-radius: 0px;
+        border-radius: 0px;
+        border: 1px #ddd solid;
+        margin-bottom: 10px;
+        height: 120px;
+        width: 100%;
+        padding-left: 5px;
+        font-size: 12px;
+    }
+
+    .SIpop {
+        display: none;
+    }
+
+    .UserInfo {
+        display: none;
+    }
+
+    .GNCommTopNotify {
+        display: none;
+    }
+
+    .Logout_Holder {
+        display: none;
+    }
+
+    .bookmarks_LeftTop a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .bookmarks_RightBottom a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .bookmarks_Item {
+        margin-bottom: 24px;
+        display: flex;
+        justify-content: space-between;
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .bookmarks_RightBottom {
+        width: 78%;
+    }
+
+    .bookmarks_LeftTop {
+        width: 20%;
+    }
+
+    .bookmarks_LeftTopImg img {
+        width: 100%;
+    }
+
+    .bookmarks_RightBottomTitle {
+        color: #000000;
+        font-family: source-serif-pro, 'Source Serif Pro', 'LyonDisplay-Medium', serif;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 36px;
+        margin-top: 0px;
+        margin-bottom: 4px;
+    }
+
+    .bookmarks_RightBottomDesc {
+        color: #000000;
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        overflow-wrap: break-word;
+    }
+
+    .bookmarks_RightBottomLastLine {
+        color: #757575;
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 20px;
+        margin-top: 7px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .bookmarks_RightBottomSave {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    .bookmarks_RightBottomMark {
+        position: relative;
+    }
+
+        .bookmarks_RightBottomMark i {
+            position: absolute;
+            top: -10px;
+        }
+
+    .bookmarks_RightBottomMarkCopy {
+        margin-left: 24px;
+    }
+
+
+    .TGN_site_DropMenuButtons {
+        width: 64%;
+        display: flex;
+        margin-left: 18px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+.TGN_site_DropMenuButton {
+    background: white;
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: 1px solid #eeeeee;
+    border-radius: 0px;
+    margin-right: 16px;
+    color: #949494;
+    font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.53px;
+    line-height: 22px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: none;
+}
+        .TGN_site_DropMenuButton:hover {
+            /*border: 1px solid rgba(117,117,117,0.5);
+            background-color: #F3F3F3;*/
+    color: #000000;
+        }
+
+    .TGN_site_DropMenuButtonON {
+        /*background: #0049fb;
+        border: 0px solid #0049fb;*/
+        /*color: #0049fb;*/
+    color: #000000;
+    }
+
+        .TGN_site_DropMenuButtonON:hover {
+            /*border: 1px solid #0d1b3c;
+            background-color: #0d1b3c;*/
+        /*color: #0049fb;*/
+    color: #000000;
+        }
+
+    .TGN_site_DropMenuButton .icon-left-point-arrow {
+        font-size: 12px;
+        margin-left: 2px;
+    }
+
+    .TGN_site_DropMenu {
+        position: fixed;
+        color: black;
+        margin-top: 26px;
+        margin-left: -5px;
+        border-radius: 0px;
+        text-align: left;
+        padding: 10px;
+        padding-left: 10px;
+        cursor: pointer;
+        display: none;
+        border: 1px solid rgba(117,117,117,0.5);
+        background-color: white;
+        z-index: 1;
+        text-transform: none;
+        min-width: 70px;
+    }
+
+        .TGN_site_DropMenu:before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 4px;
+            height: 14px;
+            width: 14px;
+            background: white;
+            box-sizing: border-box;
+            transform: rotate(-45deg) translate(70%);
+            border-top: inherit;
+            border-right: inherit;
+            box-shadow: inherit;
+        }
+
+    .TGN_site_DropMenuItem {
+        color: #000000;
+        font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        letter-spacing: 0.53px;
+        line-height: 26px;
+    }
+
+    .TGN_site_DropMenuItemON {
+
+    }
+
+    .TGN_site_DropMenuItem:hover {
+
+    }
+
+    .TGN_site_DropMenu.showmenu {
+        display: block;
+    }
+
+    .TGN_site_DropMenuClear {
+        font-size: 14px;
+        margin-top: 16px;
+        color: #0049fb;
+        display: none;
+    }
+
+
+
+    .TGN_DisplayM {
+        display: none;
+    }
+
+    .TGN_DisplayMT {
+        display: none;
+    }
+
+    .TGN_DisplayTD {
+        display: block;
+    }
+
+    .TGN_DisplayD {
+        display: block;
+    }
+.rotateIcon {
+    display: inline-block;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin-left: 4px;
+}
+
+    .TGN_InlineTitle {
+        font-family: source-serif-pro, 'Source Serif Pro', 'LyonDisplay-Medium', serif;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: 0px;
+        margin-top: 4px;
+        margin-bottom: 6px;
+    }
+.tgn_NowPlaying_Module_title {
+    color: #FFFFFF;
+    font-family: 'HelveticaNeueW01-75Bold','HelveticaNeue Bold','Helvetica LT Std Bold',Helvetica, source-serif-pro, 'Source Serif Pro', 'LyonDisplay-Medium', serif;
+    font-size: 26px;
+    line-height: 29px;
+    letter-spacing: -0.06px;
+    margin-top: 14px;
+}
+.tgn_NowPlaying_Module_description {
+    color: #FFFFFF;
+    font-weight: 300;
+    letter-spacing: -0.03px;
+    font-family: 'HelveticaNeueW01-55Roma','neue-haas-unica', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+    @media all and (max-width: 1020px) {
+.tgn_NowPlaying_Module_title {
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 8px;
+}
+.tgn_NowPlaying_Module_description {
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 6px;
+    margin-bottom: 0px;
+    max-width: 590px;
+}
+.TGN_site_Lightbox_Top {
+    width: 90% !important;
+    max-width: 90% !important;
+}
+.TGN_site_Lightbox_Middle {
+    width: 90% !important;
+    max-width: 90% !important;
+}
+.TGN_site_Lightbox_Bottom {
+    width: 90% !important;
+    max-width: 90% !important;
+}
+
+        .Auth_ProfileSettings_NavigationInner {
+            padding-top: 24px;
+            padding-left: 0px;
+        }
+
+        .Auth_ProfileSettings_Nav_UserName {
+            font-size: 24px;
+            line-height: 30px;
+        }
+
+        .Auth_ProfileSettings_Nav_UserMetrics {
+            font-size: 16px;
+            line-height: 19px;
+            max-width: 200px;
+        }
+
+        .TGN_site_DropMenuButtons {
+            width: 100%;
+            margin-left: 0px;
+            margin-bottom: 0px;
+        }
+
+        .TGN_site_DropMenuButton {
+            margin-bottom: 16px;
+        }
+    }
+
+    @media all and (max-width: 980px) {
+        .bookmarks_RightBottom {
+            width: 68%;
+        }
+.tgn_NowPlaying_Module_description {
+    max-width: 420px;
+}
+        .bookmarks_LeftTop {
+            width: 30%;
+        }
+
+        #AH_Holder {
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 0px;
+        }
+
+        .AH_Close {
+            top: 12px;
+            right: 31px;
+        }
+
+        .Auth_50_CTA_Left_Top {
+            display: block;
+            width: 100%;
+            height: unset;
+            padding-left: 0%;
+            padding-right: 0%;
+        }
+
+        .Auth_50_CTA_MiddleSpacer {
+            display: block;
+            width: 100%;
+        }
+
+        .Auth_50_Content_Right_Bottom {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin-bottom: 24px;
+        }
+
+        .Auth_50_Content_Right_BottomInner {
+            padding-left: 0px;
+            min-height: 0px;
+            width: 100%;
+        }
+
+        .Register_Holder {
+            width: 100%;
+        }
+
+        #RegButton {
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: auto;
+            float: none;
+            margin-top: 20px;
+        }
+
+        #WelcomeContinueButton {
+            margin-left: 0px;
+            margin-right: auto;
+            float: none;
+            margin-top: 20px;
+        }
+
+        .Register_Holder .Auth_50_LogInSignUpForm {
+            height: auto;
+            max-height: unset;
+            overflow-y: hidden;
+            margin-top: -10px;
+        }
+
+        .TGN_DisplayMT {
+            display: block;
+        }
+
+        .TGN_DisplayD {
+            display: none;
+        }
+
+        .Auth_SR_Thumb {
+            width: 100%;
+            height: 157px;
+        }
+
+        .Auth_SR_Item {
+            width: 254px;
+        }
+
+        .Auth_SR_ItemBook {
+            width: 254px;
+        }
+
+        .Auth_SR_Holder {
+            max-height: 300px;
+            width: 4000px;
+            position: relative;
+            top: -91px;
+            left: 240px;
+        }
+
+        .AH_Inner_Holder {
+            width: 633px;
+            margin-top: 24px;
+        }
+
+        .Login_Holder {
+            flex-flow: column;
+            width: 100%;
+        }
+
+        .Register_Holder {
+            flex-flow: column;
+            width: 100%;
+        }
+
+        .Welcome_Holder {
+            flex-flow: column;
+            width: 100%;
+        }
+.FAQ_Holder {
+    padding: 45px;
+}
+    }
+
+    @media all and (max-width: 680px) {
+.FAQ_Holder {
+    padding: 25px;
+    padding-top: 35px;
+}
+.liSignUpT1 {
+    font-size: 24px;
+    line-height: 26px;
+}
+.RegButton {
+    width: 248px;
+}
+.TGN_PassiveButton {
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: 16px;
+    margin-bottom: 14px;
+    height: 33px;
+}
+.pac-container {
+    margin-top: -165px;
+    margin-bottom: 48px;
+}
+
+.TGN_site_TitleDrop {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+        .TGN_InlineTitle {
+            font-size: 28px;
+            line-height: 32px;
+        }
+.tgn_NowPlaying_Module_title {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.06px;
+    margin-top: 8px;
+}
+.tgn_NowPlaying_Module_description {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 6px;
+    margin-bottom: 0px;
+}
+.TGN_site_Lightbox_Top {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+        .TGN_site_DropMenuButtonON:hover {
+            /*background: #0049fb;
+            border: 1px solid #0049fb;
+            color: white;*/
+        }
+        .SignInUpTW:hover {
+            border: 1px solid #a4a4a4;
+        }
+
+        .SignInUpFB:hover {
+            border: 1px solid #a4a4a4;
+        }
+
+        .bookmarks_Item {
+            flex-flow: column;
+        }
+
+        .bookmarks_RightBottom {
+            width: 100%;
+        }
+
+        .bookmarks_LeftTop {
+            width: 100%;
+        }
+
+        #LI_Mob_All_Error {
+            margin-top: 0px;
+        }
+
+        #txtAddressAN {
+            margin-left: 0px;
+            margin-top: 10px;
+        }
+
+        .Auth_50_FullnameBlock {
+            flex-flow: column;
+        }
+
+        .Auth_50_FirstLastnameBlock {
+            display: flex;
+            justify-content: space-between;
+            width: 288px;
+        }
+
+        #Auth_50_FirstnameBlock {
+            width: 126px;
+        }
+
+        #Auth_50_LastnameBlock {
+            width: 138px;
+        }
+
+        #RegButton {
+            width: 268px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .Auth_50_LogInSignUpToggle {
+            height: 38px;
+        }
+
+        .Auth_50_LogInSignUpForm {
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+
+        .txtEntryBox {
+            font-size: 16px;
+            letter-spacing: 0.1px;
+        }
+
+        #AS_txtUserTitle {
+            height: 27px;
+        }
+
+        .Auth_50_LISU_ToggleButton_Left_On {
+            height: 27px;
+            margin-left: 16px;
+            margin-right: 16px;
+            font-size: 16px;
+        }
+
+        .Auth_50_LISU_ToggleButton_Left_Off {
+            height: 27px;
+            margin-left: 16px;
+            margin-right: 16px;
+            font-size: 16px;
+        }
+
+        .Auth_50_LISU_ToggleButton_Right_On {
+            height: 27px;
+            font-size: 16px;
+        }
+
+        .Auth_50_LISU_ToggleButton_Right_Off {
+            height: 27px;
+            font-size: 16px;
+        }
+
+        .AH_Inner_Holder {
+            width: 320px;
+            margin-top: 16px;
+        }
+
+        .Auth_Int_Holder .li {
+            margin-top: 14px;
+        }
+
+        .Auth_Paragraph_Profile {
+            font-size: 12px;
+            line-height: 15px;
+        }
+
+        #txtAddress {
+            width: 100%;
+        }
+
+        #txtFirstName {
+            width: 100%;
+        }
+
+        #txtLastName {
+            width: 100%;
+        }
+
+        .ForgotPW {
+            position: relative;
+            top: 0px;
+            right: -3px;
+            margin-bottom: 0px;
+        }
+
+        .LoginPasswordGroup {
+            margin-bottom: 0px;
+        }
+
+        .Auth_ProfileSettings_Nav_Bar {
+            font-size: 16px;
+        }
+
+        .Auth_ProfileSettings_Nav_BarItem {
+            margin-right: 0px;
+        }
+
+        .TGN_site_ProfileSlideNavHolder {
+            height: 34px;
+        }
+
+        .Auth_ProfileSettings_Nav_BarItemTop {
+            padding-left: 3px;
+            padding-right: 3px;
+            height: 26px;
+        }
+
+        .Auth_50_InputBlock01 {
+            display: block;
+            margin-right: 0px;
+        }
+
+        .Auth_SR_Holder {
+            padding-top: 6px;
+            padding-left: 17px;
+            top: 0px;
+            left: -1px;
+            width: 100%;
+        }
+
+        .Auth_A_Thumb {
+            width: 130px;
+            height: 130px;
+            display: inline-block;
+            float: left;
+            margin-right: 10px;
+        }
+
+        .Auth_A_Item {
+            display: none;
+            margin: 10px;
+            vertical-align: top;
+            text-align: left;
+            width: auto;
+            cursor: pointer;
+            min-height: 160px;
+            padding-right: 10px;
+        }
+
+        .Auth_A_Title {
+            margin-top: 0px;
+        }
+
+        .Auth_A_AwardRight {
+            display: inline-block;
+            width: 160px;
+        }
+.Auth_SectionHeader50 {
+    font-size: 12px;
+    line-height: 15px;
+}
+        .Auth_SectionHolder {
+        }
+
+        .accountSettings_Holder {
+        }
+
+        .Auth_SectionDivider {
+        }
+
+        .Auth_50_AS_InputLine {
+        }
+
+        .txtEntryBox {
+        }
+
+        .ProSetTopics {
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        .Auth_Subs_Text {
+            /*width: 100%;*/
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        .Auth_FieldHolder {
+            margin-left: 0px !important;
+        }
+
+        .Auth_Subs_Holder {
+            /*margin-left: 0px !important;
+    display: block;*/
+        }
+
+        .Authcheckbox {
+            /*padding-left: 0px !important;*/
+        }
+
+        .Auth_Subs_OnOff {
+            /*margin-top: 16px;
+    margin-bottom: 24px;*/
+        }
+
+        .TGN_DisplayM {
+            display: block;
+        }
+
+        .TGN_DisplayTD {
+            display: none;
+        }
+
+        .Deregister_Holder {
+            padding: 5px;
+            display: none;
+            margin-top: 0;
+            max-width: 540px;
+            padding: 15px;
+            vertical-align: top;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 60px;
+            padding-bottom: 200px;
+        }
+
+        .RequestDelete_Holder {
+            padding: 5px;
+            display: none;
+            margin-top: 0;
+            max-width: 496px;
+            padding: 15px;
+            vertical-align: top;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 60px;
+            padding-bottom: 200px;
+        }
+
+        .UnsubscribeSignIn_Holder {
+            padding: 5px;
+            display: none;
+            margin-top: 0;
+            max-width: 496px;
+            padding: 30px;
+            vertical-align: top;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 60px;
+            padding-bottom: 200px;
+        }
+
+        .Auth_Paragraph {
+            font-size: 12px;
+            display: block;
+            max-width: 390px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+            font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        .Auth_Int_Right {
+            display: block;
+        }
+
+        .TGN_site_DropMenuButtons {
+            margin-bottom: 8px;
+        }
+
+        .TGN_site_DropMenuButton {
+            padding: 8px;
+            padding-left: 8px;
+            padding-right: 8px;
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-right: 8px;
+        }
+
+        .TGN_site_DropMenuItem {
+            font-size: 14px;
+        }
+    }
+
+    @media all and (max-width: 540px) {
+        .TGN_site_DropMenuButton {
+            font-size: 12px;
+            padding: 6px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .TGN_site_DropMenuItem {
+            font-size: 12px;
+        }
+.RequestDeleteTA {
+    width: 90%;
+}
+    }
+
+
+    @media all and (max-width: 500px) {
+        .Auth_Paragraph {
+            padding-left: 0px;
+        }
+
+        .accountSettings_Holder {
+        }
+
+        .LoginPasswordGroup {
+            margin-bottom: 0px;
+        }
+
+        .Auth_Paragraph_Profile {
+        }
+
+        .Auth_ProfileSettings_Nav_BarItemTop {
+            height: 20px;
+        }
+
+        .Auth_ProfileSettings_Nav_Bar {
+            font-size: 14px;
+        }
+
+        .SocialGetEmails_Holder {
+            padding: 20px;
+            display: none;
+            margin-top: 0;
+            width: 100%;
+            vertical-align: top;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 30px;
+            padding-bottom: 60px;
+            max-width: 440px;
+        }
+
+        .Auth_Subs_Holder {
+            max-width: 100%;
+        }
+
+        .AuthcheckboxTxt {
+        }
+
+        .ResetPassword_Holder {
+            padding: 5px;
+            padding-top: 30px;
+            padding-bottom: 60px;
+            max-width: 282px;
+        }
+
+        .RequestDelete_Holder {
+            padding-top: 30px;
+            padding-bottom: 60px;
+        }
+
+        .UnsubscribeSignIn_Holder {
+            padding-top: 30px;
+            padding-bottom: 60px;
+        }
+
+        .Deregister_Holder {
+            padding-top: 30px;
+            padding-bottom: 60px;
+        }
+    }
+
+    @media all and (max-width: 480px) {
+
+    }
+
+
+    @media all and (max-width: 370px) {
+
+        .txtEntryBox {
+            width: 288px;
+            font-size: 16px;
+            letter-spacing: 0.1px;
+            /*line-height: 24px;
+            height: 26px;*/
+        }
+        .Auth_ProfileSettings_Nav_BarItemBottom {
+        }
+
+        .Auth_ProfileSettings_Nav_BarItemTop {
+            padding-left: 2px;
+            padding-right: 2px;
+        }
+
+        .Auth_ProfileSettings_Nav_Bar {
+            font-size: 12px;
+        }
+
+        .Auth_LastName_Block {
+
+        }
+#AS_txtLastName {
+    width: 102px;
+}
+#AS_txtFirstName {
+    width: 102px;
+}
+        .Auth_ProfileSettings_Nav_UserName {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }

@@ -1,0 +1,375 @@
+
+.TGN_Footer_Holder {
+    background: black;
+    color: white;
+    font-family: 'HelveticaNeueW01-45Ligh','neue-haas-unica', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+    padding-top: 40px;
+    padding-bottom: 32px;
+    border-top: 0.5px solid rgba(255,255,255,0.5);
+}
+    .TGN_Footer_TopSection {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    .TGN_Footer_GridBlockLogo a {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .TGN_footer_Logo {
+        background-image: url(https://masumhasan.github.io/assets/notesbio/as/TGN_Logo-W-01.svg);
+        background-repeat: no-repeat;
+        height: 29px;
+        width: 180px;
+    }
+
+    .TGN_footer_Tbobg {
+        background-image: url(https://masumhasan.github.io/assets/notesbio/as/TGN_TBOBG-W-01.svg);
+        background-repeat: no-repeat;
+        height: 32px;
+        width: 107px;
+        margin-top: 8px;
+        margin-left: 0px;
+    }
+
+    .TGN_Footer_GridBlockParagraph {
+        font-size: 15px;
+        line-height: 26px;
+        letter-spacing: .3px;
+        margin-bottom: 10px;
+    }
+
+    .TGN_Footer_GridBlockSignature {
+        text-align: right;
+    }
+.TGN_Footer_GridBlock i {
+    background: white;
+    color: black;
+    border-radius: 3000px;
+    width: 26px;
+    height: 26px;
+    display: block;
+    font-size: 12px;
+    line-height: 26px;
+    text-align: center;
+    margin-top: 7px;
+}
+    .TGN_Footer_Personal {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 90%;
+        max-width: 420px;
+        margin-left: auto;
+        margin-right: auto;
+        display: none;
+    }
+
+    #TGN_Footer_PersonalImage {
+        width: 178px;
+        margin-top: 6px;
+    }
+
+    .TGN_Footer_BottomSection {
+        margin-top: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .TGN_Footer_BottomSectionTopLeft {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 48%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+        .TGN_Footer_BottomSectionTopLeft .TGN_Footer_GridBlock {
+            width: 100%;
+        }
+
+    .TGN_Footer_BottomSectionBottomRight {
+        width: 48%;
+    }
+
+    .TGN_Footer_GridBlock {
+        display: inline-block;
+    }
+
+    .TGN_Footer_VerticalLineDesktop {
+        display: block;
+        width: 1px;
+        background: #757575;
+    }
+
+    .TGN_Footer_LineMobile {
+        display: none;
+    }
+
+    .TGN_Footer_LineDesktop {
+        width: 100%;
+        height: 1px;
+        background: #757575;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    #TGN_Footer_WordLinks {
+        display: -ms-flexbox; /* IE 10 */
+        display: -webkit-flex; /* Safari 6.1+. iOS 7.1+ */
+        display: flex;
+        -webkit-flex-flow: wrap column; /* Safari 6.1+ */
+        flex-flow: wrap column;
+        max-height: 200px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 480px;
+    }
+    
+    a.TGN_FooterWordLink {
+        color: white;
+        font-size: 15px;
+        line-height: 15px;
+        margin-bottom: 38px;
+        text-decoration: none;
+        display: inline-block;
+        margin-right: 24px;
+    }
+    a.TGN_FooterWordLink:hover {
+        opacity:.6;
+    }
+
+    .TGN_Footer_SignupHeadline {
+        margin-bottom: 26px;
+        line-height: 15px;
+    }
+
+    .TGN_Footer_Signup {
+        display: block;
+        font-size: 15px;
+        font-weight: 400;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 400px;
+    }
+
+    #Auth_50_Form_Footer {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+
+    .footerSU {
+        height: 40px;
+        width: 114px;
+        border: 1px solid #FFFFFF;
+        border-radius: 0px;
+        color: #FFFFFF;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+        line-height: 38px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    .footerSU:hover {
+        opacity:.6;
+    }
+
+    .footerEntryBox {
+        background: black;
+        color: white;
+        border: none;
+        border-bottom: 1px solid #757575;
+        padding: 2px;
+        font-size: 15px;
+        margin-bottom: 20px !important;
+    }
+
+        .footerEntryBox:focus {
+            background: black !important;
+        }
+.TGN_Footer_GridBlock .iconBlock {
+    margin-left: 12px;
+}
+    .TGN_Footer_LastLine {
+        font-size: 12px;
+        color: #cccccc;
+        text-align: center;
+        margin-top: 28px;
+    }
+
+    a.TGN_Footer_LastLineLink {
+        color: #cccccc;
+        text-decoration: none;
+        display: inline-block;
+        margin-left: 24px;
+    }
+    a.TGN_Footer_LastLineLink:hover {
+        opacity:.6;
+    }
+
+    a.tgnlink {
+        color: white;
+        text-decoration: none;
+    }
+
+    .TGN_Footer_LastLineLinks {
+        display: inline-block;
+    }
+
+    @media all and (max-width: 1280px) {
+    }
+
+    @media all and (max-width: 1020px) {
+        .TGN_Footer_Personal {
+            max-width: 408px;
+            margin-left: 0px;
+        }
+
+        .TGN_Footer_GridBlockSignature {
+            text-align: left;
+        }
+
+        .TGN_Footer_BottomSection {
+            margin-top: 0px;
+            display: flex;
+            justify-content: center;
+            flex-flow: column;
+        }
+
+        .TGN_Footer_BottomSectionTopLeft {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 20px;
+        }
+
+        .TGN_Footer_VerticalLineDesktop {
+            width: 100%;
+            height: 2px;
+        }
+
+        .TGN_Footer_BottomSectionBottomRight {
+            width: 100%;
+        }
+
+        #TGN_Footer_WordLinks {
+            max-width: 600px;
+            width: 100%;
+            margin-left: 0px;
+            margin-right: auto;
+        }
+
+        .TGN_Footer_LastLine {
+            text-align: left;
+        }
+
+        .TGN_Footer_Signup {
+            margin-left: 0px;
+        }
+
+        .TGN_Footer_BottomSectionBottomRight {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @media all and (max-width: 980px) {
+    }
+
+    @media all and (max-width: 680px) {
+        .TGN_Footer_Holder {
+            padding-top: 24px;
+        }
+
+        .TGN_Footer_TopSection {
+            flex-flow: column;
+            margin-bottom: 24px;
+        }
+
+        .TGN_Footer_LineMobile {
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: #757575;
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+
+        .TGN_Footer_LineDesktop {
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+
+        .TGN_Footer_VerticalLineDesktop {
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+
+        .TGN_Footer_BottomSectionTopLeft {
+            padding-top: 20px;
+            padding-bottom: 0px;
+        }
+
+        a.TGN_FooterWordLink {
+            margin-bottom: 24px;
+        }
+
+        .TGN_Footer_Signup {
+            padding-top: 20px;
+            padding-bottom: 16px;
+        }
+
+        .TGN_Footer_Personal {
+            padding-top: 10px;
+            padding-bottom: 16px;
+            width: 100%;
+        }
+
+        .TGN_Footer_LastLine {
+        }
+
+        .TGN_Footer_GridBlock .iconBlock {
+        }
+
+        #TGN_Footer_WordLinks {
+            max-height: 180px;
+        }
+
+        .TGN_Footer_TopSection {
+            align-items: flex-start;
+        }
+
+        #TGN_Footer_GridBlock_Social {
+            margin-left: -12px;
+        }
+
+        .TGN_Footer_SignupHeadline {
+
+        }
+
+        .TGN_Footer_LastLineLinks {
+            display: block;
+        }
+
+        a.TGN_Footer_LastLineLink {
+            margin-left: 0px;
+            margin-right: 24px;
+        }
+    }
+
+    @media all and (max-width: 480px) {
+
+    }
