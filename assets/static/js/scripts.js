@@ -665,9 +665,9 @@ function initMasumHasan() {
                 "screenName": 'MasumHasans'
             },
             "domId": 'twitts-container',
-            "maxTweets": 3,
+            "maxTweets": 2,
             "enableLinks": true,
-            "showImages": false
+            "showImages": true
         };
         twitterFetcher.fetch(config1);
     }
