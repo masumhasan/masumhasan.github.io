@@ -15,6 +15,7 @@
 
         li {
             float: left;
+            font-family: Arial Black;
         }
 
         li a {
@@ -37,6 +38,11 @@
 
         }
 
+        td {
+            font-family: Helvetica;
+            font-size: 2rem;
+        }
+
         html {
             scroll-behavior: smooth;
         }
@@ -47,7 +53,7 @@
         }
 
         th {
-            font-size: 3ch;
+            font-size: 2rem;
             padding-top: 12px;
             padding-bottom: 12px;
             text-align: middle;
@@ -67,7 +73,7 @@
             width: 100%;
             color: white;
             text-align: right;
-            padding-right: 100px;
+
         }
 
         table,
@@ -80,7 +86,7 @@
 
 
 
-<body background="https://masumhasan.github.io/res/webp/back.jpg">
+<body background="back.jpg">
     <div style="position:fixed ;">
 
         <ul>
@@ -92,9 +98,9 @@
 
     <div style="color: white; text-align: center;font-size: larger;" id="table1">
         </br> </br> </br> </br> </br> </br> </br>
-        <h2>HTML Table 1</h2>
+        <h1>HTML Table 1</h1>
 
-        <table border="10" align="center" style="color: white;">
+        <table align="center" style="color: white;">
             <tr>
                 <th>Company</th>
                 <th>Contact</th>
@@ -140,33 +146,33 @@
 
 
 
-    <div style="color: white; text-align: center;font-weight: 400; font-size: 3ch;" id="table2">
+    <div style="color: white; text-align: center;font-weight: 400; font-size: 10px;" id="table2">
         </br> </br> </br> </br> </br> </br> </br>
         <h2>HTML Table 2</h2>
 
-        <table border="10" align="center" style="color: white;">
+        <table align="center" style="color: white;">
 
             <thead>
                 <tr>
-                    <th>Days</th>
-                    <th>Menu</th>
+                    <th>Food</th>
+                    <th>Cuisine</th>
                     <th>Price</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Sunday</td>
-                    <td>Chicken</td>
-                    <td rowspan="2">BDT 120</td>
+                    <td>Panta Bhaat + Ilish</td>
+                    <td rowspan="2">Bangladeshi</td>
+                    <td>BDT ৳ 220</td>
                 </tr>
                 <tr>
-                    <td>Monday</td>
-                    <td>Fish Curry + Rice</td>
+                    <td>Mejbaani Beef + Bhaat</td>
+                    <td>BDT ৳ 250</td>
                 </tr>
                 <tr>
-                    <td>Sunday</td>
-                    <td>Chicken + Polao</td>
-                    <td>BDT 150</td>
+                    <td>Chicken Momo</td>
+                    <td>Nepali</td>
+                    <td>BDT ৳ 150</td>
                 </tr>
             </tbody>
         </table>
