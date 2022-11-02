@@ -139,3 +139,15 @@ form .button input:hover {
 
   background: linear-gradient(-135deg, #b4039f, #ff0000);
 }
+
+
+.footer {
+  background-color: #333;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: right;
+
+}
