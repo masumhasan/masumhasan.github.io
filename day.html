@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Three.js Programmer Scene</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+      canvas {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/r129/build/three.min.js"></script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/r129/examples/js/controls/OrbitControls.js"></script>
+    <script>
+      let scene, camera, renderer, controls;
+      let pc, table, coffee;
+
+      init();
+      animate();
+
+      function init() {
+        // Create the scene
+        scene = new THREE.Scene();
+
+        // Set up the camera
+        camera = new THREE.PerspectiveCamera(
+          75,
+          window.innerWidth / window.innerHeight,
+          0.1,
+          1000
+        );
+        camera.position.z = 15;
+
+        // Set up the renderer
+        renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        // Set up the OrbitControls
+        controls = new THREE.OrbitControls(camera, renderer.domElement);
+
+        // Create the programmer mesh
+        const pcGeometry = new THREE.BoxGeometry(3, 3, 3);
+        const pcMaterial = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+        pc = new THREE.Mesh(pcGeometry, pcMaterial);
+        pc.position.y = -2;
+        scene.add(pc);
+
+        // Create the table mesh
+        const tableGeometry = new THREE.BoxGeometry(20, 1, 10);
+        const tableMaterial = new THREE.MeshBasicMaterial({ color: 0x663300 });
+        table = new THREE.Mesh(tableGeometry, tableMaterial);
+        scene.add(table);
+
+        // Create the coffee mesh
+        const coffeeGeometry = new THREE.CylinderGeometry(2, 2, 4, 32);
+        const coffeeMaterial = new THREE.MeshBasicMaterial({ color: 0x663300 });
+        coffee = new THREE.Mesh(coffeeGeometry, coffeeMaterial);
+        coffee.position.set(-5, -1, 0);
+        scene.add(coffee);
+
+        // Add drag and drop functionality to the coffee mesh
+        const raycaster = new THREE.Raycaster();
+        const mouse = new THREE.Vector2();
+        let isDragging = false;
+        function onMouseDown(event) {
+          event.preventDefault();
+          mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+          mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+          raycaster.setFromCamera(mouse, camera);
+          const intersects = raycaster.intersectObject(coffee);
+          if (intersects.length > 0) {
+            isDragging = true;
+          }
+        }
+        function onMouseUp() {
+          isDragging = false;
+        }
+        function onMouseMove(event) {
+          if (isDragging) {
+            mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+            mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+            const newPosition = raycaster.intersectObject(table)[0].point;
+            coffee.position.copy(newPosition);
+          }
+        }
+        window.addEventListener("mousedown", onMouseDown
+);
+    window.addEventListener("mouseup", onMouseUp);
+    window.addEventListener("mousemove", onMouseMove, false);
+    window.addEventListener("touchstart", onMouseDown);
+    window.addEventListener("touchend", onMouseUp);
+    window.addEventListener("touchmove", onMouseMove, false);
+  }
+
+  function animate() {
+    requestAnimationFrame(animate);
+
+    // Rotate the coffee mesh
+    coffee.rotation.y += 0.01;
+
+    // Render the scene
+    renderer.render(scene, camera);
+  }
+</script>
+    
+  </body>
+</html> 
