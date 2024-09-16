@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+
+    <student id="0203014011">
+        <name>Nur Hasan Masum</name>
+        <email>nur.hasan.cse@ulab.edu.bd</email>
+        <address>Beribadh Road , Mohammadpur</address>
+    </student>
+
+    <student id="0193014067">
+        <name>Asib Sikder Pranto</name>
+        <email>asib.sikder.cse@ulab.edu.bd</email>
+        <address>Beribadh Road , Mohammadpur</address>
+    </student>
+
+    <student id="0193014035">
+        <name>Jaohar Raihan</name>
+        <email>jaohar.raihan.cse@ulab.edu.bd</email>
+        <address>Beribadh Road , Mohammadpur</address>
+    </student>
+</students>

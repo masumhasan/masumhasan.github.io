@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Information Lookup</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      table {
+        width: 50%;
+        margin-top: 20px;
+        border-collapse: collapse;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Enter Student ID</h2>
+    <form id="student-form">
+      <label for="student-id">Student ID:</label>
+      <input type="text" id="student-id" maxlength="10" required />
+      <button type="submit">Get Info</button>
+    </form>
+
+    <table id="student-info" style="display: none">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Address</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="name"></td>
+          <td id="email"></td>
+          <td id="address"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script>
+      document
+        .getElementById("student-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          let studentId = document.getElementById("student-id").value;
+
+          // Fetch data from the XML file
+          fetch("data.xml")
+            .then((response) => response.text())
+            .then((xmlString) => {
+              // Parse the XML
+              let parser = new DOMParser();
+              let xmlDoc = parser.parseFromString(xmlString, "text/xml");
+
+              // Find the student by ID
+              let student = xmlDoc.querySelector(`student[id="${studentId}"]`);
+
+              if (student) {
+                // Populate the table with student info
+                document.getElementById("name").textContent =
+                  student.querySelector("name").textContent;
+                document.getElementById("email").textContent =
+                  student.querySelector("email").textContent;
+                document.getElementById("address").textContent =
+                  student.querySelector("address").textContent;
+
+                // Show the table
+                document.getElementById("student-info").style.display = "table";
+              } else {
+                alert("Student not found");
+              }
+            })
+            .catch((error) => {
+              console.error("Error fetching the XML file:", error);
+            });
+        });
+    </script>
+  </body>
+</html>
