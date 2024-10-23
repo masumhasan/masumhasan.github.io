@@ -1,31 +1,78 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoomable and Movable Image</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+      #image-container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+      }
+      #image {
+        transform-origin: center;
+        transition: transform 0.2s;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="image-container">
+      <img id="image" src="b.jpeg" alt="Zoomable Image" />
+    </div>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title></title>
-  <meta http-equiv="refresh"
-    content="0; url=https://lucid.app/lucidspark/a99b1de9-0516-456b-beb5-786102eaee2d/edit?invitationId=inv_398bfba1-97fb-428f-8a76-1e62e3a578ea" />
+    <script>
+      const image = document.getElementById("image");
+      let scale = 1;
+      let translateX = 0;
+      let translateY = 0;
+      const zoomSpeed = 0.1;
+      const moveSpeed = 10;
 
-  <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="" />
-</head>
+      // Function to update image transform (zoom and move)
+      function updateTransform() {
+        image.style.transform = `scale(${scale}) translate(${translateX}px, ${translateY}px)`;
+      }
 
-<body>
-  <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
-
-  <script src="" async defer></script>
-</body>
-
+      // Zoom in and out with + and - keys
+      document.addEventListener("keydown", (event) => {
+        switch (event.key) {
+          case "+":
+          case "=": // to handle = key for zoom in
+            scale += zoomSpeed;
+            updateTransform();
+            break;
+          case "-":
+            scale = Math.max(0.1, scale - zoomSpeed); // Prevent scale from going below 0.1
+            updateTransform();
+            break;
+          case "ArrowUp":
+            translateY += moveSpeed;
+            updateTransform();
+            break;
+          case "ArrowDown":
+            translateY -= moveSpeed;
+            updateTransform();
+            break;
+          case "ArrowLeft":
+            translateX += moveSpeed;
+            updateTransform();
+            break;
+          case "ArrowRight":
+            translateX -= moveSpeed;
+            updateTransform();
+            break;
+        }
+      });
+    </script>
+  </body>
 </html>
