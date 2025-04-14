@@ -911,6 +911,7 @@ body.vjs-full-window {
     bottom-top {
         transform: translate(100px,0);
         opacity: 0
+
     }
 
     200-top {
@@ -921,6 +922,9 @@ body.vjs-full-window {
 
 .scroll-left {
     -skrollr-animation-name: scroll-left
+
+
+    /* Ensure proper syntax with a semicolon */
 }
 
 @-skrollr-keyframes scroll-left-big {
@@ -943,6 +947,7 @@ body.vjs-full-window {
     bottom-top {
         transform: translate(100px,0);
         opacity: 0
+        
     }
 
     -200-bottom {
