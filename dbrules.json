@@ -1,0 +1,13 @@
+
+
+{
+  "rules": {
+    "contactMessages": {
+      ".read": "auth != null", // Only authenticated users can read messages (optional, you could make this public too)
+      ".write": true // Anyone can write messages to this path
+    },
+    // Other paths would follow the default rules or your specific rules
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}

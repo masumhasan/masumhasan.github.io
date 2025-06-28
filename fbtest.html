@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Your Contact Page</title>
+</head>
+
+<body>
+
+    <!-- Your existing HTML content for the contact form -->
+    <form id="contactForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Firebase SDKs - Make sure to use the latest versions! -->
+    <script src="https://www.gstatic.com/firebasejs/10.X.X/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.X.X/firebase-database-compat.js"></script>
+
+    <script>
+        // Your Firebase project configuration
+        const firebaseConfig = {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "YOUR_AUTH_DOMAIN",
+            projectId: "masum-s-bot", // This should match your project ID!
+            storageBucket: "YOUR_STORAGE_BUCKET",
+            messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+            appId: "YOUR_APP_ID",
+            databaseURL: "YOUR_DATABASE_URL" // Important for Realtime Database
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        // Get a reference to the Realtime Database service
+        const database = firebase.database();
+
+        // Now, let's handle the form submission!
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent the default form submission behavior
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Push the message to a new unique node in your 'contactMessages' path
+            database.ref('contactMessages').push({
+                name: name,
+                email: email,
+                message: message,
+                timestamp: Date.now() // Record when the message was sent
+            })
+                .then(() => {
+                    alert('Message sent successfully!');
+                    // Optionally clear the form
+                    document.getElementById('contactForm').reset();
+                })
+                .catch((error) => {
+                    console.error("Error writing message: ", error);
+                    alert('Failed to send message. Please try again.');
+                });
+        });
+    </script>
+</body>
+
+</html>
