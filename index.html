@@ -34,30 +34,7 @@
       }
     </script>
 
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
 
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyDjrfJVVJOSMHdfIs7lF1wwo-ZH1drUdEA",
-      authDomain: "masum-s-bot.firebaseapp.com",
-      databaseURL: "https://masum-s-bot-default-rtdb.asia-southeast1.firebasedatabase.app",
-      projectId: "masum-s-bot",
-      storageBucket: "masum-s-bot.firebasestorage.app",
-      messagingSenderId: "1061787278425",
-      appId: "1:1061787278425:web:7ca47ae80f931f7f5c6548",
-      measurementId: "G-5MRJL4H3J0"
-    };
-
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-  </script>
 
 
   <meta name="viewport"
@@ -404,7 +381,7 @@
           <h2>Shining things</h2>
           <div class="achievements">
             <div class="achievement">
-              <div class="num">5</div>
+              <div class="num">4</div>
               <h3>Github Badges</h3>
               <div style="display: flex; gap: 10px;">
                 <img src="files/images/badges/gh1.png" alt="GitHub Badge 1" style="height:40px;">
@@ -419,7 +396,7 @@
             </div>
             <div class="achievement">
               <div class="num">82</div>
-              <h3>Repositories</h3>
+               <img src="files/images/repo.png" alt="GitHub Repo" style="width:150px;">
             </div>
             <div class="achievement">
               <div class="num">128</div>
@@ -559,11 +536,12 @@
                   alt="project 1"
                   style="width:60px;height:60px;object-fit:contain;">
                 <div class="project-content">
-                  <p class="project-desc"><strong>Smart IoT Pet Feeder with Google Assistant integration</strong></p>
-                  <div class="project-meta">By NUR HASAN MASUM | 18 August 2024 | project</div>
-                  <p class="project-desc">Smart IoT Pet Feeder with Google Assistant integration and FireBase
+                  <p class="project-desc"><strong>gBaymax: A Lightweight Offline Healthcare & Personal Assistant Powered by Gemma 3n</strong></p>
+                  <div class="project-meta">By NUR HASAN MASUM | 18 July 2025 | project</div>
+                  <p class="project-desc">
+                    gBaymax is designed to provide essential healthcare assistance without relying on constant internet connectivity. Leveraging the power of Gemma 3n, it offers features like medication reminders, health tracking, and personalized wellness tips, all while ensuring user privacy and data security.
                   </p>
-                  <a class="read-btn" href="https://github.com/masumhasan/" target="_blank">Visit Project </a>
+                  <a class="read-btn" href="https://github.com/users/masumhasan/projects/11/" target="_blank">Visit Project </a>
                 </div>
               </div>
               <div class="project-item">
@@ -815,68 +793,26 @@
             </div>
           </div>
         </div>
-        <div class="binarypoets-block-contact">
-          <form method="POST" class="binarypoets_contact_form" id="contactForm"></form>
-            <div class="fields">
-              <input type="text" name="name" placeholder="Name" class="required" required />
-              <input type="email" name="email" placeholder="Email" class="required" required />
-              <textarea name="message" cols="80" rows="10" placeholder="Message" class="required" required></textarea>
-            </div>
-            <input type="submit" value="submit" />
-            <div id="formStatus" style="margin-top:10px;"></div>
-          </form>
-        </div>
-        <script type="module">
-          import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-database.js";
-          import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
-          // Firebase config (should match the one in your <head>)
-          const firebaseConfig = {
-            apiKey: "AIzaSyDjrfJVVJOSMHdfIs7lF1wwo-ZH1drUdEA",
-            authDomain: "masum-s-bot.firebaseapp.com",
-            databaseURL: "https://masum-s-bot-default-rtdb.asia-southeast1.firebasedatabase.app",
-            projectId: "masum-s-bot",
-            storageBucket: "masum-s-bot.firebasestorage.app",
-            messagingSenderId: "1061787278425",
-            appId: "1:1061787278425:web:7ca47ae80f931f7f5c6548",
-            measurementId: "G-5MRJL4H3J0"
-          };
-          // Initialize Firebase (only if not already initialized)
-          let app;
-          try {
-            app = initializeApp(firebaseConfig);
-          } catch (e) {
-            // Already initialized
-          }
-          const db = getDatabase();
+        
 
-          document.getElementById('contactForm').addEventListener('submit', async function (e) {
-            e.preventDefault();
-            const name = this.name.value.trim();
-            const email = this.email.value.trim();
-            const message = this.message.value.trim();
-            const status = document.getElementById('formStatus');
-            if (!name || !email || !message) {
-              status.textContent = "Please fill in all fields.";
-              status.style.color = "red";
-              return;
-            }
-            try {
-              await push(ref(db, 'contacts'), { name, email, message, timestamp: Date.now() });
-              status.textContent = "Thank you! Your message has been sent.";
-              status.style.color = "green";
-              this.reset();
-            } catch (err) {
-              status.textContent = "Error sending message. Please try again.";
-              status.style.color = "red";
-            }
-          });
-        </script>
+      <div class="binarypoets-block-contact">
+        <form method="POST" class="binarypoets_contact_form">
+          <div class="fields">
+            <input type="text" name="name" placeholder="Name" class="required" />
+            <input type="email" name="email" placeholder="Email" class="required" />
+            <textarea name="message" cols="80" rows="10" placeholder="Message" class="required"></textarea>
+          </div>
+          <input type="submit" value="submit" />
+        </form>
+      </div>
 
       </div>
-    </div>
+    </div> <!-- end of .pagesection__content -->
+  </div> <!-- end of .pagesection -->
+   
 
 
-  </div>
+  </div> <!-- end of #main -->
 
 
 
