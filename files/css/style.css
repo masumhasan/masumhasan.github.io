@@ -1,6 +1,5 @@
 body {
-  font-family: 'Oxygen', sans-serif;
-
+  font-family: "Oxygen", sans-serif;
 
   color: #000;
 }
@@ -9,9 +8,9 @@ html {
   background: #f1efed;
 }
 
-html.loading #logo, 
+html.loading #logo,
 html.loading .start-project,
-html.loading #menu-toggler, 
+html.loading #menu-toggler,
 html.loading .pagesection__title span {
   opacity: 0;
   transition-duration: 1.5s;
@@ -35,7 +34,6 @@ html.loading #navigation {
   transition: none;
 }
 
-
 /* hide scrollbar */
 body {
   -ms-overflow-style: none;
@@ -43,7 +41,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-  display: none;      
+  display: none;
 }
 
 .pagesection__content::-webkit-scrollbar {
@@ -120,7 +118,7 @@ h1 a img {
   left: 100%;
   height: 100vh;
   height: 100%;
-  background: #AAAEB3;
+  background: #aaaeb3;
   background: #f1efed;
   z-index: 1;
 }
@@ -141,7 +139,7 @@ h1 a img {
     with the ScrollMagic pin for the team members, don't know why still
   */
   /* increase it to 3 to work with the animationBoard element */
-  z-index: 3; 
+  z-index: 3;
   flex: 0 0 auto;
   width: 48px;
   background: #f1efed;
@@ -182,7 +180,7 @@ h1 a img {
   padding-right: 50px;
 }
 
-.pagesection__content.portfolio-item  {
+.pagesection__content.portfolio-item {
   padding-right: 50px;
   background: transparent;
   flex-grow: 0;
@@ -232,10 +230,11 @@ h1 a img {
   position: relative;
   overflow: hidden;
   border-radius: 25px;
-  margin:4vh 0 4vh 30px;
+  margin: 4vh 0 4vh 30px;
 }
 
-.binarypoets-block-picture img, .binarypoets-block-picture video {
+.binarypoets-block-picture img,
+.binarypoets-block-picture video {
   height: 100%;
   object-fit: cover;
   position: absolute;
@@ -248,7 +247,6 @@ h1 a img {
 }
 
 .binarypoets-block-picture video {
-  
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -258,7 +256,8 @@ h1 a img {
   max-width: none;
 }
 
-.binarypoets-block-services, .binarypoets-block-processes {
+.binarypoets-block-services,
+.binarypoets-block-processes {
   flex: 0 0 auto;
   display: flex;
   flex-direction: column;
@@ -276,24 +275,27 @@ h1 a img {
   width: 100%;
 }
 
-.binarypoets-block-services__summary h2, .binarypoets-block-processes__summary h2 {
+.binarypoets-block-services__summary h2,
+.binarypoets-block-processes__summary h2 {
   color: #000;
   font-size: 2.2vh;
   margin-bottom: 20px;
 }
 
-.binarypoets-block-services__summary p, .binarypoets-block-processes__summary p {
+.binarypoets-block-services__summary p,
+.binarypoets-block-processes__summary p {
   font-size: 46px;
   font-size: 5.1vh;
   letter-spacing: -0.01vw;
-  color:  #222;
+  color: #222;
   line-height: 125%;
   font-weight: 500;
   width: 70vh;
   margin-bottom: 10vh;
 }
 
-.binarypoets-block-services__services, .binarypoets-block-processes__processes {
+.binarypoets-block-services__services,
+.binarypoets-block-processes__processes {
   display: flex;
   padding-bottom: 100px;
 }
@@ -320,11 +322,10 @@ h1 a img {
 }
 
 .binarypoets-block-services__services .service img {
-/*  position: relative;
+  /*  position: relative;
   left: -20px;
   margin-top: 50px;
   width: 100px;*/
-
 }
 
 .binarypoets-block-projects {
@@ -359,7 +360,8 @@ h1 a img {
   display: block;
 }
 
-.binarypoets-block-projects__project .parallax-frame img, .binarypoets-block-projects__project .parallax-frame video {
+.binarypoets-block-projects__project .parallax-frame img,
+.binarypoets-block-projects__project .parallax-frame video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -421,7 +423,6 @@ h1 a img {
   width: 100vh;
   height: calc(100vh - 240px);
   height: 69vh;
-
 }
 
 .binarypoets-block-projects__project--size-medium {
@@ -529,7 +530,7 @@ h1 a img {
   min-width: 1400px;
   height: 100%;
   display: grid;
-  background: no-repeat url(../images/%40stock/explode-bg-1.png);
+  background: no-repeat url(../images/explode-bg-1.png);
   background-size: contain;
   grid-template-columns: repeat(20, 50px);
   grid-template-rows: repeat(20, 5%);
@@ -681,7 +682,6 @@ h1 a img {
   max-width: 150px;
 }
 
-
 .binarypoets-block-testimonials .short-text {
   margin-bottom: 30px;
   font-weight: 500;
@@ -690,7 +690,7 @@ h1 a img {
 }
 
 .binarypoets-block-testimonials .short-text a {
-  color:  #000;
+  color: #000;
   text-decoration: underline;
 }
 
@@ -915,7 +915,6 @@ h1 a img {
   text-decoration: underline;
 }
 
-
 .binarypoets-block-portfolio-item-header {
   display: flex;
   flex-direction: row;
@@ -948,15 +947,15 @@ h1 a img {
   margin-top: 20px;
 }
 
-.binarypoets-block-portfolio-item-header .meta  li {
+.binarypoets-block-portfolio-item-header .meta li {
   position: relative;
 }
 
-.binarypoets-block-portfolio-item-header .meta  li.roles {
+.binarypoets-block-portfolio-item-header .meta li.roles {
   margin-top: 30px;
 }
 
-.binarypoets-block-portfolio-item-header .meta  li strong {
+.binarypoets-block-portfolio-item-header .meta li strong {
   transform: translateX(-100%);
   position: absolute;
   padding-right: 10px;
@@ -1098,7 +1097,7 @@ h1 a img {
 .pagesection__content .image.top {
   align-self: flex-start;
   padding-top: 80px;
-} 
+}
 
 .pagesection__content .image.center {
   align-self: center;
@@ -1131,9 +1130,7 @@ h1 a img {
   flex-grow: 1;
 }
 
-
 @media screen and (max-width: 1023px) {
-
   html.loading #navigation {
     transform: none;
     position: static;
@@ -1170,7 +1167,7 @@ h1 a img {
     height: 0;
   }
 
-  html.loading .pagesection__content.portfolio-item  {
+  html.loading .pagesection__content.portfolio-item {
     padding-bottom: 0;
   }
 
@@ -1179,7 +1176,6 @@ h1 a img {
       1. change .pagesection and #navigation's flex-grow to 0
 
   */
-
 
   h2 {
     font-size: 5vw;
@@ -1361,30 +1357,35 @@ h1 a img {
     overflow: hidden;
   }
 
-  .binarypoets-block-picture img, .binarypoets-block-picture video {
+  .binarypoets-block-picture img,
+  .binarypoets-block-picture video {
     position: static;
     max-width: 100%;
     display: block;
   }
 
-  .binarypoets-block-services, .binarypoets-block-processes {
+  .binarypoets-block-services,
+  .binarypoets-block-processes {
     width: 100%;
     display: block;
     padding: 0;
     padding-top: 60px;
   }
 
-  .binarypoets-block-services__summary, .binarypoets-block-processes__summary {
+  .binarypoets-block-services__summary,
+  .binarypoets-block-processes__summary {
     margin-left: 0;
     width: auto;
   }
 
-  .binarypoets-block-services__summary h2, .binarypoets-block-processes__summary h2 {
+  .binarypoets-block-services__summary h2,
+  .binarypoets-block-processes__summary h2 {
     margin-left: 5%;
     font-size: 20px;
   }
 
-  .binarypoets-block-services__summary p, .binarypoets-block-processes__summary p {
+  .binarypoets-block-services__summary p,
+  .binarypoets-block-processes__summary p {
     margin-left: 20%;
     margin-top: 30px;
     margin-bottom: 60px;
@@ -1395,7 +1396,8 @@ h1 a img {
     width: 75%;
   }
 
-  .binarypoets-block-services__services, .binarypoets-block-processes__processes {
+  .binarypoets-block-services__services,
+  .binarypoets-block-processes__processes {
     display: block;
     margin-top: 40px;
     padding-bottom: 50px;
@@ -1416,8 +1418,6 @@ h1 a img {
   .binarypoets-block-services__services .service h3 {
     font-size: 3.2vw;
   }
-
-
 
   .binarypoets-block-projects {
     display: block;
@@ -1447,7 +1447,7 @@ h1 a img {
     margin-top: 30px;
   }
 
-  .binarypoets-block-projects__project .parallax-frame  {
+  .binarypoets-block-projects__project .parallax-frame {
     border-radius: 20px;
     display: block;
   }
@@ -1468,16 +1468,16 @@ h1 a img {
     height: auto;
   }
 
-/*  .binarypoets-block-projects__project--size-large img {
+  /*  .binarypoets-block-projects__project--size-large img {
     height: 320px;
   }*/
 
   .binarypoets-block-projects__project--size-medium {
     width: 55vw;
-    height: 43vw ;
+    height: 43vw;
   }
 
-/*  .binarypoets-block-projects__project--size-medium img {
+  /*  .binarypoets-block-projects__project--size-medium img {
     height: 210px;
   }
 */
@@ -1486,11 +1486,12 @@ h1 a img {
     height: 25vw;
   }
 
-/*  .binarypoets-block-projects__project--size-small img {
+  /*  .binarypoets-block-projects__project--size-small img {
     height: 20vw;
   }*/
 
-  .binarypoets-block-projects__project--size-small .binarypoets-block-projects__metas {
+  .binarypoets-block-projects__project--size-small
+    .binarypoets-block-projects__metas {
     display: none;
   }
 
@@ -1513,7 +1514,6 @@ h1 a img {
     width: 30vw;
     line-height: 140%;
   }
-
 
   .binarypoets-block-philosphy {
     display: block;
@@ -1539,7 +1539,6 @@ h1 a img {
     font-weight: 500;
     color: #222;
     width: 75%;
-
   }
 
   .binarypoets-block-philosphy .philosphies {
@@ -1606,15 +1605,15 @@ h1 a img {
   .binarypoets-block-achievements .achievements .achievement .num {
     font-size: 8vw;
     line-height: 125%;
-}
+  }
 
-.binarypoets-block-achievements .achievements .achievement h3 {
-    font-size: 3.2vw
-}
+  .binarypoets-block-achievements .achievements .achievement h3 {
+    font-size: 3.2vw;
+  }
 
   .binarypoets-block-achievements .achievements .achievement:nth-child(even) {
     margin-left: 10%;
-  } 
+  }
 
   .binarypoets-block-achievements .achievements .achievement:nth-child(2) {
     margin-top: -20px;
@@ -1673,7 +1672,6 @@ h1 a img {
     font-size: 3.2vw;
     margin-top: 15px;
   }
-
 
   .binarypoets-block-team-members .members .member .info .job-title {
     font-size: 14px;
@@ -1744,7 +1742,7 @@ h1 a img {
 
   .binarypoets-block-contact .info h3 {
     font-size: 20px;
-    color:  #000;
+    color: #000;
   }
 
   .binarypoets-block-contact h3:nth-of-type(2) {
@@ -1752,9 +1750,9 @@ h1 a img {
   }
 
   .binarypoets-block-contact .info {
-     margin-left: 20%;
-     margin-top: 0;
-     margin-bottom: 100px;
+    margin-left: 20%;
+    margin-top: 0;
+    margin-bottom: 100px;
   }
 
   .binarypoets-block-contact ul {
@@ -1769,19 +1767,19 @@ h1 a img {
 
   .binarypoets-block-contact form .fields {
     width: 100%;
-
   }
 
-  .binarypoets-block-contact form .fields input, .binarypoets-block-contact form .fields textarea {
+  .binarypoets-block-contact form .fields input,
+  .binarypoets-block-contact form .fields textarea {
     font-size: 3.2vw;
   }
-   .binarypoets-block-contact form > input {
-        margin: 50px auto;
-        display: inherit;
-        font-size: 3.2vw;
-        width: 18vw;
-        height: 18vw;
-   }
+  .binarypoets-block-contact form > input {
+    margin: 50px auto;
+    display: inherit;
+    font-size: 3.2vw;
+    width: 18vw;
+    height: 18vw;
+  }
 
   .binarypoets-block-blog-posts {
     display: block;
@@ -1793,7 +1791,7 @@ h1 a img {
     padding-bottom: 30px;
   }
 
-  .binarypoets-block-blog-posts__post { 
+  .binarypoets-block-blog-posts__post {
     border-right: none;
     padding: 0;
     display: block;
@@ -1838,7 +1836,7 @@ h1 a img {
     padding-bottom: 80px;
   }
 
-  .pagesection__content.portfolio-item  {
+  .pagesection__content.portfolio-item {
     padding-right: 0;
     padding-bottom: 80px;
     top: 0;
@@ -1853,7 +1851,7 @@ h1 a img {
     display: none;
   }
 
-  .close-button { 
+  .close-button {
     position: relative;
     width: 60px;
     min-height: 60px;
@@ -1875,12 +1873,10 @@ h1 a img {
     transform: translate(-50%, -50%) rotate(-45deg);
   }
 
-
   .close-button:hover {
     transform: scale(0.9);
-    transition:  scale 0.3s ease-in-out;
+    transition: scale 0.3s ease-in-out;
   }
-
 
   .binarypoets-block-portfolio-item-header .image-and-title {
     width: 100%;
@@ -1926,7 +1922,8 @@ h1 a img {
     height: auto;
   }
 
-  .binarypoets-block-portfolio-item-image img, .binarypoets-block-portfolio-item-image.vertical img {
+  .binarypoets-block-portfolio-item-image img,
+  .binarypoets-block-portfolio-item-image.vertical img {
     width: 100%;
     height: auto;
   }
@@ -1955,8 +1952,4 @@ h1 a img {
   .binarypoets-block-portfolio-nav a {
     font-weight: bold;
   }
-
 }
-
-
-
