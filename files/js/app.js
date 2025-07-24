@@ -225,22 +225,66 @@ Project.prototype.fetchData = function () {
         this.data = data;
 
         let parser = new DOMParser();
+        let parsedDoc = parser.parseFromString(this.data, "text/html");
+
+        // Debug: log the fetched URL and check what elements are available
+        console.log("Fetching data from:", this.link.href);
+        console.log(
+          "Available elements in fetched HTML:",
+          parsedDoc.querySelectorAll("*").length
+        );
+        console.log(
+          "Body content:",
+          parsedDoc.body
+            ? parsedDoc.body.innerHTML.substring(0, 200) + "..."
+            : "No body found"
+        );
 
         // for horizontal
-        this.itemEl = parser
-          .parseFromString(this.data, "text/html")
-          .querySelector(".pagesection__content");
-        this.color = this.itemEl.dataset.color;
+        this.itemEl = parsedDoc.querySelector(".pagesection__content");
+
+        if (!this.itemEl) {
+          // Try alternative selectors that might exist in the fetched content
+          this.itemEl =
+            parsedDoc.querySelector(".content") ||
+            parsedDoc.querySelector("main") ||
+            parsedDoc.querySelector(".main-content") ||
+            parsedDoc.querySelector("body > div") ||
+            parsedDoc.body;
+
+          if (this.itemEl) {
+            console.warn(
+              "Using fallback element:",
+              this.itemEl.className || this.itemEl.tagName
+            );
+          } else {
+            console.error(
+              "Could not find .pagesection__content or any fallback content in fetched data"
+            );
+            console.error(
+              "Available classes:",
+              Array.from(parsedDoc.querySelectorAll("[class]")).map(
+                (el) => el.className
+              )
+            );
+            return;
+          }
+        }
+
+        this.color = this.itemEl.dataset.color || "#000000"; // Default color if not found
         this.itemEl.style.display = "none";
         this.section.el.append(this.itemEl);
         this.goBackLink = this.itemEl.querySelector("a.go-back");
-        this.goBackLink.addEventListener(
-          "click",
-          function (event) {
-            event.preventDefault();
-            this.hideItem();
-          }.bind(this)
-        );
+
+        if (this.goBackLink) {
+          this.goBackLink.addEventListener(
+            "click",
+            function (event) {
+              event.preventDefault();
+              this.hideItem();
+            }.bind(this)
+          );
+        }
 
         this.itemEl.addEventListener(
           "wheel",
@@ -256,20 +300,43 @@ Project.prototype.fetchData = function () {
         );
 
         // for vertical
-        this.itemElVertical = parser
-          .parseFromString(this.data, "text/html")
-          .querySelector(".pagesection__content");
+        this.itemElVertical = parsedDoc.querySelector(".pagesection__content");
+
+        if (!this.itemElVertical) {
+          // Try the same fallback logic for vertical mode
+          this.itemElVertical =
+            parsedDoc.querySelector(".content") ||
+            parsedDoc.querySelector("main") ||
+            parsedDoc.querySelector(".main-content") ||
+            parsedDoc.querySelector("body > div") ||
+            parsedDoc.body;
+
+          if (this.itemElVertical) {
+            console.warn(
+              "Using fallback element for vertical mode:",
+              this.itemElVertical.className || this.itemElVertical.tagName
+            );
+          } else {
+            console.error(
+              "Could not find .pagesection__content or any fallback content in fetched data for vertical mode"
+            );
+            return;
+          }
+        }
+
         this.itemElVertical.style.display = "none";
         this.el.after(this.itemElVertical);
         this.closeLink = this.itemElVertical.querySelector(".close-project");
 
-        this.closeLink.addEventListener(
-          "click",
-          function (event) {
-            event.preventDefault();
-            this.hideItem();
-          }.bind(this)
-        );
+        if (this.closeLink) {
+          this.closeLink.addEventListener(
+            "click",
+            function (event) {
+              event.preventDefault();
+              this.hideItem();
+            }.bind(this)
+          );
+        }
       }.bind(this)
     );
 };
