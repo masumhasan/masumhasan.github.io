@@ -2546,7 +2546,7 @@ body {
     position: absolute;
     left: 530px;
     top: 150px;
-    background-image: url(biobg.png);
+    background-image: url(bio-bg.png);
     background-position: -1481px -443px;
     width: 280px;
     height: 346px;
@@ -2556,7 +2556,7 @@ body {
     position: absolute;
     left: 182px;
     top: 249px;
-    background-image: url(biobg.png);
+    background-image: url(bio-bg.png);
     background-position: -1105px 0;
     width: 185px;
     height: 449px;
