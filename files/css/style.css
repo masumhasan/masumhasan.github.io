@@ -1330,18 +1330,18 @@ h1 a img {
   }
 
   .binarypoets-block-title h2 {
-    margin-left: 20%;
-    width: 75%;
-    margin-bottom: ;
+    margin-left: 8%;
+    width: 85%;
+    /* margin-bottom: ; */
   }
 
   .binarypoets-block-title.long-title h2 {
-    width: 75%;
+    width: 85%;
     margin-bottom: 80px;
   }
 
   .binarypoets-block-title p {
-    margin-left: 20%;
+    margin-left: 8%;
     padding: 0;
   }
 
@@ -1386,14 +1386,14 @@ h1 a img {
 
   .binarypoets-block-services__summary p,
   .binarypoets-block-processes__summary p {
-    margin-left: 20%;
+    margin-left: 8%;
     margin-top: 30px;
     margin-bottom: 60px;
     font-size: 5vw;
     line-height: 125%;
     font-weight: 500;
     color: #222;
-    width: 75%;
+    width: 85%;
   }
 
   .binarypoets-block-services__services,
@@ -1405,10 +1405,10 @@ h1 a img {
 
   .binarypoets-block-services__services .service {
     margin-bottom: 50px;
-    margin-left: 20%;
-    width: 75%;
+    margin-left: 8%;
+    width: 100%;
     min-width: 75%;
-    max-width: 75%;
+    max-width: 100%;
   }
 
   .binarypoets-block-services__services .service p {
@@ -1532,13 +1532,13 @@ h1 a img {
   }
 
   .binarypoets-block-philosphy .summary {
-    margin-left: 20%;
+    margin-left: 8%;
     margin-top: 20px;
     margin-bottom: 60px;
     font-size: 5vw;
     font-weight: 500;
     color: #222;
-    width: 75%;
+    width: 85%;
   }
 
   .binarypoets-block-philosphy .philosphies {
@@ -1693,14 +1693,14 @@ h1 a img {
   }
 
   .binarypoets-block-testimonials .summary {
-    margin-left: 20%;
+    margin-left: 8%;
     margin-top: 20px;
     margin-bottom: 60px;
     font-size: 5vw;
     line-height: 125%;
     font-weight: 500;
     color: #222;
-    width: 75%;
+    width: 85%;
   }
 
   .binarypoets-block-testimonials .logos {

@@ -1,3 +1,4 @@
+// whole script strict mode
 "use strict";
 
 let page = {
