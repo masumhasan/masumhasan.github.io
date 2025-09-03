@@ -471,7 +471,7 @@ h1 a img {
 }
 
 .blahlab-block-philosphy .summary {
-  font-size: 5.1vh;
+  font-size: 2.1vh;
   letter-spacing: -0.01vw;
   color: #222;
   line-height: 125%;
@@ -1329,9 +1329,8 @@ h1 a img {
   }
 
   .blahlab-block-title h2 {
-    margin-left: 20%;
-    width: 75%;
-    margin-bottom: ;
+    margin-left: 8%;
+    width: 85%;
   }
 
   .blahlab-block-title.long-title h2 {
@@ -1345,7 +1344,8 @@ h1 a img {
   }
 
   #hello-title.blahlab-block-title {
-    /*background: url(../images/@stock/he.png) -70px 0px no-repeat, url(../images/@stock/huo.png) right -60px bottom 30px no-repeat;*/
+    background: url(../files/images/bg1.png) -70px 0px no-repeat,
+      url(../files/images/bg2.png) right -60px bottom 30px no-repeat;
     /*background: none;*/
   }
 
@@ -1517,8 +1517,6 @@ h1 a img {
     display: block;
     width: 100%;
     padding: 0;
-    padding-top: 80px;
-    padding-bottom: 40px;
   }
 
   .blahlab-block-philosphy h2 {
@@ -1530,7 +1528,7 @@ h1 a img {
   }
 
   .blahlab-block-philosphy .summary {
-    margin-left: 20%;
+    margin-left: 8%;
     margin-top: 20px;
     margin-bottom: 60px;
     font-size: 5vw;
@@ -1749,7 +1747,7 @@ h1 a img {
   }
 
   .blahlab-block-contact .info {
-    margin-left: 20%;
+    margin-left: 8%;
     margin-top: 0;
     margin-bottom: 100px;
   }
