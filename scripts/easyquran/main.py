@@ -24,8 +24,8 @@ TRANSLATIONS = {
     }
 }
 
-# Default translations to fetch
-DEFAULT_ENGLISH_IDS = ["131", "20"]  # Dr. Mustafa Khattab, Saheeh International
+# Default translations to fetch - including Saheeh International
+DEFAULT_ENGLISH_IDS = ["20", "131", "109", "22"]  # Saheeh International first, then others
 DEFAULT_BENGALI_IDS = ["161", "163", "164", "162"]  # All available Bengali translations
 
 # ------------------ FIREBASE CONFIG ------------------
@@ -76,6 +76,9 @@ def fetch_arabic_verses(chapter_id):
     res.raise_for_status()
     verses = res.json()["verses"]
     print(f"  ✅ Fetched {len(verses)} Arabic verses")
+    
+    # API rate limiting
+    time.sleep(0.5)
     return verses
 
 def fetch_transliteration(chapter_id):
@@ -86,6 +89,9 @@ def fetch_transliteration(chapter_id):
     res.raise_for_status()
     verses = res.json()["verses"]
     print(f"  ✅ Fetched transliteration for {len(verses)} verses")
+    
+    # API rate limiting
+    time.sleep(0.5)
     return verses
 
 def fetch_translations(chapter_id, translation_ids):
@@ -97,6 +103,9 @@ def fetch_translations(chapter_id, translation_ids):
     res.raise_for_status()
     verses = res.json()["verses"]
     print(f"  ✅ Fetched translations for {len(verses)} verses")
+    
+    # API rate limiting
+    time.sleep(0.5)
     return verses
 
 def organize_translations(verses, translation_ids, language_key):
@@ -120,6 +129,18 @@ def organize_translations(verses, translation_ids, language_key):
     
     return organized
 
+def clear_database():
+    """Clear the entire quran database before fresh upload."""
+    try:
+        print("🗑️  Clearing existing Quran database...")
+        ref = db.reference('quran')
+        ref.delete()
+        print("✅ Database cleared successfully")
+        return True
+    except Exception as e:
+        print(f"❌ Error clearing database: {e}")
+        return False
+
 def upload_to_firebase(chapter_id, surah_data):
     """Upload surah data to Firebase with proper error handling."""
     try:
@@ -132,18 +153,42 @@ def upload_to_firebase(chapter_id, surah_data):
 
 # ------------------ MAIN UPLOAD FUNCTION ------------------
 def upload_quran():
-    print("🚀 Starting Quran upload process...\n")
+    print("🚀 Starting comprehensive Quran upload process...\n")
+    print("📋 Configuration:")
+    print(f"   English Translations: {len(DEFAULT_ENGLISH_IDS)} - {DEFAULT_ENGLISH_IDS}")
+    print(f"   Bengali Translations: {len(DEFAULT_BENGALI_IDS)} - {DEFAULT_BENGALI_IDS}")
+    print(f"   Primary Translation: Saheeh International (ID: 20)")
+    
+    # Clear existing database
+    if not clear_database():
+        print("💥 Failed to clear database. Exiting...")
+        return
+    
+    print("\n" + "="*80)
+    print("🔄 STARTING FRESH UPLOAD WITH ALL LANGUAGES")
+    print("="*80)
     
     try:
         chapters = fetch_chapters()
-        print(f"\n📊 Total chapters to process: {len(chapters)}\n")
+        print(f"\n📊 Total chapters to process: {len(chapters)}")
+        
+        # Calculate total expected verses
+        total_expected_verses = sum(chapter['verses_count'] for chapter in chapters)
+        print(f"📊 Total expected verses: {total_expected_verses}")
+        print("\n")
+
+        total_uploaded_verses = 0
+        failed_chapters = []
+        start_time = time.time()
 
         for idx, chapter in enumerate(chapters, 1):
+            chapter_start_time = time.time()
             print(f"{'='*80}")
             print(f"📋 Processing Surah {chapter['id']}/{len(chapters)}: {chapter['name_simple']}")
             print(f"   Arabic Name: {chapter['name_arabic']}")
             print(f"   Translation: {chapter['translated_name']['name']}")
             print(f"   Total Verses: {chapter['verses_count']}")
+            print(f"   📈 Overall Progress: {idx}/{len(chapters)} ({idx/len(chapters)*100:.1f}%)")
             print(f"{'='*80}")
 
             try:
@@ -153,7 +198,7 @@ def upload_quran():
                 # Fetch transliteration
                 transliteration_verses = fetch_transliteration(chapter["id"])
                 
-                # Fetch English translations
+                # Fetch English translations (including Saheeh International)
                 english_verses = fetch_translations(chapter["id"], DEFAULT_ENGLISH_IDS)
                 english_translations = organize_translations(english_verses, DEFAULT_ENGLISH_IDS, "english")
                 
@@ -162,12 +207,14 @@ def upload_quran():
                 bengali_translations = organize_translations(bengali_verses, DEFAULT_BENGALI_IDS, "bengali")
                 
                 print(f"  📊 Data Summary:")
-                print(f"     Arabic verses: {len(arabic_verses)}")
-                print(f"     English translations: {len(DEFAULT_ENGLISH_IDS)} types")
-                print(f"     Bengali translations: {len(DEFAULT_BENGALI_IDS)} types")
+                print(f"     ✅ Arabic verses: {len(arabic_verses)}")
+                print(f"     ✅ Transliteration: {len(transliteration_verses)}")
+                print(f"     ✅ English translations: {len(DEFAULT_ENGLISH_IDS)} types")
+                print(f"     ✅ Bengali translations: {len(DEFAULT_BENGALI_IDS)} types")
 
             except Exception as e:
                 print(f"  ❌ Error fetching verses: {e}")
+                failed_chapters.append(chapter['id'])
                 continue
 
             # Prepare surah data structure
@@ -180,7 +227,8 @@ def upload_quran():
                     "name_translation": chapter["translated_name"]["name"],
                     "total_verses": chapter["verses_count"],
                     "revelation_place": chapter.get("revelation_place", ""),
-                    "revelation_order": chapter.get("revelation_order", 0)
+                    "revelation_order": chapter.get("revelation_order", 0),
+                    "uploaded_at": int(time.time())
                 },
                 "translations_info": {
                     "english": TRANSLATIONS["english"],
@@ -215,48 +263,97 @@ def upload_quran():
                 surah_data["verses"][str(verse_number)] = verse_data
                 processed_verses += 1
             
-            print(f"  ✅ Processed {processed_verses} verses with full translation data")
+            print(f"  ✅ Processed {processed_verses} verses with complete translation data")
 
             # Upload surah to Firebase
             try:
                 print(f"  🔄 Uploading to Firebase...")
                 success = upload_to_firebase(chapter["id"], surah_data)
                 if success:
-                    print(f"  ✅ Successfully uploaded Surah {chapter['id']} to Firebase")
+                    total_uploaded_verses += processed_verses
+                    chapter_time = time.time() - chapter_start_time
+                    print(f"  ✅ Successfully uploaded Surah {chapter['id']} to Firebase ({chapter_time:.1f}s)")
                     
-                    # Show sample data for first verse
+                    # Show sample data for first verse with Saheeh International
                     if "1" in surah_data["verses"]:
                         sample_verse = surah_data["verses"]["1"]
                         print(f"  📝 Sample verse 1:")
-                        print(f"     Arabic: {sample_verse['arabic']['text_uthmani'][:50]}...")
-                        print(f"     Transliteration: {sample_verse['transliteration'][:50]}...")
+                        print(f"     Arabic: {sample_verse['arabic']['text_uthmani'][:60]}...")
+                        print(f"     Transliteration: {sample_verse['transliteration'][:60]}...")
+                        
+                        # Show Saheeh International first
+                        if "20" in sample_verse['translations']['english']:
+                            saheeh_text = sample_verse['translations']['english']['20']['text']
+                            print(f"     Saheeh International: {saheeh_text[:60]}...")
+                        
+                        # Show other English translations
                         if sample_verse['translations']['english']:
-                            first_eng = list(sample_verse['translations']['english'].values())[0]
-                            print(f"     English: {first_eng['text'][:50]}...")
+                            other_eng = [k for k in sample_verse['translations']['english'].keys() if k != "20"]
+                            if other_eng:
+                                first_other = sample_verse['translations']['english'][other_eng[0]]
+                                print(f"     Other English: {first_other['text'][:60]}...")
+                        
+                        # Show Bengali translation
                         if sample_verse['translations']['bengali']:
                             first_ben = list(sample_verse['translations']['bengali'].values())[0]
-                            print(f"     Bengali: {first_ben['text'][:50]}...")
+                            print(f"     Bengali: {first_ben['text'][:60]}...")
                 else:
                     print(f"  ❌ Failed to upload Surah {chapter['id']}")
+                    failed_chapters.append(chapter['id'])
                     continue
                 
             except Exception as e:
                 print(f"  ❌ Firebase upload failed: {e}")
+                failed_chapters.append(chapter['id'])
                 continue
 
-            print(f"  ⏱️  Waiting 2 seconds before next chapter...")
-            time.sleep(2)  # Increased delay to avoid API throttling
+            # Enhanced progress reporting
+            elapsed_time = time.time() - start_time
+            avg_time_per_chapter = elapsed_time / idx
+            estimated_remaining = (len(chapters) - idx) * avg_time_per_chapter
             
-            print(f"  📈 Progress: {idx}/{len(chapters)} chapters completed ({idx/len(chapters)*100:.1f}%)\n")
+            print(f"  📊 Status Report:")
+            print(f"     ⏱️  Chapter processed in: {chapter_time:.1f}s")
+            print(f"     📈 Verses uploaded so far: {total_uploaded_verses}/{total_expected_verses}")
+            print(f"     ⏳ Elapsed time: {elapsed_time/60:.1f} minutes")
+            print(f"     🔮 Estimated remaining: {estimated_remaining/60:.1f} minutes")
 
-        print("🎉 Quran upload process completed!")
-        print(f"\n📋 Translation Summary:")
+            print(f"  ⏱️  Waiting 3 seconds before next chapter (API rate limiting)...")
+            time.sleep(3)  # Increased delay to respect API limits
+            
+            print(f"  📈 Overall Progress: {idx}/{len(chapters)} chapters completed ({idx/len(chapters)*100:.1f}%)")
+            print(f"     ✅ Successful uploads: {idx - len(failed_chapters)}")
+            print(f"     ❌ Failed uploads: {len(failed_chapters)}")
+            print()
+
+        # Final summary
+        total_time = time.time() - start_time
+        print("🎉 Comprehensive Quran upload process completed!")
+        print(f"\n📋 Final Summary:")
+        print(f"{'='*60}")
+        print(f"📊 Statistics:")
+        print(f"   Total chapters processed: {len(chapters)}")
+        print(f"   Successful uploads: {len(chapters) - len(failed_chapters)}")
+        print(f"   Failed uploads: {len(failed_chapters)}")
+        print(f"   Total verses uploaded: {total_uploaded_verses}")
+        print(f"   Total processing time: {total_time/60:.1f} minutes")
+        print(f"   Average time per chapter: {total_time/len(chapters):.1f} seconds")
+        
+        print(f"\n🌍 Languages Included:")
         print(f"English Translations:")
-        for tid, info in TRANSLATIONS["english"].items():
-            print(f"  - {info['name']} (ID: {tid})")
+        for tid in DEFAULT_ENGLISH_IDS:
+            info = TRANSLATIONS["english"][tid]
+            status = "🥇 PRIMARY" if tid == "20" else "✅"
+            print(f"  {status} {info['name']} (ID: {tid})")
         print(f"Bengali Translations:")
-        for tid, info in TRANSLATIONS["bengali"].items():
-            print(f"  - {info['name']} (ID: {tid})")
+        for tid in DEFAULT_BENGALI_IDS:
+            info = TRANSLATIONS["bengali"][tid]
+            print(f"  ✅ {info['name']} (ID: {tid})")
+        
+        if failed_chapters:
+            print(f"\n❌ Failed Chapters: {failed_chapters}")
+        else:
+            print(f"\n🎯 All chapters uploaded successfully!")
         
     except Exception as e:
         print(f"💥 Fatal error during upload process: {e}")
