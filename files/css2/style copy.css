@@ -196,7 +196,7 @@ h1 a img {
   opacity: 1;
 }
 
-.blahlab-block-title {
+.binarypoets-block-title {
   width: auto;
   min-width: 65vw;
   padding-right: 100px;
@@ -207,24 +207,24 @@ h1 a img {
   flex: 0 0 auto;
 }
 
-#hello-title.blahlab-block-title {
+#hello-title.binarypoets-block-title {
   /*background: url(../images/@stock/cloud.png) -70px 50px no-repeat, url(../images/@stock/cloud.png) right -260px bottom 30px no-repeat;*/
 }
 
-.blahlab-block-title h2 {
-  width: 85vh;
-  margin-bottom: 12vh;
+.binarypoets-block-title h2 {
+  width: 75vh;
+  margin-bottom: 15vh;
 }
 
-.blahlab-block-title.long-title h2 {
+.binarypoets-block-title.long-title h2 {
   width: 80vh;
 }
 
-.blahlab-block-title p {
+.binarypoets-block-title p {
   padding-bottom: 50px;
 }
 
-.blahlab-block-picture {
+.binarypoets-block-picture {
   width: 80vw;
   flex: 0 0 auto;
   position: relative;
@@ -233,11 +233,10 @@ h1 a img {
   margin: 4vh 0 4vh 30px;
 }
 
-.blahlab-block-picture img,
-.blahlab-block-picture video {
-  width: 100%;
+.binarypoets-block-picture img,
+.binarypoets-block-picture video {
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -247,9 +246,7 @@ h1 a img {
   border-radius: 25px;
 }
 
-.blahlab-block-picture video {
-  width: 100%;
-  height: 100%;
+.binarypoets-block-picture video {
   object-fit: contain;
   position: absolute;
   top: 0;
@@ -259,8 +256,8 @@ h1 a img {
   max-width: none;
 }
 
-.blahlab-block-services,
-.blahlab-block-processes {
+.binarypoets-block-services,
+.binarypoets-block-processes {
   flex: 0 0 auto;
   display: flex;
   flex-direction: column;
@@ -269,24 +266,24 @@ h1 a img {
   padding-top: 50px;
 }
 
-.blahlab-block-services__summary {
+.binarypoets-block-services__summary {
   margin-left: auto;
   width: 66.7%;
 }
 
-.blahlab-block-processes__summary {
+.binarypoets-block-processes__summary {
   width: 100%;
 }
 
-.blahlab-block-services__summary h2,
-.blahlab-block-processes__summary h2 {
+.binarypoets-block-services__summary h2,
+.binarypoets-block-processes__summary h2 {
   color: #000;
   font-size: 2.2vh;
   margin-bottom: 20px;
 }
 
-.blahlab-block-services__summary p,
-.blahlab-block-processes__summary p {
+.binarypoets-block-services__summary p,
+.binarypoets-block-processes__summary p {
   font-size: 46px;
   font-size: 5.1vh;
   letter-spacing: -0.01vw;
@@ -297,64 +294,64 @@ h1 a img {
   margin-bottom: 10vh;
 }
 
-.blahlab-block-services__services,
-.blahlab-block-processes__processes {
+.binarypoets-block-services__services,
+.binarypoets-block-processes__processes {
   display: flex;
   padding-bottom: 100px;
 }
 
-.blahlab-block-services__services .service {
+.binarypoets-block-services__services .service {
   flex: 1 1 0;
   width: 50vh;
   min-width: 260px;
   max-width: 500px;
 }
 
-.blahlab-block-services__services .service h3 {
+.binarypoets-block-services__services .service h3 {
   font-size: 3.4vh;
   /*font-weight: 500;*/
 }
 
-.blahlab-block-services__services .service p {
+.binarypoets-block-services__services .service p {
   margin-top: 2vh;
   padding-right: 8vh;
 }
 
-.blahlab-block-services__services .service {
+.binarypoets-block-services__services .service {
   /*border-top: 1px solid #000;*/
 }
 
-.blahlab-block-services__services .service img {
+.binarypoets-block-services__services .service img {
   /*  position: relative;
   left: -20px;
   margin-top: 50px;
   width: 100px;*/
 }
 
-.blahlab-block-projects {
+.binarypoets-block-projects {
   display: flex;
   flex: 0 0 auto;
   width: auto;
   padding-top: 4vh;
 }
 
-.blahlab-block-projects h2 {
+.binarypoets-block-projects h2 {
   max-width: 60vh;
   margin-top: 4vh;
 }
 
-.blahlab-block-projects__projects {
+.binarypoets-block-projects__projects {
   display: flex;
   padding-bottom: 20vh;
   margin-left: 80px;
 }
 
-.blahlab-block-projects__project {
+.binarypoets-block-projects__project {
   position: relative;
   margin-right: 120px;
 }
 
-.blahlab-block-projects__project .parallax-frame {
+.binarypoets-block-projects__project .parallax-frame {
   width: 100%;
   height: 100%;
   position: relative;
@@ -363,8 +360,8 @@ h1 a img {
   display: block;
 }
 
-.blahlab-block-projects__project .parallax-frame img,
-.blahlab-block-projects__project .parallax-frame video {
+.binarypoets-block-projects__project .parallax-frame img,
+.binarypoets-block-projects__project .parallax-frame video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -377,41 +374,41 @@ h1 a img {
   transform: scale(1);
 }
 
-.blahlab-block-projects__project .parallax-frame img:hover {
+.binarypoets-block-projects__project .parallax-frame img:hover {
   transition: transform 0.8 ease;
 }
 
-.blahlab-block-projects__metas {
+.binarypoets-block-projects__metas {
   position: absolute;
   display: flex;
   bottom: 8px;
 }
 
-.blahlab-block-projects__metas .meta {
+.binarypoets-block-projects__metas .meta {
   border-radius: 15px;
   padding: 5px 14px;
   font-size: 10px;
   margin-left: 5px;
 }
 
-.blahlab-block-projects__metas--color-light .meta {
+.binarypoets-block-projects__metas--color-light .meta {
   color: #000;
   background: #f1efed;
 }
 
-.blahlab-block-projects__metas--color-dark .meta {
+.binarypoets-block-projects__metas--color-dark .meta {
   color: #fff;
   background: #000;
 }
 
-.blahlab-block-projects__project h3 {
+.binarypoets-block-projects__project h3 {
   position: absolute;
   /*top: 105%;*/
   left: 0;
   margin-top: 20px;
 }
 
-.blahlab-block-projects__project p {
+.binarypoets-block-projects__project p {
   position: absolute;
   /*top: 105%;*/
   right: 0;
@@ -422,41 +419,41 @@ h1 a img {
   font-size: 2vh;
 }
 
-.blahlab-block-projects__project--size-large {
+.binarypoets-block-projects__project--size-large {
   width: 100vh;
   height: calc(100vh - 240px);
   height: 69vh;
 }
 
-.blahlab-block-projects__project--size-medium {
+.binarypoets-block-projects__project--size-medium {
   width: 65vh;
   height: 50vh;
   /*max-height: calc(100vh - 240px);*/
 }
 
-.blahlab-block-projects__project--size-medium p {
+.binarypoets-block-projects__project--size-medium p {
   display: none;
 }
 
-.blahlab-block-projects__project--size-small {
+.binarypoets-block-projects__project--size-small {
   width: 38vh;
   height: 35vh;
 }
 
-.blahlab-block-projects__project--size-small p {
+.binarypoets-block-projects__project--size-small p {
   display: none;
 }
 
-.blahlab-block-projects__project--align-top {
+.binarypoets-block-projects__project--align-top {
   align-self: start;
 }
 
-.blahlab-block-projects__project--align-bottom {
+.binarypoets-block-projects__project--align-bottom {
   align-self: end;
   /*margin-bottom: 20px;*/
 }
 
-.blahlab-block-philosphy {
+.binarypoets-block-philosphy {
   display: flex;
   flex: 0 0 auto;
   width: auto;
@@ -466,21 +463,20 @@ h1 a img {
   padding-top: 50px;
 }
 
-.blahlab-block-philosphy h2 {
+.binarypoets-block-philosphy h2 {
   display: none;
 }
 
-.blahlab-block-philosphy .summary {
-  font-size: 2.1vh;
+.binarypoets-block-philosphy .summary {
+  font-size: 5.1vh;
   letter-spacing: -0.01vw;
   color: #222;
-  line-height: 125%;
   font-weight: 500;
-  width: 65vh;
+  width: 110vh;
   margin-bottom: 10vh;
 }
 
-.blahlab-block-philosphy .philosphies {
+.binarypoets-block-philosphy .philosphies {
   align-self: end;
   margin-left: 30vh;
   margin-right: 20vh;
@@ -490,7 +486,7 @@ h1 a img {
   justify-content: space-between;
 }
 
-.blahlab-block-philosphy .philosphies .philosphy {
+.binarypoets-block-philosphy .philosphies .philosphy {
   flex: 0 0 auto;
   width: 30vh;
   min-width: 300px;
@@ -499,22 +495,22 @@ h1 a img {
   flex-direction: column;
 }
 
-.blahlab-block-philosphy .philosphies .philosphy h3 {
+.binarypoets-block-philosphy .philosphies .philosphy h3 {
   font-size: 3.4vh;
   margin-bottom: 20px;
 }
 
-.blahlab-block-philosphy .philosphies .philosphy p {
+.binarypoets-block-philosphy .philosphies .philosphy p {
   margin-bottom: 30px;
 }
 
-.blahlab-block-philosphy .philosphies .philosphy .philosphy-label {
+.binarypoets-block-philosphy .philosphies .philosphy .philosphy-label {
   margin-top: auto;
   padding-top: 0;
   font-size: 8vh;
 }
 
-.blahlab-block-achievements {
+.binarypoets-block-achievements {
   flex: 0 0 auto;
   width: auto;
   flex-direction: row;
@@ -524,24 +520,24 @@ h1 a img {
   position: relative;
 }
 
-.blahlab-block-achievements h2 {
+.binarypoets-block-achievements h2 {
   font-size: 3.2vh;
   letter-spacing: 0;
   position: absolute;
 }
 
-.blahlab-block-achievements .achievements {
+.binarypoets-block-achievements .achievements {
   min-width: 1400px;
   height: 100%;
   display: grid;
-  background: no-repeat url(../files/images/explode-bg-1.png);
+  background: no-repeat url(../images/explode-bg-1.png);
   background-size: contain;
   grid-template-columns: repeat(20, 50px);
   grid-template-rows: repeat(20, 5%);
   margin-left: 20vh;
 }
 
-.blahlab-block-achievements .achievements .achievement {
+.binarypoets-block-achievements .achievements .achievement {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -556,45 +552,45 @@ h1 a img {
   background: #f1efed;
 }
 
-.blahlab-block-achievements .achievements .achievement:nth-of-type(1) {
+.binarypoets-block-achievements .achievements .achievement:nth-of-type(1) {
   grid-row-start: 7;
   grid-column-start: 1;
 }
 
-.blahlab-block-achievements .achievements .achievement:nth-of-type(2) {
+.binarypoets-block-achievements .achievements .achievement:nth-of-type(2) {
   grid-row-start: 3;
   grid-column-start: 11;
 }
 
-.blahlab-block-achievements .achievements .achievement:nth-of-type(3) {
+.binarypoets-block-achievements .achievements .achievement:nth-of-type(3) {
   grid-row-start: 12;
   grid-column-start: 7;
 }
 
-.blahlab-block-achievements .achievements .achievement:nth-of-type(4) {
+.binarypoets-block-achievements .achievements .achievement:nth-of-type(4) {
   grid-row-start: 8;
   grid-column-start: 14;
 }
 
-.blahlab-block-achievements .achievements .achievement .num {
+.binarypoets-block-achievements .achievements .achievement .num {
   font-size: 8vh;
   line-height: 125%;
 }
 
-.blahlab-block-achievements .achievements .achievement h3 {
+.binarypoets-block-achievements .achievements .achievement h3 {
   margin-top: 10px;
   text-align: center;
   font-size: 2.4vh;
 }
 
-.blahlab-block-team-members-and-sibling {
+.binarypoets-block-team-members-and-sibling {
   display: flex;
   flex-direction: row;
   /* this fix the spaces above the members section when reduce the browser height */
   margin-top: 0 !important;
 }
 
-.blahlab-block-team-members {
+.binarypoets-block-team-members {
   flex: 0 0 auto;
   flex-direction: row;
   border-left: 1px solid #999;
@@ -606,16 +602,16 @@ h1 a img {
   width: 85vh; /* for the pin to work, must have a width for the scrollmagic-pin-spacer to copy */
 }
 
-.blahlab-block-team-members h2 {
+.binarypoets-block-team-members h2 {
   font-size: 3.2vh;
   letter-spacing: 0;
 }
 
-.blahlab-block-team-members .members {
+.binarypoets-block-team-members .members {
   margin-left: 80px;
 }
 
-.blahlab-block-team-members .members .member {
+.binarypoets-block-team-members .members .member {
   width: 40vh;
   min-width: 300px;
   max-width: 500px;
@@ -623,30 +619,30 @@ h1 a img {
   margin-bottom: 60px;
 }
 
-.blahlab-block-team-members .members .member .info {
+.binarypoets-block-team-members .members .member .info {
   position: absolute;
   left: 108%;
   bottom: 10px;
   width: 200px;
 }
 
-.blahlab-block-team-members .members .member img {
+.binarypoets-block-team-members .members .member img {
   object-fit: cover;
   min-height: 100%;
   border-radius: 20px;
 }
 
-.blahlab-block-team-members .members .member .info .name {
+.binarypoets-block-team-members .members .member .info .name {
   font-weight: 500;
   font-size: 2.6vh;
 }
 
-.blahlab-block-team-members .members .member .info .job-title {
+.binarypoets-block-team-members .members .member .info .job-title {
   color: #888;
   font-size: 1.8vh;
 }
 
-.blahlab-block-testimonials {
+.binarypoets-block-testimonials {
   display: flex;
   flex-direction: column;
   border-left: 1px solid #999;
@@ -658,11 +654,11 @@ h1 a img {
   position: relative;
 }
 
-.blahlab-block-testimonials h2 {
+.binarypoets-block-testimonials h2 {
   display: none;
 }
 
-.blahlab-block-testimonials .summary {
+.binarypoets-block-testimonials .summary {
   font-size: 5.1vh;
   letter-spacing: -0.01vw;
   line-height: 125%;
@@ -671,7 +667,7 @@ h1 a img {
   margin-bottom: 10vh;
 }
 
-.blahlab-block-testimonials .logos {
+.binarypoets-block-testimonials .logos {
   width: 800px;
   margin-left: 65vh;
   align-self: end;
@@ -679,90 +675,90 @@ h1 a img {
   flex-wrap: wrap;
 }
 
-.blahlab-block-testimonials .logos img {
+.binarypoets-block-testimonials .logos img {
   width: 150px;
   height: auto;
   margin: 10px;
   max-width: 150px;
 }
 
-.blahlab-block-testimonials .short-text {
+.binarypoets-block-testimonials .short-text {
   margin-bottom: 30px;
   font-weight: 500;
   position: absolute;
   top: 87vh;
 }
 
-.blahlab-block-testimonials .short-text a {
+.binarypoets-block-testimonials .short-text a {
   color: #000;
   text-decoration: underline;
 }
 
-.blahlab-block-contact {
+.binarypoets-block-contact {
   display: flex;
   flex-direction: row;
   padding-left: 100px;
   padding-top: 50px;
 }
 
-.blahlab-block-contact.contact-details {
+.binarypoets-block-contact.contact-details {
   display: flex;
   flex-direction: column;
 }
 
-.blahlab-block-contact h2 {
+.binarypoets-block-contact h2 {
   margin-bottom: 10vh;
   width: 65vh;
 }
 
-.blahlab-block-contact .info {
+.binarypoets-block-contact .info {
   margin-top: 100px;
   display: flex;
   flex-direction: row;
   /*align-self: flex-end;*/
 }
 
-.blahlab-block-contact .info div {
+.binarypoets-block-contact .info div {
   margin-right: 50px;
 }
 
-.blahlab-block-contact .info h3 {
+.binarypoets-block-contact .info h3 {
   font-size: 2.2vh;
   letter-spacing: 0;
   font-weight: bold;
   /*color: #000;*/
 }
 
-.blahlab-block-contact ul {
+.binarypoets-block-contact ul {
   width: 200px;
   margin-top: 30px;
 }
 
-.blahlab-block-contact .contact-infos li {
+.binarypoets-block-contact .contact-infos li {
   font-weight: 500;
   margin-bottom: 2vh;
 }
 
-.blahlab-block-contact li a {
+.binarypoets-block-contact li a {
   font-weight: 500;
   color: #000;
 }
 
-.blahlab-block-contact li a:hover {
+.binarypoets-block-contact li a:hover {
   text-decoration: underline;
 }
 
-.blahlab-block-contact h3:nth-of-type(2) {
+.binarypoets-block-contact h3:nth-of-type(2) {
   margin-top: 6vh;
 }
 
-.blahlab-block-contact form {
+.binarypoets-block-contact form {
   display: flex;
   flex-direction: row;
   margin-bottom: 80px;
 }
 
-.blahlab-block-contact form .fields {
+.binarypoets-block-contact form .fields {
   display: flex;
   flex-direction: column;
   border: 1px solid #999;
@@ -772,7 +768,7 @@ h1 a img {
   width: 800px;
 }
 
-.blahlab-block-contact form .fields input {
+.binarypoets-block-contact form .fields input {
   border: none;
   border-bottom: 1px solid #999;
   font-size: 3vh;
@@ -783,16 +779,16 @@ h1 a img {
   background-color: #f1efed;
 }
 
-.blahlab-block-contact form .fields label.error {
+.binarypoets-block-contact form .fields label.error {
   color: red;
   padding-top: 5px;
 }
 
-.blahlab-block-contact form .fields input::placeholder {
+.binarypoets-block-contact form .fields input::placeholder {
   color: #000;
 }
 
-.blahlab-block-contact form .fields textarea {
+.binarypoets-block-contact form .fields textarea {
   border: none;
   border-bottom: 1px solid #999;
   font-size: 3vh;
@@ -804,11 +800,11 @@ h1 a img {
   margin-top: 40px;
 }
 
-.blahlab-block-contact form .fields textarea::placeholder {
+.binarypoets-block-contact form .fields textarea::placeholder {
   color: #000;
 }
 
-.blahlab-block-contact form > input {
+.binarypoets-block-contact form > input {
   align-self: center;
   height: 15vh;
   width: 15vh;
@@ -822,12 +818,12 @@ h1 a img {
   cursor: pointer;
 }
 
-.blahlab-block-blog-posts {
+.binarypoets-block-blog-posts {
   display: flex;
   flex-direction: row;
 }
 
-.blahlab-block-blog-posts__post {
+.binarypoets-block-blog-posts__post {
   border-right: 1px solid #999;
   padding: 20px 50px;
   display: flex;
@@ -835,13 +831,13 @@ h1 a img {
   align-items: flex-end;
 }
 
-.blahlab-block-blog-posts__post .date {
+.binarypoets-block-blog-posts__post .date {
   width: 300px;
   color: #000;
   margin-bottom: 10px;
 }
 
-.blahlab-block-blog-posts__post h3 {
+.binarypoets-block-blog-posts__post h3 {
   width: 300px;
   font-size: 24px;
   font-weight: bold;
@@ -849,38 +845,38 @@ h1 a img {
   margin-bottom: 350px;
 }
 
-.blahlab-block-blog-posts__post .read-more {
+.binarypoets-block-blog-posts__post .read-more {
   width: 300px;
   color: #000;
   margin-bottom: 20px;
 }
 
-.blahlab-block-blog-posts__post .read-more a {
+.binarypoets-block-blog-posts__post .read-more a {
   color: #000;
 }
 
-.blahlab-block-blog-posts__image-container {
+.binarypoets-block-blog-posts__image-container {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
 }
 
-.blahlab-block-blog-posts__image-container--size-large {
+.binarypoets-block-blog-posts__image-container--size-large {
   width: 500px;
   height: 300px;
 }
 
-.blahlab-block-blog-posts__image-container--size-square {
+.binarypoets-block-blog-posts__image-container--size-square {
   width: 300px;
   height: 300px;
 }
 
-.blahlab-block-blog-posts__image-container--size-small {
+.binarypoets-block-blog-posts__image-container--size-small {
   width: 300px;
   height: 180px;
 }
 
-.blahlab-block-blog-posts img {
+.binarypoets-block-blog-posts img {
   max-height: 100%;
   min-width: 100%;
   position: absolute;
@@ -919,7 +915,7 @@ h1 a img {
   text-decoration: underline;
 }
 
-.blahlab-block-portfolio-item-header {
+.binarypoets-block-portfolio-item-header {
   display: flex;
   flex-direction: row;
   flex: 0 0 auto;
@@ -929,56 +925,56 @@ h1 a img {
   padding-bottom: 100px;
 }
 
-.blahlab-block-portfolio-item-header .image-and-title {
+.binarypoets-block-portfolio-item-header .image-and-title {
   max-width: 60vw;
   min-width: 55vw;
 }
 
-.blahlab-block-portfolio-item-header .image-and-title img {
+.binarypoets-block-portfolio-item-header .image-and-title img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.blahlab-block-portfolio-item-header .image-and-title h3 {
+.binarypoets-block-portfolio-item-header .image-and-title h3 {
   margin-top: 30px;
 }
 
-.blahlab-block-portfolio-item-header .meta {
+.binarypoets-block-portfolio-item-header .meta {
   width: 200px;
   margin-left: 100px;
   margin-top: 20px;
 }
 
-.blahlab-block-portfolio-item-header .meta li {
+.binarypoets-block-portfolio-item-header .meta li {
   position: relative;
 }
 
-.blahlab-block-portfolio-item-header .meta li.roles {
+.binarypoets-block-portfolio-item-header .meta li.roles {
   margin-top: 30px;
 }
 
-.blahlab-block-portfolio-item-header .meta li strong {
+.binarypoets-block-portfolio-item-header .meta li strong {
   transform: translateX(-100%);
   position: absolute;
   padding-right: 10px;
 }
 
-.blahlab-block-portfolio-item-header .link-and-description {
+.binarypoets-block-portfolio-item-header .link-and-description {
   margin-top: 20px;
   width: 80vh;
 }
 
-.blahlab-block-portfolio-item-header .link-and-description .link {
+.binarypoets-block-portfolio-item-header .link-and-description .link {
   color: #000;
 }
 
-.blahlab-block-portfolio-item-header .link-and-description .link:hover {
+.binarypoets-block-portfolio-item-header .link-and-description .link:hover {
   text-decoration: underline;
 }
 
-.blahlab-block-portfolio-item-header .link-and-description p {
+.binarypoets-block-portfolio-item-header .link-and-description p {
   margin-top: 50px;
   font-size: 5.1vh;
   letter-spacing: -0.01vw;
@@ -987,7 +983,7 @@ h1 a img {
   color: #222;
 }
 
-.blahlab-block-portfolio-item-image {
+.binarypoets-block-portfolio-item-image {
   flex: 0 0 auto;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -995,27 +991,27 @@ h1 a img {
   margin-left: 160px;
 }
 
-.blahlab-block-portfolio-item-image img {
+.binarypoets-block-portfolio-item-image img {
   height: 100%;
 }
 
-.blahlab-block-portfolio-item-image h4 {
+.binarypoets-block-portfolio-item-image h4 {
   /*font-size: 24px;*/
   /*line-height: 240%;*/
 }
 
-.blahlab-block-portfolio-item-image.vertical {
+.binarypoets-block-portfolio-item-image.vertical {
   padding-top: 0;
   padding-bottom: 0;
   height: auto;
 }
 
-.blahlab-block-portfolio-item-image.vertical img {
+.binarypoets-block-portfolio-item-image.vertical img {
   width: 30vw;
   height: auto;
 }
 
-.blahlab-block-portfolio-item-testimonial {
+.binarypoets-block-portfolio-item-testimonial {
   padding-top: 50px;
   width: 80vh;
   flex: 0 0 auto;
@@ -1023,12 +1019,17 @@ h1 a img {
   margin-right: 160px;
 }
 
-.blahlab-block-portfolio-item-testimonial h4 {
-  margin-top: 20px;
+.binarypoets-block-portfolio-item-testimonial h7 {
+  margin-top: 10px;
   color: #666;
 }
 
-.blahlab-block-portfolio-item-testimonial p {
+.binarypoets-block-portfolio-item-testimonial h4 {
+  margin-top: 15px;
+  color: #666;
+}
+
+.binarypoets-block-portfolio-item-testimonial p {
   font-size: 5.1vh;
   line-height: 125%;
   font-weight: 500;
@@ -1037,7 +1038,7 @@ h1 a img {
   margin-top: 20px;
 }
 
-.blahlab-block-portfolio-nav {
+.binarypoets-block-portfolio-nav {
   flex: 0 0 auto;
   margin-top: auto;
   margin-bottom: 50px;
@@ -1046,11 +1047,11 @@ h1 a img {
   display: none;
 }
 
-.blahlab-block-portfolio-nav a {
+.binarypoets-block-portfolio-nav a {
   color: #000;
 }
 
-.blahlab-block-portfolio-nav a:hover {
+.binarypoets-block-portfolio-nav a:hover {
   text-decoration: underline;
 }
 
@@ -1319,7 +1320,7 @@ h1 a img {
     opacity: 1;
   }
 
-  .blahlab-block-title {
+  .binarypoets-block-title {
     width: 100%;
     display: block;
     padding: 0;
@@ -1328,63 +1329,64 @@ h1 a img {
     overflow: hidden;
   }
 
-  .blahlab-block-title h2 {
+  .binarypoets-block-title h2 {
     margin-left: 8%;
     width: 85%;
+    /* margin-bottom: ; */
   }
 
-  .blahlab-block-title.long-title h2 {
-    width: 75%;
+  .binarypoets-block-title.long-title h2 {
+    width: 85%;
     margin-bottom: 80px;
   }
 
-  .blahlab-block-title p {
-    margin-left: 20%;
+  .binarypoets-block-title p {
+    margin-left: 8%;
     padding: 0;
   }
 
-  #hello-title.blahlab-block-title {
-    background: url(../files/images/bg1.png) -70px 0px no-repeat,
-      url(../files/images/bg2.png) right -60px bottom 30px no-repeat;
+  #hello-title.binarypoets-block-title {
+    background: url(../images/bg1.png) -70px 0px no-repeat,
+      url(../images/bg2.png) right -60px bottom 30px no-repeat;
     /*background: none;*/
   }
 
-  .blahlab-block-picture {
+  .binarypoets-block-picture {
     display: block;
     width: 88%;
     padding: 0;
     overflow: hidden;
   }
 
-  .blahlab-block-picture img,
-  .blahlab-block-picture video {
+  .binarypoets-block-picture img,
+  .binarypoets-block-picture video {
     position: static;
     max-width: 100%;
     display: block;
   }
 
-  .blahlab-block-services,
-  .blahlab-block-processes {
+  .binarypoets-block-services,
+  .binarypoets-block-processes {
     width: 100%;
     display: block;
     padding: 0;
     padding-top: 60px;
   }
 
-  .blahlab-block-services__summary,
-  .blahlab-block-processes__summary {
+  .binarypoets-block-services__summary,
+  .binarypoets-block-processes__summary {
     margin-left: 0;
     width: auto;
   }
 
-  .blahlab-block-services__summary h2,
-  .blahlab-block-processes__summary h2 {
+  .binarypoets-block-services__summary h2,
+  .binarypoets-block-processes__summary h2 {
     margin-left: 5%;
     font-size: 20px;
   }
 
-  .blahlab-block-services__summary p,
-  .blahlab-block-processes__summary p {
+  .binarypoets-block-services__summary p,
+  .binarypoets-block-processes__summary p {
     margin-left: 8%;
     margin-top: 30px;
     margin-bottom: 60px;
@@ -1395,30 +1397,30 @@ h1 a img {
     width: 85%;
   }
 
-  .blahlab-block-services__services,
-  .blahlab-block-processes__processes {
+  .binarypoets-block-services__services,
+  .binarypoets-block-processes__processes {
     display: block;
     margin-top: 40px;
     padding-bottom: 50px;
   }
 
-  .blahlab-block-services__services .service {
-    margin-bottom: 20px;
+  .binarypoets-block-services__services .service {
+    margin-bottom: 50px;
     margin-left: 8%;
     width: 100%;
     min-width: 75%;
-    max-width: 95%;
+    max-width: 100%;
   }
 
-  .blahlab-block-services__services .service p {
+  .binarypoets-block-services__services .service p {
     margin-top: 10px;
   }
 
-  .blahlab-block-services__services .service h3 {
+  .binarypoets-block-services__services .service h3 {
     font-size: 3.2vw;
   }
 
-  .blahlab-block-projects {
+  .binarypoets-block-projects {
     display: block;
     width: 100%;
     padding: 0;
@@ -1426,13 +1428,13 @@ h1 a img {
     padding-top: 6vw;
   }
 
-  .blahlab-block-projects h2 {
+  .binarypoets-block-projects h2 {
     margin-left: 20%;
     margin-bottom: 60px;
     width: 60%;
   }
 
-  .blahlab-block-projects__projects {
+  .binarypoets-block-projects__projects {
     display: block;
     padding: 0;
     width: 90%;
@@ -1440,60 +1442,61 @@ h1 a img {
     margin-top: 30px;
   }
 
-  .blahlab-block-projects__project {
+  .binarypoets-block-projects__project {
     clear: both;
     margin: 0;
     margin-top: 30px;
   }
 
-  .blahlab-block-projects__project .parallax-frame {
+  .binarypoets-block-projects__project .parallax-frame {
     border-radius: 20px;
     display: block;
   }
 
-  .blahlab-block-projects__project .parallax-frame img {
+  .binarypoets-block-projects__project .parallax-frame img {
     width: 100%;
     object-fit: cover;
     position: static;
     display: block;
   }
 
-  .blahlab-block-projects__project--right {
+  .binarypoets-block-projects__project--right {
     margin-left: auto;
   }
 
-  .blahlab-block-projects__project--size-large {
+  .binarypoets-block-projects__project--size-large {
     width: 100%;
     height: auto;
   }
 
-  /*  .blahlab-block-projects__project--size-large img {
+  /*  .binarypoets-block-projects__project--size-large img {
     height: 320px;
   }*/
 
-  .blahlab-block-projects__project--size-medium {
+  .binarypoets-block-projects__project--size-medium {
     width: 55vw;
     height: 43vw;
   }
 
-  /*  .blahlab-block-projects__project--size-medium img {
+  /*  .binarypoets-block-projects__project--size-medium img {
     height: 210px;
   }
 */
-  .blahlab-block-projects__project--size-small {
+  .binarypoets-block-projects__project--size-small {
     width: 26vw;
     height: 25vw;
   }
 
-  /*  .blahlab-block-projects__project--size-small img {
+  /*  .binarypoets-block-projects__project--size-small img {
     height: 20vw;
   }*/
 
-  .blahlab-block-projects__project--size-small .blahlab-block-projects__metas {
+  .binarypoets-block-projects__project--size-small
+    .binarypoets-block-projects__metas {
     display: none;
   }
 
-  .blahlab-block-projects__project h3 {
+  .binarypoets-block-projects__project h3 {
     position: static;
     max-width: 50vw;
     float: left;
@@ -1502,7 +1505,7 @@ h1 a img {
     font-size: 3.2vw;
   }
 
-  .blahlab-block-projects__project p {
+  .binarypoets-block-projects__project p {
     position: static;
     float: right;
     margin-top: 16px;
@@ -1513,13 +1516,15 @@ h1 a img {
     line-height: 140%;
   }
 
-  .blahlab-block-philosphy {
+  .binarypoets-block-philosphy {
     display: block;
     width: 100%;
     padding: 0;
+    padding-top: 80px;
+    padding-bottom: 40px;
   }
 
-  .blahlab-block-philosphy h2 {
+  .binarypoets-block-philosphy h2 {
     margin-left: 5%;
     font-size: 20px;
     width: auto;
@@ -1527,18 +1532,17 @@ h1 a img {
     display: block;
   }
 
-  .blahlab-block-philosphy .summary {
+  .binarypoets-block-philosphy .summary {
     margin-left: 8%;
     margin-top: 20px;
     margin-bottom: 60px;
     font-size: 5vw;
-    line-height: 125%;
     font-weight: 500;
     color: #222;
     width: 85%;
   }
 
-  .blahlab-block-philosphy .philosphies {
+  .binarypoets-block-philosphy .philosphies {
     display: block;
     margin: 0;
     width: 100%;
@@ -1547,13 +1551,13 @@ h1 a img {
     margin-left: 20%;
   }
 
-  .blahlab-block-philosphy .philosphies .philosphy {
+  .binarypoets-block-philosphy .philosphies .philosphy {
     position: relative;
     width: 70%;
     margin-bottom: 20px;
   }
 
-  .blahlab-block-philosphy .philosphies .philosphy .philosphy-label {
+  .binarypoets-block-philosphy .philosphies .philosphy .philosphy-label {
     margin: 0;
     padding: 0;
     position: absolute;
@@ -1563,11 +1567,11 @@ h1 a img {
     font-size: 8vw;
   }
 
-  .blahlab-block-philosphy .philosphies .philosphy h3 {
+  .binarypoets-block-philosphy .philosphies .philosphy h3 {
     font-size: 3.2vw;
   }
 
-  .blahlab-block-achievements {
+  .binarypoets-block-achievements {
     display: block;
     width: 100%;
     border-top: 1px solid #999;
@@ -1577,13 +1581,13 @@ h1 a img {
     padding-bottom: 80px;
   }
 
-  .blahlab-block-achievements h2 {
+  .binarypoets-block-achievements h2 {
     margin-left: 5%;
     position: static;
     font-size: 20px;
   }
 
-  .blahlab-block-achievements .achievements {
+  .binarypoets-block-achievements .achievements {
     width: 90%;
     height: auto;
     display: block;
@@ -1592,44 +1596,44 @@ h1 a img {
     margin-top: 50px;
   }
 
-  .blahlab-block-achievements .achievements .achievement {
+  .binarypoets-block-achievements .achievements .achievement {
     width: 60vw;
     height: 40vw;
     border-radius: 25px;
     margin-top: 10px;
   }
 
-  .blahlab-block-achievements .achievements .achievement .num {
+  .binarypoets-block-achievements .achievements .achievement .num {
     font-size: 8vw;
     line-height: 125%;
   }
 
-  .blahlab-block-achievements .achievements .achievement h3 {
+  .binarypoets-block-achievements .achievements .achievement h3 {
     font-size: 3.2vw;
   }
 
-  .blahlab-block-achievements .achievements .achievement:nth-child(even) {
+  .binarypoets-block-achievements .achievements .achievement:nth-child(even) {
     margin-left: 10%;
   }
 
-  .blahlab-block-achievements .achievements .achievement:nth-child(2) {
+  .binarypoets-block-achievements .achievements .achievement:nth-child(2) {
     margin-top: -20px;
   }
 
-  .blahlab-block-achievements .achievements .achievement:nth-child(3) {
+  .binarypoets-block-achievements .achievements .achievement:nth-child(3) {
     margin-top: -20px;
   }
 
-  .blahlab-block-achievements .achievements .achievement:nth-child(4) {
+  .binarypoets-block-achievements .achievements .achievement:nth-child(4) {
     margin-top: -20px;
   }
 
-  .blahlab-block-team-members-and-sibling {
+  .binarypoets-block-team-members-and-sibling {
     display: block;
     width: 100%;
   }
 
-  .blahlab-block-team-members {
+  .binarypoets-block-team-members {
     display: block;
     width: 100%;
     padding: 0;
@@ -1637,44 +1641,44 @@ h1 a img {
     border-top: 1px solid #999;
   }
 
-  .blahlab-block-team-members h2 {
+  .binarypoets-block-team-members h2 {
     margin-left: 5%;
     font-size: 20px;
   }
 
-  .blahlab-block-team-members .members {
+  .binarypoets-block-team-members .members {
     width: 90%;
     margin: 0 auto;
     margin-top: 50px;
   }
 
-  .blahlab-block-team-members .members .member {
+  .binarypoets-block-team-members .members .member {
     width: 85vw;
     min-width: auto;
     /*max-width: 85vw;*/
     height: auto;
   }
 
-  .blahlab-block-team-members .members .member img {
+  .binarypoets-block-team-members .members .member img {
     width: 100%;
   }
 
-  .blahlab-block-team-members .members .member .info {
+  .binarypoets-block-team-members .members .member .info {
     position: static;
     display: block;
     margin-left: 10px;
   }
 
-  .blahlab-block-team-members .members .member .info .name {
+  .binarypoets-block-team-members .members .member .info .name {
     font-size: 3.2vw;
     margin-top: 15px;
   }
 
-  .blahlab-block-team-members .members .member .info .job-title {
+  .binarypoets-block-team-members .members .member .info .job-title {
     font-size: 14px;
   }
 
-  .blahlab-block-testimonials {
+  .binarypoets-block-testimonials {
     display: block;
     width: 100%;
     padding: 0;
@@ -1682,14 +1686,14 @@ h1 a img {
     padding-top: 60px;
   }
 
-  .blahlab-block-testimonials h2 {
+  .binarypoets-block-testimonials h2 {
     display: block;
     color: #000;
     margin-left: 5%;
     font-size: 20px;
   }
 
-  .blahlab-block-testimonials .summary {
+  .binarypoets-block-testimonials .summary {
     margin-left: 8%;
     margin-top: 20px;
     margin-bottom: 60px;
@@ -1700,18 +1704,18 @@ h1 a img {
     width: 85%;
   }
 
-  .blahlab-block-testimonials .logos {
+  .binarypoets-block-testimonials .logos {
     display: block;
     width: 70%;
     margin-left: 20%;
     margin-top: 70px;
   }
 
-  .blahlab-block-testimonials .logos img {
+  .binarypoets-block-testimonials .logos img {
     margin-left: 0;
   }
 
-  .blahlab-block-testimonials .short-text {
+  .binarypoets-block-testimonials .short-text {
     margin-top: 50px;
     margin-bottom: 80px;
     margin-left: 5%;
@@ -1720,13 +1724,13 @@ h1 a img {
     bottom: 0;
   }
 
-  .blahlab-block-contact {
+  .binarypoets-block-contact {
     display: block;
     width: 100%;
     padding: 0;
   }
 
-  .blahlab-block-contact h2 {
+  .binarypoets-block-contact h2 {
     margin-left: 20%;
     margin-top: 60px;
     font-size: 5vw;
@@ -1737,40 +1741,40 @@ h1 a img {
     margin-bottom: 60px;
   }
 
-  .blahlab-block-contact .info h3 {
+  .binarypoets-block-contact .info h3 {
     font-size: 20px;
     color: #000;
   }
 
-  .blahlab-block-contact h3:nth-of-type(2) {
+  .binarypoets-block-contact h3:nth-of-type(2) {
     margin-top: 6vw;
   }
 
-  .blahlab-block-contact .info {
-    margin-left: 8%;
+  .binarypoets-block-contact .info {
+    margin-left: 20%;
     margin-top: 0;
     margin-bottom: 100px;
   }
 
-  .blahlab-block-contact ul {
+  .binarypoets-block-contact ul {
     margin-top: 5px;
   }
 
-  .blahlab-block-contact form {
+  .binarypoets-block-contact form {
     display: block;
     margin-left: 5%;
     margin-right: 5%;
   }
 
-  .blahlab-block-contact form .fields {
+  .binarypoets-block-contact form .fields {
     width: 100%;
   }
 
-  .blahlab-block-contact form .fields input,
-  .blahlab-block-contact form .fields textarea {
+  .binarypoets-block-contact form .fields input,
+  .binarypoets-block-contact form .fields textarea {
     font-size: 3.2vw;
   }
-  .blahlab-block-contact form > input {
+  .binarypoets-block-contact form > input {
     margin: 50px auto;
     display: inherit;
     font-size: 3.2vw;
@@ -1778,7 +1782,7 @@ h1 a img {
     height: 18vw;
   }
 
-  .blahlab-block-blog-posts {
+  .binarypoets-block-blog-posts {
     display: block;
     width: 100%;
     padding: 0;
@@ -1788,7 +1792,7 @@ h1 a img {
     padding-bottom: 30px;
   }
 
-  .blahlab-block-blog-posts__post {
+  .binarypoets-block-blog-posts__post {
     border-right: none;
     padding: 0;
     display: block;
@@ -1798,28 +1802,28 @@ h1 a img {
     padding-top: 60px;
   }
 
-  .blahlab-block-blog-posts__post .date {
+  .binarypoets-block-blog-posts__post .date {
     margin-left: 20%;
     margin-bottom: 5px;
   }
 
-  .blahlab-block-blog-posts__post h3 {
+  .binarypoets-block-blog-posts__post h3 {
     margin: 0;
     margin-left: 20%;
   }
 
-  .blahlab-block-blog-posts__post .read-more {
+  .binarypoets-block-blog-posts__post .read-more {
     display: none;
   }
 
-  .blahlab-block-blog-posts__image-container {
+  .binarypoets-block-blog-posts__image-container {
     width: 90%;
     height: auto;
     margin: 0 auto;
     margin-top: 30px;
   }
 
-  .blahlab-block-blog-posts__image-container img {
+  .binarypoets-block-blog-posts__image-container img {
     object-fit: cover;
     position: static;
     max-height: none;
@@ -1827,7 +1831,7 @@ h1 a img {
     display: block;
   }
 
-  .blahlab-block-portfolio-item-header {
+  .binarypoets-block-portfolio-item-header {
     display: block;
     padding: 0;
     padding-bottom: 80px;
@@ -1875,35 +1879,35 @@ h1 a img {
     transition: scale 0.3s ease-in-out;
   }
 
-  .blahlab-block-portfolio-item-header .image-and-title {
+  .binarypoets-block-portfolio-item-header .image-and-title {
     width: 100%;
     min-width: 100%;
     max-width: 100%;
   }
 
-  .blahlab-block-portfolio-item-header .image-and-title h3 {
+  .binarypoets-block-portfolio-item-header .image-and-title h3 {
     margin: 0 auto;
     width: 90%;
     margin-top: 20px;
   }
 
-  .blahlab-block-portfolio-item-header .meta {
+  .binarypoets-block-portfolio-item-header .meta {
     margin-left: auto;
     width: 180px;
     margin-top: 40px;
   }
 
-  .blahlab-block-portfolio-item-header .meta li.roles {
+  .binarypoets-block-portfolio-item-header .meta li.roles {
     margin-top: 30px;
   }
 
-  .blahlab-block-portfolio-item-header .link-and-description {
+  .binarypoets-block-portfolio-item-header .link-and-description {
     width: 90%;
     margin: 0 auto;
     margin-top: 70px;
   }
 
-  .blahlab-block-portfolio-item-header .link-and-description p {
+  .binarypoets-block-portfolio-item-header .link-and-description p {
     margin-top: 30px;
     font-size: 5vw;
     line-height: 125%;
@@ -1911,7 +1915,7 @@ h1 a img {
     color: #222;
   }
 
-  .blahlab-block-portfolio-item-image {
+  .binarypoets-block-portfolio-item-image {
     width: 90%;
     margin: 0 auto;
     margin-bottom: 70px;
@@ -1919,20 +1923,20 @@ h1 a img {
     height: auto;
   }
 
-  .blahlab-block-portfolio-item-image img,
-  .blahlab-block-portfolio-item-image.vertical img {
+  .binarypoets-block-portfolio-item-image img,
+  .binarypoets-block-portfolio-item-image.vertical img {
     width: 100%;
     height: auto;
   }
 
-  .blahlab-block-portfolio-item-testimonial {
+  .binarypoets-block-portfolio-item-testimonial {
     width: 90%;
     margin: 0 auto;
     padding: 0;
     margin-top: 70px;
   }
 
-  .blahlab-block-portfolio-item-testimonial p {
+  .binarypoets-block-portfolio-item-testimonial p {
     margin-left: 15%;
     font-size: 5vw;
     line-height: 125%;
@@ -1940,13 +1944,13 @@ h1 a img {
     color: #222;
   }
 
-  .blahlab-block-portfolio-nav {
+  .binarypoets-block-portfolio-nav {
     width: 90%;
     margin: 0 auto;
     margin-top: 60px;
   }
 
-  .blahlab-block-portfolio-nav a {
+  .binarypoets-block-portfolio-nav a {
     font-weight: bold;
   }
 }
