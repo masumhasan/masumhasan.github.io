@@ -55,3 +55,39 @@
 .read-btn:hover {
   background: #444;
 }
+
+.clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 10px;
+  gap: 15px;
+  width: 100%;
+}
+
+.clock {
+  text-align: center;
+  flex: 0 0 auto;
+}
+
+canvas {
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  width: 80px;
+  height: 80px;
+}
+
+.city {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  canvas {
+    width: 70px;
+    height: 70px;
+  }
+}
