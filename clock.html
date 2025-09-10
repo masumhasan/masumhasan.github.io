@@ -31,7 +31,7 @@
         text-align: center;
       }
 
-      .clock-canvas {
+      .clock-clockpage {
         width: 100%;
         height: auto;
         aspect-ratio: 1 / 1; /* circle remains square */
@@ -57,14 +57,10 @@
 
     <script>
       const cities = [
+        { name: "Dhaka", timeZone: "Asia/Dhaka", color: "#FDDDE6" },
         { name: "New York", timeZone: "America/New_York", color: "#9CC3E6" },
-        { name: "Zurich", timeZone: "Europe/Zurich", color: "#FDDDE6" },
-        { name: "Chicago", timeZone: "America/Chicago", color: "#B8E0D2" },
-        {
-          name: "Cape Town",
-          timeZone: "Africa/Johannesburg",
-          color: "#C97C7C",
-        },
+        { name: "Dubai", timeZone: "Asia/Dubai", color: "#B8E0D2" },
+        { name: "Berlin", timeZone: "Europe/Berlin", color: "#C97C7C" },
       ];
 
       function createClocks() {
@@ -74,7 +70,7 @@
           const box = document.createElement("div");
           box.className = "clock-box";
           box.innerHTML = `
-          <canvas id="clock${i}" class="clock-canvas"></canvas>
+          <canvas id="clock${i}" class="clock-clockpage"></canvas>
           <div class="city">${city.name}</div>
           <div class="time" id="time${i}"></div>
         `;
@@ -145,17 +141,17 @@
         ctx.font = `bold ${radius * 0.15}px Arial`;
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
-        ctx.fillText(ampm, radius, radius * 0.2);
+        ctx.fillText(ampm, radius, radius * 1.5);
       }
 
       function updateClocks() {
         cities.forEach((city, i) => {
-          const canvas = document.getElementById(`clock${i}`);
-          const size = canvas.offsetWidth;
-          canvas.width = size;
-          canvas.height = size;
+          const clockpage = document.getElementById(`clock${i}`);
+          const size = clockpage.offsetWidth;
+          clockpage.width = size;
+          clockpage.height = size;
 
-          const ctx = canvas.getContext("2d");
+          const ctx = clockpage.getContext("2d");
           const radius = size / 2;
 
           const now = new Date();
