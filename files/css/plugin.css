@@ -1,0 +1,40 @@
+.clock-wrapper {
+  padding-left: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1400px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}
+
+.clock-box {
+  flex: 1;
+  min-width: 0;
+  text-align: center;
+}
+
+.clock-canvas {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1; /* keeps circle ratio */
+  display: block;
+  margin: 0 auto;
+}
+
+.city {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.time {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 3px;
+}

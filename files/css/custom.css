@@ -56,46 +56,6 @@
   background: #444;
 }
 
-.clock-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  gap: 15px;
-  width: 100%;
-}
-
-.clock {
-  text-align: center;
-  flex: 0 0 auto;
-}
-
-canvas {
-  background: white;
-  border-radius: 50%;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-  width: 80px;
-  height: 80px;
-}
-
-.city {
-  margin-top: 8px;
-  font-weight: bold;
-}
-
-@media (max-width: 600px) {
-  canvas {
-    width: 70px;
-    height: 70px;
-  }
-}
-
-picturex {
-  position: absolute;
-  padding-bottom: -150px;
-  animation: floatUp 8s linear infinite;
-}
 @keyframes floatUp {
   from {
     transform: translateY(0) rotate(0deg);
@@ -167,3 +127,5 @@ picturex {
     width: 100vw !important; /* Full width on mobile */
   }
 }
+
+/*worldclock*/
