@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>World Clock</title>
+    <title>Responsive World Clock</title>
     <style>
       body {
         margin: 0;
@@ -19,10 +19,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 2vw; /* spacing scales with viewport */
         width: 100%;
-        max-width: 1400px;
-        padding: 10px;
+        padding: 2vw;
         box-sizing: border-box;
       }
 
@@ -35,21 +34,21 @@
       .clock-canvas {
         width: 100%;
         height: auto;
-        aspect-ratio: 1 / 1; /* keeps circle ratio */
+        aspect-ratio: 1 / 1; /* circle remains square */
         display: block;
         margin: 0 auto;
       }
 
       .city {
-        font-size: 1.1rem;
+        font-size: clamp(0.8rem, 1.2vw, 1.5rem);
         font-weight: 600;
-        margin-top: 5px;
+        margin-top: 0.3em;
       }
 
       .time {
-        font-size: 1.3rem;
+        font-size: clamp(1rem, 1.5vw, 2rem);
         font-weight: bold;
-        margin-top: 3px;
+        margin-top: 0.2em;
       }
     </style>
   </head>
@@ -59,9 +58,13 @@
     <script>
       const cities = [
         { name: "New York", timeZone: "America/New_York", color: "#9CC3E6" },
-        { name: "Dhaka", timeZone: "Asia/Dhaka", color: "#FDDDE6" },
-        { name: "Dubai", timeZone: "Asia/Dubai", color: "#B8E0D2" },
-        { name: "Berlin", timeZone: "Europe/Berlin", color: "#E8B4B8" },
+        { name: "Zurich", timeZone: "Europe/Zurich", color: "#FDDDE6" },
+        { name: "Chicago", timeZone: "America/Chicago", color: "#B8E0D2" },
+        {
+          name: "Cape Town",
+          timeZone: "Africa/Johannesburg",
+          color: "#C97C7C",
+        },
       ];
 
       function createClocks() {
@@ -90,11 +93,11 @@
 
         // ticks
         ctx.strokeStyle = "#333";
-        ctx.lineWidth = 2;
+        ctx.lineWidth = Math.max(1, radius * 0.01);
         for (let i = 0; i < 12; i++) {
           let angle = (i * Math.PI) / 6;
-          let x1 = radius + Math.cos(angle) * (radius - 15);
-          let y1 = radius + Math.sin(angle) * (radius - 15);
+          let x1 = radius + Math.cos(angle) * (radius - radius * 0.1);
+          let y1 = radius + Math.sin(angle) * (radius - radius * 0.1);
           let x2 = radius + Math.cos(angle) * (radius - 5);
           let y2 = radius + Math.sin(angle) * (radius - 5);
           ctx.beginPath();
@@ -108,10 +111,10 @@
         ctx.beginPath();
         ctx.moveTo(radius, radius);
         ctx.lineTo(
-          radius + Math.cos(hourAngle - Math.PI / 2) * (radius - 60),
-          radius + Math.sin(hourAngle - Math.PI / 2) * (radius - 60)
+          radius + Math.cos(hourAngle - Math.PI / 2) * (radius * 0.5),
+          radius + Math.sin(hourAngle - Math.PI / 2) * (radius * 0.5)
         );
-        ctx.lineWidth = 6;
+        ctx.lineWidth = radius * 0.06;
         ctx.stroke();
 
         // minute hand
@@ -119,10 +122,10 @@
         ctx.beginPath();
         ctx.moveTo(radius, radius);
         ctx.lineTo(
-          radius + Math.cos(minAngle - Math.PI / 2) * (radius - 40),
-          radius + Math.sin(minAngle - Math.PI / 2) * (radius - 40)
+          radius + Math.cos(minAngle - Math.PI / 2) * (radius * 0.7),
+          radius + Math.sin(minAngle - Math.PI / 2) * (radius * 0.7)
         );
-        ctx.lineWidth = 4;
+        ctx.lineWidth = radius * 0.04;
         ctx.stroke();
 
         // second hand
@@ -130,19 +133,19 @@
         ctx.beginPath();
         ctx.moveTo(radius, radius);
         ctx.lineTo(
-          radius + Math.cos(secAngle - Math.PI / 2) * (radius - 25),
-          radius + Math.sin(secAngle - Math.PI / 2) * (radius - 25)
+          radius + Math.cos(secAngle - Math.PI / 2) * (radius * 0.8),
+          radius + Math.sin(secAngle - Math.PI / 2) * (radius * 0.8)
         );
         ctx.strokeStyle = "#222";
-        ctx.lineWidth = 2;
+        ctx.lineWidth = radius * 0.02;
         ctx.stroke();
 
-        // AM/PM inside clock, shifted 20% from top
+        // AM/PM inside clock (20% from top)
         ctx.fillStyle = "#222";
-        ctx.font = "bold 14px Arial";
+        ctx.font = `bold ${radius * 0.15}px Arial`;
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
-        ctx.fillText(ampm, radius, radius * 1.5); // <-- shifted down
+        ctx.fillText(ampm, radius, radius * 0.2);
       }
 
       function updateClocks() {
