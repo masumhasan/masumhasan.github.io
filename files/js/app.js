@@ -5,6 +5,25 @@ let page = {
   ScrollMagicController: new ScrollMagic.Controller({}),
 };
 
+// Randomize position, delay, and speed for each tech logo
+document.addEventListener("DOMContentLoaded", function () {
+  const pictures = document.querySelectorAll("picturex");
+  pictures.forEach(function (pic) {
+    // Random left position (0% to 95%)
+    const left = Math.floor(Math.random() * 96);
+    // Random bottom position (0px to 80px)
+    const bottom = Math.floor(Math.random() * 81);
+    // Random animation delay (0s to 10s)
+    const delay = (Math.random() * 10).toFixed(2);
+    // Random animation duration (6s to 14s)
+    const duration = (6 + Math.random() * 8).toFixed(2);
+    pic.style.left = left + "%";
+    pic.style.bottom = bottom + "px";
+    pic.style.animationDelay = delay + "s";
+    pic.style.animationDuration = duration + "s";
+  });
+});
+
 function NavBar(el, page) {
   this.el = el;
   this.page = page;

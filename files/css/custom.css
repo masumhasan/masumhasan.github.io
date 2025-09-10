@@ -90,3 +90,19 @@ canvas {
     height: 70px;
   }
 }
+
+picturex {
+  position: absolute;
+  padding-bottom: -150px;
+  animation: floatUp 8s linear infinite;
+}
+@keyframes floatUp {
+  from {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
+}

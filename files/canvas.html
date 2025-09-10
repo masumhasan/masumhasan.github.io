@@ -1,0 +1,172 @@
+<head>
+  <style>
+    body {
+      margin: 0;
+      background: white;
+      overflow: hidden;
+    }
+    picture {
+      position: absolute;
+      padding-bottom: -150px;
+      animation: floatUp 8s linear infinite;
+    }
+    @keyframes floatUp {
+      from {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+      to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Tech Logos Floating Animation -->
+  <picture style="left: 5%; animation-delay: 0s">
+    <img
+      src="../techlogos/androidstudio.png"
+      alt="Android Studio"
+      width="48"
+      height="48"
+    />
+  </picture>
+  <picture style="left: 10%; animation-delay: 0.5s">
+    <img
+      src="../techlogos/googlecloud.png"
+      alt="Google Cloud"
+      width="48"
+      height="48"
+    />
+  </picture>
+  <picture style="left: 15%; animation-delay: 1s">
+    <img src="../techlogos/nextjs.png" alt="Next.js" width="48" height="48" />
+  </picture>
+  <picture style="left: 20%; animation-delay: 1.5s">
+    <img src="../techlogos/pycharm.png" alt="PyCharm" width="48" height="48" />
+  </picture>
+  <picture style="left: 25%; animation-delay: 2s">
+    <img
+      src="../techlogos/tailwindcss.png"
+      alt="Tailwind CSS"
+      width="48"
+      height="48"
+    />
+  </picture>
+  <picture style="left: 30%; animation-delay: 2.5s">
+    <img
+      src="../techlogos/cloudflare.png"
+      alt="Cloudflare"
+      width="48"
+      height="48"
+    />
+  </picture>
+  <picture style="left: 35%; animation-delay: 3s">
+    <img src="../techlogos/html.png" alt="HTML" width="48" height="48" />
+  </picture>
+  <picture style="left: 40%; animation-delay: 3.5s">
+    <img src="../techlogos/nodejs.png" alt="Node.js" width="48" height="48" />
+  </picture>
+  <picture style="left: 45%; animation-delay: 4s">
+    <img src="../techlogos/python.png" alt="Python" width="48" height="48" />
+  </picture>
+  <picture style="left: 50%; animation-delay: 4.5s">
+    <img
+      src="../techlogos/tensorflow.png"
+      alt="TensorFlow"
+      width="48"
+      height="48"
+    />
+  </picture>
+  <picture style="left: 55%; animation-delay: 5s">
+    <img src="../techlogos/figma.png" alt="Figma" width="48" height="48" />
+  </picture>
+  <picture style="left: 60%; animation-delay: 5.5s">
+    <img
+      src="../techlogos/javascript.png"
+      alt="JavaScript"
+      width="48"
+      height="48"
+    />
+  </picture>
+  <picture style="left: 65%; animation-delay: 6s">
+    <img src="../techlogos/npm.png" alt="npm" width="48" height="48" />
+  </picture>
+  <picture style="left: 70%; animation-delay: 6.5s">
+    <img src="../techlogos/react.png" alt="React" width="48" height="48" />
+  </picture>
+  <picture style="left: 75%; animation-delay: 7s">
+    <img
+      src="../techlogos/typescript.png"
+      alt="TypeScript"
+      width="48"
+      height="48"
+    />
+  </picture>
+  <picture style="left: 80%; animation-delay: 7.5s">
+    <img
+      src="../techlogos/firebase.png"
+      alt="Firebase"
+      width="48"
+      height="48"
+    />
+  </picture>
+  <picture style="left: 85%; animation-delay: 8s">
+    <img src="../techlogos/jira.png" alt="Jira" width="48" height="48" />
+  </picture>
+  <picture style="left: 90%; animation-delay: 8.5s">
+    <img src="../techlogos/postman.png" alt="Postman" width="48" height="48" />
+  </picture>
+  <picture style="left: 95%; animation-delay: 9s">
+    <img src="../techlogos/redux.png" alt="Redux" width="48" height="48" />
+  </picture>
+  <picture style="left: 12%; animation-delay: 1.2s">
+    <img src="../techlogos/vscode.png" alt="VSCode" width="48" height="48" />
+  </picture>
+  <picture style="left: 22%; animation-delay: 2.2s">
+    <img src="../techlogos/git.png" alt="Git" width="48" height="48" />
+  </picture>
+  <picture style="left: 32%; animation-delay: 3.2s">
+    <img src="../techlogos/mongodb.png" alt="MongoDB" width="48" height="48" />
+  </picture>
+  <picture style="left: 42%; animation-delay: 4.2s">
+    <img
+      src="../techlogos/powershell.png"
+      alt="Powershell"
+      width="48"
+      height="48"
+    />
+  </picture>
+  <picture style="left: 52%; animation-delay: 5.2s">
+    <img src="../techlogos/slack.png" alt="Slack" width="48" height="48" />
+  </picture>
+  <picture style="left: 62%; animation-delay: 6.2s">
+    <img
+      src="../techlogos/woocommerce.png"
+      alt="WooCommerce"
+      width="48"
+      height="48"
+    />
+  </picture>
+  <script>
+    // Randomize position, delay, and speed for each tech logo
+    document.addEventListener("DOMContentLoaded", function () {
+      const pictures = document.querySelectorAll("picture");
+      pictures.forEach(function (pic) {
+        // Random left position (0% to 95%)
+        const left = Math.floor(Math.random() * 96);
+        // Random bottom position (0px to 80px)
+        const bottom = Math.floor(Math.random() * 81);
+        // Random animation delay (0s to 10s)
+        const delay = (Math.random() * 10).toFixed(2);
+        // Random animation duration (6s to 14s)
+        const duration = (6 + Math.random() * 8).toFixed(2);
+        pic.style.left = left + "%";
+        pic.style.bottom = bottom + "px";
+        pic.style.animationDelay = delay + "s";
+        pic.style.animationDuration = duration + "s";
+      });
+    });
+  </script>
+</body>
