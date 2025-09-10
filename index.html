@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html class="loading">
   <head>
@@ -144,7 +145,7 @@
               enthusiast based in Bangladesh.
             </p>
           </div>
-          <div class="blahlab-block-picture">
+          <div class="blahlab-block-picture" style="width: 100%;">
             <video autoplay="" loop="" muted="" playsinline="" style="object-fit: cover;">
               <source src="files/videos/vid1.mp4" type="video/mp4" />
             </video>
@@ -212,7 +213,7 @@
               </div>
             </div>
           </div>
-          <div class="blahlab-block-picture" style="width: 40vw;!important">
+          <div class="blahlab-block-picture myvidbox" id="mobileBox">
             <video autoplay="" loop="" muted="" playsinline="">
               <source src="files/videos/coding.mp4" type="video/mp4" />
             </video>
@@ -367,8 +368,9 @@
                     src="files/images/works/enedao.jpg"
                     alt="project enedao"
                   />
+                  
                 </a>
-
+                
                 <h3>ENEDAO VIDEO</h3>
                 <p>Video Content for Enedao</p>
               </div>
@@ -503,11 +505,12 @@
                       vertical-align: -webkit-baseline-middle;
                       font-size: medium;
                       font-family: Arial;
+                      padding-left: 8vw;
                     ">
                     <tbody class="all">
                       <tr style="text-align: right">
                         <td>
-                          <a href="https://fb.me/masumhasans" target="_blank" style="display: inline-block; padding: 0px"><img src="https://masumhasan.github.io/social/fb.png" href="https://fb.me/masumhasans" target="_blank" alt="facebook" width="24"></a>
+                          <a href="https://fb.me/masumhasans" target="_blank" style="display: inline-block; padding: 0px"><img src="https://masumhasan.github.io/social/fb.png" href="https://fb.me/masumhasans" target="_blank" alt="facebook" width="32" style="max-width: 135px; display: block"></a>
                         </td>
 
                         <td width="5">
@@ -529,7 +532,7 @@
                           <div></div>
                         </td>
                         <td>
-                          <a href="https://x.com/masumhasans" target="_blank" style="display: inline-block; padding: 0px"><img src="https://masumhasan.github.io/social/x.png" href="https://x.com/masumhasans" alt="x" width="24" style="max-width: 135px; display: block"></a>
+                          <a href="https://x.com/masumhasans" target="_blank" style="display: inline-block; padding: 0px"><img src="https://masumhasan.github.io/social/x.png" href="https://x.com/masumhasans" alt="x" width="32" style="max-width: 135px; display: block"></a>
                         </td>
                         <td width="5">
                           <div></div>
@@ -994,7 +997,39 @@ Bangladesh                  </li>
         </div>
       </div>
     </div>
+<script>
+      // Replace with your YouTube video ID
+      const YOUTUBE_VIDEO_ID = "lAiHJZnZdjE";
 
+      // YouTube embed API URL with autoplay and custom options
+      const embedUrl = `https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0`;
+
+      const openBtn = document.getElementById("openPopupBtn");
+      const closeBtn = document.getElementById("closePopupBtn");
+      const overlay = document.getElementById("popupOverlay");
+      const videoContainer = document.getElementById("videoContainer");
+
+      openBtn.onclick = () => {
+        overlay.style.display = "flex";
+        videoContainer.innerHTML = `<iframe src="${embedUrl}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="width:100%;height:100%;border-radius:8px;"></iframe>`;
+      };
+
+      closeBtn.onclick = () => {
+        overlay.style.display = "none";
+        videoContainer.innerHTML = "";
+      };
+
+      // Optional: close popup when clicking outside content
+      overlay.onclick = (e) => {
+        if (e.target === overlay) {
+          closeBtn.onclick();
+        }
+      };
+    </script>
+
+
+
+      
     <script src="files/js/anime.min.js"></script>
     <script src="files/js/jquery-3.4.1.min.js"></script>
     <script src="files/js/jquery.validate.min.js"></script>
@@ -1003,3 +1038,4 @@ Bangladesh                  </li>
     <script src="files/js/app.js"></script>
   </body>
 </html>
+  

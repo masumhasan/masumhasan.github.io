@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Video Popup Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+      }
+      .popup-content {
+        background: #fff;
+        padding: 0;
+        border-radius: 8px;
+        position: relative;
+        width: 80vw;
+        max-width: 640px;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+      }
+      .close-btn {
+        position: absolute;
+        top: 8px;
+        right: 12px;
+        background: #fff;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 10;
+      }
+      .video-container {
+        width: 100%;
+        height: 360px;
+        background: #000;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      @media (max-width: 700px) {
+        .video-container {
+          height: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button id="openPopupBtn">Open Video</button>
+
+    <div class="popup-overlay" id="popupOverlay">
+      <div class="popup-content">
+        <button class="close-btn" id="closePopupBtn">&times;</button>
+        <div class="video-container" id="videoContainer"></div>
+      </div>
+    </div>
+
+    <script>
+      // Replace with your YouTube video ID
+      const YOUTUBE_VIDEO_ID = "lAiHJZnZdjE";
+
+      // YouTube embed API URL with autoplay and custom options
+      const embedUrl = `https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0`;
+
+      const openBtn = document.getElementById("openPopupBtn");
+      const closeBtn = document.getElementById("closePopupBtn");
+      const overlay = document.getElementById("popupOverlay");
+      const videoContainer = document.getElementById("videoContainer");
+
+      openBtn.onclick = () => {
+        overlay.style.display = "flex";
+        videoContainer.innerHTML = `<iframe src="${embedUrl}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="width:100%;height:100%;border-radius:8px;"></iframe>`;
+      };
+
+      closeBtn.onclick = () => {
+        overlay.style.display = "none";
+        videoContainer.innerHTML = "";
+      };
+
+      // Optional: close popup when clicking outside content
+      overlay.onclick = (e) => {
+        if (e.target === overlay) {
+          closeBtn.onclick();
+        }
+      };
+    </script>
+  </body>
+</html>
