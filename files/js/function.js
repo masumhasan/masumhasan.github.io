@@ -109,13 +109,13 @@ function updateClocks() {
 
     drawClock(ctx, radius, h, m, s, ampm, city.color);
 
-    document.getElementById(`time${i}`).textContent =
-      local.toLocaleTimeString([], {
+    document.getElementById(`time${i}`).textContent = local.toLocaleTimeString(
+      [],
+      {
         hour: "2-digit",
         minute: "2-digit",
-      }) +
-      " " +
-      ampm;
+      }
+    );
   });
 }
 
