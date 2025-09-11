@@ -1,26 +1,8 @@
 <head>
-  <style>
-    body {
-      margin: 0;
-      background: white;
-      overflow: hidden;
-    }
-    tech-logo {
-      position: absolute;
-      padding-bottom: -150px;
-      animation: floatUp 8s linear infinite;
-    }
-    @keyframes floatUp {
-      from {
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
-      }
-      to {
-        transform: translateY(-110vh) rotate(360deg);
-        opacity: 0;
-      }
-    }
-  </style>
+  <link
+    rel="stylesheet"
+    href="https://masumhasan.github.io/files/css/plugin.css"
+  />
 </head>
 <body>
   <!-- Tech Logos Floating Animation -->
@@ -226,21 +208,5 @@
       />
     </tech-logo>
   </section>
-  <script>
-    // Randomize position, delay, and speed for each tech logo
-    document.addEventListener("DOMContentLoaded", function () {
-      const pictures = document.querySelectorAll("tech-logo");
-      pictures.forEach(function (pic) {
-        const left = Math.floor(Math.random() * 96);
-        const bottom = Math.floor(Math.random() * 81);
-        // Start animation at -10s
-        const delay = (Math.random() * 10 - 10).toFixed(2); // -10s to 0s
-        const duration = (6 + Math.random() * 8).toFixed(2);
-        pic.style.left = left + "%";
-        pic.style.bottom = bottom + "px";
-        pic.style.animationDelay = delay + "s";
-        pic.style.animationDuration = duration + "s";
-      });
-    });
-  </script>
+  <script src="https://masumhasan.github.io/files/js/plugin.js"></script>
 </body>

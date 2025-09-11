@@ -1,16 +1,14 @@
 .clock-wrapper {
+  width: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2vw; /* spacing scales with viewport */
-  width: 100%;
+  height: auto;
+  gap: 2vw;
   padding: 2vw;
   box-sizing: border-box;
-  flex-wrap: wrap; /* wrap on smaller screens */
-  margin: 0;
-  font-family: Arial, sans-serif;
-
-  height: 100vh;
 }
 
 .clock-box {
@@ -22,7 +20,7 @@
 .clock-clockpage {
   width: 100%;
   height: auto;
-  aspect-ratio: 1 / 1; /* circle remains square */
+  aspect-ratio: 1 / 1;
   display: block;
   margin: 0 auto;
 }
@@ -37,4 +35,22 @@
   font-size: clamp(1rem, 1.5vw, 2rem);
   font-weight: bold;
   margin-top: 0.2em;
+}
+
+/* TECH LOGOS ANIMATION */
+
+tech-logo {
+  position: absolute;
+  padding-bottom: -150px;
+  animation: floatUp 8s linear infinite;
+}
+@keyframes floatUp {
+  from {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
 }
