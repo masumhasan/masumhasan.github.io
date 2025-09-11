@@ -85,15 +85,18 @@ function drawClock(ctx, radius, h, m, s, ampm, color) {
   ctx.textBaseline = "middle";
   ctx.fillText(ampm, radius, radius * 1.5);
 }
-
 function updateClocks() {
   cities.forEach((city, i) => {
     const clockpage = document.getElementById(`clock${i}`);
     const size = clockpage.offsetWidth;
-    clockpage.width = size;
-    clockpage.height = size;
+
+    const ratio = window.devicePixelRatio;
+    clockpage.width = size * ratio;
+    clockpage.height = size * ratio;
 
     const ctx = clockpage.getContext("2d");
+    ctx.scale(ratio, ratio);
+
     const radius = size / 2;
 
     const now = new Date();
@@ -109,7 +112,6 @@ function updateClocks() {
 
     drawClock(ctx, radius, h, m, s, ampm, city.color);
 
-    // Digital clock with AM/PM
     document.getElementById(`time${i}`).textContent =
       local.toLocaleTimeString([], {
         hour: "2-digit",
