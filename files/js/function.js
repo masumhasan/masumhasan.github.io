@@ -1,86 +1,126 @@
-const cities = {
-  Dhaka: "Asia/Dhaka",
-  NewYork: "America/New_York",
-  London: "Europe/London",
-  Dubai: "Asia/Dubai",
-  Berlin: "Europe/Berlin",
-};
+const cities = [
+  { name: "Dhaka", timeZone: "Asia/Dhaka", color: "#FDDDE6" },
+  { name: "New York", timeZone: "America/New_York", color: "#9CC3E6" },
+  { name: "Dubai", timeZone: "Asia/Dubai", color: "#B8E0D2" },
+  { name: "Berlin", timeZone: "Europe/Berlin", color: "#C97C7C" },
+];
 
-function drawClock(city, tz) {
-  const canvas = document.getElementById(city);
-  const ctx = canvas.getContext("2d");
-  const size = (canvas.width = canvas.offsetWidth);
-  canvas.height = size;
-  const radius = size / 2;
+function createClocks() {
+  const wrapper = document.getElementById("clocks");
+  wrapper.innerHTML = "";
+  cities.forEach((city, i) => {
+    const box = document.createElement("div");
+    box.className = "clock-box";
+    box.innerHTML = `
+          <canvas id="clock${i}" class="clock-clockpage"></canvas>
+          <div class="city">${city.name}</div>
+          <div class="time" id="time${i}"></div>
+        `;
+    wrapper.appendChild(box);
+  });
+}
 
-  ctx.clearRect(0, 0, size, size);
-  ctx.translate(radius, radius);
+function drawClock(ctx, radius, h, m, s, ampm, color) {
+  ctx.clearRect(0, 0, radius * 2, radius * 2);
 
-  // draw circle
+  // background
   ctx.beginPath();
-  ctx.arc(0, 0, radius - 5, 0, 2 * Math.PI);
-  ctx.fillStyle = "white";
+  ctx.arc(radius, radius, radius - 5, 0, 2 * Math.PI);
+  ctx.fillStyle = color;
   ctx.fill();
-  ctx.strokeStyle = "#000";
-  ctx.lineWidth = 3;
-  ctx.stroke();
 
-  // get time
-  let now = new Date();
-  let time = new Date(now.toLocaleString("en-US", { timeZone: tz }));
-
-  let sec = time.getSeconds();
-  let min = time.getMinutes();
-  let hr = time.getHours();
-
-  // draw numbers
-  ctx.font = `${radius * 0.15}px Arial`;
-  ctx.textBaseline = "middle";
-  ctx.textAlign = "center";
-  for (let num = 1; num <= 12; num++) {
-    let ang = (num * Math.PI) / 6;
-    ctx.rotate(ang);
-    ctx.translate(0, -radius * 0.85);
-    ctx.rotate(-ang);
-    ctx.fillText(num.toString(), 0, 0);
-    ctx.rotate(ang);
-    ctx.translate(0, radius * 0.85);
-    ctx.rotate(-ang);
-  }
-
-  // draw hands
-  function drawHand(pos, length, width, color = "black") {
+  // ticks
+  ctx.strokeStyle = "#333";
+  ctx.lineWidth = Math.max(1, radius * 0.01);
+  for (let i = 0; i < 12; i++) {
+    let angle = (i * Math.PI) / 6;
+    let x1 = radius + Math.cos(angle) * (radius - radius * 0.1);
+    let y1 = radius + Math.sin(angle) * (radius - radius * 0.1);
+    let x2 = radius + Math.cos(angle) * (radius - 5);
+    let y2 = radius + Math.sin(angle) * (radius - 5);
     ctx.beginPath();
-    ctx.lineWidth = width;
-    ctx.lineCap = "round";
-    ctx.strokeStyle = color;
-    ctx.moveTo(0, 0);
-    ctx.rotate(pos);
-    ctx.lineTo(0, -length);
+    ctx.moveTo(x1, y1);
+    ctx.lineTo(x2, y2);
     ctx.stroke();
-    ctx.rotate(-pos);
   }
 
   // hour hand
-  let hourPos = ((hr % 12) * Math.PI) / 6 + (min * Math.PI) / (6 * 60);
-  drawHand(hourPos, radius * 0.5, 5);
+  let hourAngle = ((h % 12) * Math.PI) / 6 + (m * Math.PI) / 360;
+  ctx.beginPath();
+  ctx.moveTo(radius, radius);
+  ctx.lineTo(
+    radius + Math.cos(hourAngle - Math.PI / 2) * (radius * 0.5),
+    radius + Math.sin(hourAngle - Math.PI / 2) * (radius * 0.5)
+  );
+  ctx.lineWidth = radius * 0.06;
+  ctx.stroke();
 
   // minute hand
-  let minPos = (min * Math.PI) / 30 + (sec * Math.PI) / (30 * 60);
-  drawHand(minPos, radius * 0.7, 3);
+  let minAngle = (m * Math.PI) / 30 + (s * Math.PI) / 1800;
+  ctx.beginPath();
+  ctx.moveTo(radius, radius);
+  ctx.lineTo(
+    radius + Math.cos(minAngle - Math.PI / 2) * (radius * 0.7),
+    radius + Math.sin(minAngle - Math.PI / 2) * (radius * 0.7)
+  );
+  ctx.lineWidth = radius * 0.04;
+  ctx.stroke();
 
   // second hand
-  let secPos = (sec * Math.PI) / 30;
-  drawHand(secPos, radius * 0.8, 2, "red");
+  let secAngle = (s * Math.PI) / 30;
+  ctx.beginPath();
+  ctx.moveTo(radius, radius);
+  ctx.lineTo(
+    radius + Math.cos(secAngle - Math.PI / 2) * (radius * 0.8),
+    radius + Math.sin(secAngle - Math.PI / 2) * (radius * 0.8)
+  );
+  ctx.strokeStyle = "#222";
+  ctx.lineWidth = radius * 0.02;
+  ctx.stroke();
 
-  ctx.translate(-radius, -radius);
+  // AM/PM inside clock (20% from top)
+  ctx.fillStyle = "#222";
+  ctx.font = `bold ${radius * 0.15}px Arial`;
+  ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
+  ctx.fillText(ampm, radius, radius * 1.5);
 }
 
 function updateClocks() {
-  for (let city in cities) {
-    drawClock(city, cities[city]);
-  }
+  cities.forEach((city, i) => {
+    const clockpage = document.getElementById(`clock${i}`);
+    const size = clockpage.offsetWidth;
+    clockpage.width = size;
+    clockpage.height = size;
+
+    const ctx = clockpage.getContext("2d");
+    const radius = size / 2;
+
+    const now = new Date();
+    const local = new Date(
+      now.toLocaleString("en-US", { timeZone: city.timeZone })
+    );
+
+    let h = local.getHours();
+    let m = local.getMinutes();
+    let s = local.getSeconds();
+
+    const ampm = h >= 12 ? "PM" : "AM";
+
+    drawClock(ctx, radius, h, m, s, ampm, city.color);
+
+    // Digital clock with AM/PM
+    document.getElementById(`time${i}`).textContent =
+      local.toLocaleTimeString([], {
+        hour: "2-digit",
+        minute: "2-digit",
+      }) +
+      " " +
+      ampm;
+  });
 }
 
+createClocks();
 setInterval(updateClocks, 1000);
 updateClocks();
+window.addEventListener("resize", updateClocks);
