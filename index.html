@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html class="loading">
   <head>
@@ -75,6 +76,8 @@
     <link rel="stylesheet" href="files/css/style.css" />
     <link rel="stylesheet" href="files/css/custom.css" />
     <link rel="stylesheet" href="files/css/plugin.css" />
+
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
 
 
   </head>
@@ -433,11 +436,8 @@
             </div>
             <div class="blahlab-block-services__services">
               <div class="service">
-                <img
-                  src="files/images/animations/research3d.gif"
-                  alt="Development"
-                  style="height: 220px; width: 220px"
-                />
+          
+                <dotlottie-wc src="https://lottie.host/9ed552b5-9948-4e66-ab52-7438d3e1ff8f/49YxLhSpIP.lottie" style="width: 220px;height: 220px" speed="1" autoplay loop></dotlottie-wc>
                 <h3>1. Research</h3>
                 <p>
                   🔍 Thorough research to understand your business, industry,
@@ -925,9 +925,10 @@
                   <p class="project-desc"><strong>
                      <img
                         src="files/images/project.png"
-                        alt="meComic
+                        alt="meComic"
                         style="width:32px;height:32px;object-fit:contain;vertical-align:middle;margin-right:8px;"
                       />
+
                       meComic | Customized Comic maker for Parenting, Schools, and Kids</strong></p>
                   <div class="project-meta">By NUR HASAN MASUM | 18 August 2024 | project</div>
                   <p class="project-desc">
@@ -1289,6 +1290,44 @@ Bangladesh                  </li>
     <script src="files/js/function.js"></script>
 
 
-  </body>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
 </html>
   
