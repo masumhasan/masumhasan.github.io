@@ -1,73 +1,20 @@
-<body class="text-center">
-  <div id="page">
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
-        <div class="inner">
-          <h3 class="masthead-brand">Background #1</h3>
-          <nav class="nav nav-masthead justify-content-center">
-            <a
-              class="nav-link"
-              href="https://codepen.io/soju22/"
-              target="_blank"
-              >Codepen Profile</a
-            >
-            <a
-              class="nav-link"
-              href="https://codepen.io/collection/AGZywR"
-              target="_blank"
-              >ThreeJS Collection</a
-            >
-          </nav>
-        </div>
-      </header>
-
-      <main role="main" class="inner cover">
-        <h2>Interactive Background</h2>
-        <p class="lead">
-          This simple interactive background is made with
-          <a href="https://threejs.org" target="_blank">ThreeJS</a> and a
-          <a
-            href="https://threejs.org/docs/#api/en/geometries/PlaneBufferGeometry"
-            target="_blank"
-            >PlaneBufferGeometry</a
-          >
-          animated with Simplex noise.
-        </p>
-
-        <form style="width: 80%; margin: 0 auto">
-          <div class="form-row">
-            <div class="form-group col-sm-6">
-              <label for="noiseInput" class="form-label">Noise Coef</label>
-              <input
-                type="range"
-                min="1"
-                max="100"
-                class="custom-range"
-                id="noiseInput"
-              />
-            </div>
-            <div class="form-group col-sm-6">
-              <label for="heightInput" class="form-label">Height Coef</label>
-              <input
-                type="range"
-                min="1"
-                max="100"
-                class="custom-range"
-                id="heightInput"
-              />
-            </div>
-          </div>
-          <div class="form-group col-md-12">
-            <a href="#" id="trigger" class="btn btn-sm btn-secondary"
-              >Random Colors</a
-            >
-          </div>
-        </form>
-      </main>
-
-      <footer class="mastfoot mt-auto"></footer>
-    </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>3D Audio Agent — Background</title>
+  <link
+    rel="stylesheet"
+    href="https://masumhasan.github.io/plugins/css/voiceagent.css"
+  />
+</head>
+<body>
+  <div id="app">
+    <canvas id="background"></canvas>
   </div>
 
-  <canvas id="background"></canvas>
+  <!-- libs -->
+  <script src="https://masumhasan.github.io/plugins/js/voiceagent.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.0.3/chroma.min.js"></script>
 </body>
