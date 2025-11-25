@@ -51,7 +51,7 @@ body::-webkit-scrollbar {
 /* the top navigation */
 
 h2 {
-  font-size: 5.1vh;
+  font-size: 3.5vh;
   letter-spacing: -0.01vw;
   line-height: 125%;
   font-weight: 400;
@@ -1029,7 +1029,7 @@ h1 a img {
 }
 
 .blahlab-block-portfolio-item-testimonial p {
-  font-size: 5.1vh;
+  font-size: 3vh;
   line-height: 125%;
   font-weight: 500;
   color: #222;
