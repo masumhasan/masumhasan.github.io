@@ -68,7 +68,6 @@ coverage/
 *~
 
 # IDEs and editors
-.vscode/
 .idea/
 *.sublime-project
 *.sublime-workspace
@@ -212,3 +211,7 @@ $RECYCLE.BIN/
 *.out
 *.app
 scripts/easyquran/
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
