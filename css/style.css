@@ -534,7 +534,7 @@ h1 a img {
   min-width: 1400px;
   height: 100%;
   display: grid;
-  background: no-repeat url(../files/images/explode-bg-1.png);
+  background: no-repeat url(../images/explode-bg-1.png);
   background-size: contain;
   grid-template-columns: repeat(20, 50px);
   grid-template-rows: repeat(20, 5%);

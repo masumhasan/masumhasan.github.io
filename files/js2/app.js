@@ -412,12 +412,16 @@ Section.prototype.onResize = function () {
   this.onResizeTimeout = setTimeout(
     function () {
       // recalculate the section content width
-      this.page.sections.forEach(
-        function (section) {
-          section.content.style.flexBasis =
-            this.page.activatedSection.el.offsetWidth + "px";
-        }.bind(this)
-      );
+      if (this.page && this.page.activatedSection && this.page.activatedSection.el && this.page.sections) {
+        this.page.sections.forEach(
+          function (section) {
+            if (section && section.content) {
+              section.content.style.flexBasis =
+                this.page.activatedSection.el.offsetWidth + "px";
+            }
+          }.bind(this)
+        );
+      }
     }.bind(this),
     800
   );

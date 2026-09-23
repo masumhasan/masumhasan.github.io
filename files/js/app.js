@@ -364,12 +364,16 @@ Section.prototype.onResize = function () {
   this.onResizeTimeout = setTimeout(
     function () {
       // recalculate the section content width
-      this.page.sections.forEach(
-        function (section) {
-          section.content.style.flexBasis =
-            this.page.activatedSection.el.offsetWidth + "px";
-        }.bind(this)
-      );
+      if (this.page && this.page.activatedSection && this.page.activatedSection.el && this.page.sections) {
+        this.page.sections.forEach(
+          function (section) {
+            if (section && section.content) {
+              section.content.style.flexBasis =
+                this.page.activatedSection.el.offsetWidth + "px";
+            }
+          }.bind(this)
+        );
+      }
     }.bind(this),
     800
   );
@@ -443,7 +447,14 @@ Section.prototype.onWheel = function (event) {
   let forward = event.deltaY > 0;
   let reverse = event.deltaY < 0;
 
+  let oldScrollLeft = this.content.scrollLeft;
   this.content.scrollLeft += event.deltaY;
+
+  if (forward && Math.ceil(oldScrollLeft) >= this.content.scrollWidth - this.content.clientWidth) {
+    this.goToNext();
+  } else if (reverse && oldScrollLeft <= 0) {
+    this.goToPrevious();
+  }
 };
 
 Section.prototype.setupScrollMagicScenesForVertical = function () {
