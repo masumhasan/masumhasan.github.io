@@ -2,7 +2,7 @@
 # Project specific
 GHORAAP/ghorapp.wpress
 pglite-debug.log
-
+.vscode
 # Node.js
 venv
 node_modules/
